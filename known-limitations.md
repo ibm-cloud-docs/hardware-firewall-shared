@@ -1,0 +1,42 @@
+---
+
+copyright:
+  years: 2017
+lastupdated: "2017-12-07"
+
+---
+
+{:shortdesc: .shortdesc}
+{:new_window: target="_blank"}
+{:codeblock: .codeblock}
+{:pre: .pre}
+{:screen: .screen}
+{:tip: .tip}
+{:download: .download}
+
+# Known Limitations
+
+<<<<<<< HEAD
+A shared Hardware Firewall cannot be deployed to a server on a VLAN that meets any of the following criteria. 
+=======
+A Hardware Firewall (Shared) cannot be deployed to a server on a VLAN that meets any of the following criteria. 
+>>>>>>> origin/staging
+
+* Is currently associated with a Network Gateway, Hardware Firewall, or FortiGate Security Appliance.
+* Contains 30 or more servers.
+* Has a primary subnet that is larger than a /28.
+
+In these instances, a new VLAN must be established for the Firewall or another product must be selected.
+
+<<<<<<< HEAD
+Further limitations for the Hardware Firewall (Shared) include: 
+
+* Not available for 10Gb servers
+* Maximum of 79 firewall rules per shared Hardware Firewall
+* Portable subnets are not protected
+=======
+* Not available for 10Gb servers
+* Maximum of 79 firewall rules per Hardware Firewall (Shared)
+* Portable subnets not protected
+>>>>>>> origin/staging
+* Incompatible with Windows Network Load Balancing (NLB) due to the way ARP is processed
