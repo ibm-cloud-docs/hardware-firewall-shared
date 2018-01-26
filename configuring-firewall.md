@@ -18,59 +18,35 @@ lastupdated: "2017-12-07"
 
 Configuring the firewall is as simple as creating a set of rules to allow access to certain IP addresses/ports from specific internet addresses while denying traffic from other sources.
 
-<<<<<<< HEAD
 ## Adding a Firewall to a Server
 
 To add a firewall to a server, click on the link **Devices > Device List > Click the desired server > Configuration > Bottom of the page: Order Hardware Firewall** in the Customer Portal. This begins the order process for an appropriate firewall based on the uplink speed of the selected server. If you receive an error, see the [Known Limitations](known-limitations.html) and/or contact SoftLayer support.
 
 ## Editing Rules
-=======
-## Edit Rules
->>>>>>> origin/staging
 
 When a firewall is first added to a server, a set of rules is initially put in place that allows all traffic to reach the server. The rules can then be edited to control the traffic reaching the server.
 
-To edit the firewall rules, 
-
-<<<<<<< HEAD
 Ensure the "status" indicates that the firewall is "Processing All Rules." Users can choose to bypass the rules in the event that implemented rules have an unintended impact on their environment by clicking **Bypass Rules** in the **Actions** drop-down.
-=======
+
 1. From your browser, open  [Customer Portal ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/){: new_window} and log into your account.
 2. In the Customer Portal navigation, go to Devices > Device List and click on the firewall protected device you want to configure.
 3. In the **Firewall** tab, ensure the "Status" indicates that the firewall is "Processing All Rules."  The page displays the current rules in effect for IPv4 and IPv6 addresses. If no rules are implemented, a faded placeholder is displayed. At this point, links are available to edit the current rules.  This list of rules is known as the 'working config'. A 'working config' is a set of rules that is in the process of being created but has not yet been applied to the firewall. A user may edit, add, and delete rules until the rule set is completed. 
->>>>>>> origin/staging
 
-     Rules are displayed in the order in which they are processed, with lower numbered rules having precedence over higher 
-     number rules (if rule one allows a packet through, rules two and beyond are ignored by the packet).
-     
-     The fields are:
+	Rules are displayed in the order in which they are processed, with lower numbered rules having precedence over higher number rules (if rule one allows a packet through, rules two and beyond are ignored by the packet).
 
-      * **Order** - This field contains the rule number.  Rules can be moved up or down the list with the provided arrows.
-      * **Action** - This select list is used to 'permit' or 'deny' traffic matching this rule.
-      * **Source** - This field can be either 'any' or a specific IP address or the network address for a specific subnet.
-      * **CIDR** - This field indicates the standard CIDR notation for the selected source. "32" will implement the rule for a 
-      single IP while, for example, "24" will implement the rule for 256 IPs.
-      * **Destination** - This field selects the destination IP (see [Known Limitations](known-limitations.html) if there are 
-      issues).
-      * **CIDR** - This field indicates the standard CIDR notation for the selected destination.
-      * **Port Range** - These two fields indicate the range of ports (between 1 and 65535) that the rule will apply to.
-      * **Protocol** - This field selects the protocol the rule will apply to (TCP/GRE/ICMP/UDP/PPTP/AH/ESP).
+	The fields are:
 
-<<<<<<< HEAD
-The fields are:
+	* **Order** - This field contains the rule number.  Rules can be moved up or down the list with the provided arrows.
+	* **Action** - This select list is used to 'permit' or 'deny' traffic matching this rule.
+	* **Source** - This field can be either 'any' or a specific IP address or the network address for a specific subnet.
+	* **CIDR** - This field indicates the standard CIDR notation for the selected source. "32" will implement the rule for a single IP while "24" will implement the rule for 256 IPs.
+	* **Destination** - This field selects the destination IP (see [Known Limitations](known-limitations.html) if there are issues).
+	* **CIDR** - This field indicates the standard CIDR notation for the selected destination.
+	* **Port Range** - These two fields indicate the range of ports (between 1 and 65535) that the rule will apply to.
+	* **Protocol** - This field selects the protocol the rule will apply to (TCP/GRE/ICMP/UDP/PPTP/AH/ESP).
 
-* **Order** - This field contains the rule number.  Rules can be moved up or down the list with the provided arrows.
-* **Action** - This select list is used to 'permit' or 'deny' traffic matching this rule.
-* **Source** - This field can be either 'any' or a specific IP address or the network address for a specific subnet.
-* **CIDR** - This field indicates the standard CIDR notation for the selected source. "32" will implement the rule for a single IP while "24" will implement the rule for 256 IPs.
-* **Destination** - This field selects the destination IP (see [Known Limitations](known-limitations.html) if there are issues).
-* **CIDR** - This field indicates the standard CIDR notation for the selected destination.
-* **Port Range** - These two fields indicate the range of ports (between 1 and 65535) that the rule will apply to.
-* **Protocol** - This field selects the protocol the rule will apply to (TCP/GRE/ICMP/UDP/PPTP/AH/ESP).
-=======
 4. Click on a rule to edit it or click on the plus sign at the bottom of the table to add an additional rule. Clicking on the minus icon will delete the rule. The rules are automatically validated as you enter them.
 5. Once the 'working config' is complete, press the **Update Rules** button to have the 'working config' applied to the firewall. The rules should take effect within two minutes.
->>>>>>> origin/staging
 
 ## Common Ports
 The following ports are common for the Hardware Firewall (Shared).
