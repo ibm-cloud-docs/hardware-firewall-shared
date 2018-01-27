@@ -7,11 +7,7 @@ Hardware Firewall (Shared)
     {: .navgroup id="learn"}
     getting-started.md
     about.md
-<<<<<<< HEAD
     [Explore Firewalls](https://console.bluemix.net/docs/infrastructure/fortigate-10g/explore-firewalls.html#explore-firewalls)
-=======
-    [Explore Firewalls](https://console.stage1.bluemix.net/docs/infrastructure/fortigate-10g/explore-firewalls.html)
->>>>>>> origin/staging
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
@@ -22,13 +18,11 @@ Hardware Firewall (Shared)
     viewing-logs.md
     {: .navgroup-end}
     
-<<<<<<< HEAD
-=======
     {: .navgroup id="reference"}
     [IBM Cloud IP Ranges](https://console.stage1.bluemix.net/docs/infrastructure/hardware-firewall-dedicated/ips.html)
     {: .navgroup-end}
 
->>>>>>> origin/staging
+
     {: .navgroup id="help"}
     faqs.md
     known-limitations.md
