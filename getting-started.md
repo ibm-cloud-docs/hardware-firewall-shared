@@ -41,5 +41,5 @@ To add a firewall to a server:
 
 1. From your browser, open  [Customer Portal ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/){: new_window} and log into your account.
 2. In the Customer Portal navigation, go to **Devices > Device List** and click on the server you want protected.  
-3. In the Device Details screen, in the Configuration tab, scroll to the bottom of the page to the Addons section and click on the **Order Hardware Firewall** link. 
-4. In the Order Hardware Firewall panel, choose from the options presented (if applicable) and press Continue to complete the ordering process.
+3. In the **Device Details** page, in the **Configuration** tab, scroll to the bottom of the page to the **Addons** section and click on the **Order Hardware Firewall** link. 
+4. In the **Order Hardware Firewall** dialog, choose from the options presented (if applicable) and press **Continue** to complete the ordering process.
