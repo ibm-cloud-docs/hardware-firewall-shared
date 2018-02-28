@@ -17,7 +17,7 @@ lastupdated: "2017-12-07"
 
 # Getting Help and Support
 
-If you have problems or questions when using the Hardware Firewall (Dedicated), you can get help by searching for information or by asking questions through one of the forums listed below. You can also open a support ticket.
+If you have problems or questions when using the Hardware Firewall (Shared), you can get help by searching for information or by asking questions through one of the forums listed below. You can also open a support ticket.
 
 When using the forums to ask a question, tag your question so that it is seen by the IBM Cloud development teams.
 
