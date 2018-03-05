@@ -1,0 +1,30 @@
+{:navgroup: .navgroup}
+{:topicgroup: .topicgroup}
+
+{: .toc subcollection="hardware-firewall-shared" audience="network" href="/docs/infrastructure/hardware-firewall-shared/getting-started.html"}
+ハードウェア・ファイアウォール (共有)
+
+    {: .navgroup id="learn"}
+    getting-started.md
+    about.md
+    [ファイアウォールの詳細](https://console.bluemix.net/docs/infrastructure/fortigate-10g/explore-firewalls.html#explore-firewalls)
+    {: .navgroup-end}
+
+    {: .navgroup id="howto"}
+    configuring-firewall.md
+    view_firewalls.md
+    bypassing.md
+    cancelling.md
+    viewing-logs.md
+    {: .navgroup-end}
+    
+    {: .navgroup id="reference"}
+    [IBM Cloud の IP 範囲](https://console.bluemix.net/docs/infrastructure/hardware-firewall-dedicated/ips.html)
+    {: .navgroup-end}
+
+
+    {: .navgroup id="help"}
+    faqs.md
+    known-limitations.md
+    getting-help.md
+    {: .navgroup-end}
