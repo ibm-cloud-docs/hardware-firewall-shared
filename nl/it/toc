@@ -1,0 +1,30 @@
+{:navgroup: .navgroup}
+{:topicgroup: .topicgroup}
+
+{: .toc subcollection="hardware-firewall-shared" audience="network" href="/docs/infrastructure/hardware-firewall-shared/getting-started.html"}
+Firewall hardware (condiviso) 
+
+    {: .navgroup id="learn"}
+    getting-started.md
+    about.md
+    [Esplora i firewall](https://console.bluemix.net/docs/infrastructure/fortigate-10g/explore-firewalls.html#explore-firewalls)
+    {: .navgroup-end}
+
+    {: .navgroup id="howto"}
+    configuring-firewall.md
+    view_firewalls.md
+    bypassing.md
+    cancelling.md
+    viewing-logs.md
+    {: .navgroup-end}
+    
+    {: .navgroup id="reference"}
+    [IBM Cloud IP Ranges](https://console.bluemix.net/docs/infrastructure/hardware-firewall-dedicated/ips.html)
+    {: .navgroup-end}
+
+
+    {: .navgroup id="help"}
+    faqs.md
+    known-limitations.md
+    getting-help.md
+    {: .navgroup-end}
