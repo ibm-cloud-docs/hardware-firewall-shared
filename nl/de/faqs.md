@@ -38,7 +38,7 @@ Nein. Portierbare IP-Adressen können nicht geschützt werden, da sie zwischen S
 
 ## Kann ich eine Hardware-Firewall und ein Netzgateway mit demselben VLAN verbinden?
 
-Nein, es ist nicht möglich, eine Hardware-Firewall (freigegeben oder dediziert) und ein Netzgateway-Gerät demselben VLAN zuzuweisen. Die erweiterte Funktionalität des Netzgateway-Geräts bietet Firewall-Features für Ihr Netz anstelle einer freigegebenen oder dedizierten Firewall.
+Nein, es ist nicht möglich, eine Hardware-Firewall (freigegeben oder dediziert) und ein Netzgateway-Gerät demselben VLAN zuzuweisen.  Die erweiterte Funktionalität des Netzgateway-Geräts bietet Firewall-Features für Ihr Netz anstelle einer freigegebenen oder dedizierten Firewall.
 
 ## Fließt der öffentliche Datenverkehr zuerst durch die Einrichtung für den Lastausgleich oder die Hardware-Firewall?
 
@@ -46,11 +46,11 @@ Aus dem öffentlichen Internet kommen zuerst die Lastausgleich-Produkte, dann di
 
 ## Muss die Uplink-Port-Geschwindigkeit eines Servers mit der Hardware-Firewall (freigegeben) übereinstimmen?
 
-Die Hardware-Firewall (freigegeben) muss der öffentlichen Uplink-Geschwindigkeit des Servers entsprechen. Da jedoch nur die öffentliche Seite des Netzwerks geschützt wird, muss die öffentliche Uplink-Geschwindigkeit mit der Auswahl der Firewall übereinstimmen. Kunden können ein Ticket erstellen, um ein Downgrade der allgemein zugänglichen Schnittstellen anzufordern.
+Die Hardware-Firewall (freigegeben) muss der öffentlichen Uplink-Geschwindigkeit des Servers entsprechen. Da jedoch nur die öffentliche Seite des Netzwerks geschützt wird, muss die öffentliche Uplink-Geschwindigkeit mit der Auswahl der Firewall übereinstimmen.  Kunden können ein Ticket erstellen, um ein Downgrade der allgemein zugänglichen Schnittstellen anzufordern.
 
 ## Berechnet IBM Cloud für die Firewall-Bandbreite eine Gebühr?
 
-Die Bandbreite für die Hardware-Firewall (freigegeben), die Hardware-Firewall (dediziert) und die FortiGate Security Appliance wird nicht abgerechnet. Darüber hinaus können diese Produkte die gesamte Bandbreitenauslastung reduzieren, indem sie den Datenverkehr begrenzt, auf den Server reagieren müssen.
+Die Bandbreite für die Hardware-Firewall (freigegeben), die Hardware-Firewall (dediziert) und die FortiGate Security Appliance wird nicht abgerechnet.  Darüber hinaus können diese Produkte die gesamte Bandbreitenauslastung reduzieren, indem sie den Datenverkehr begrenzt, auf den Server reagieren müssen.
 
 ## Wie aktualisiere ich den Uplink meiner Hardware Firewall (freigegeben)?
 
@@ -58,11 +58,11 @@ Die Hardware-Firewall (freigegeben) ist mit der öffentlichen Uplink-Port-Geschw
 
 ## Gibt es für die Hardware-Firewall (freigegeben) eine Hochverfügbarkeit?
 
-Nein. Die Hardware-Firewall-Plattform ist auf Unternehmen abgestimmt und sehr langlebig, aber echte Hochverfügbarkeit (redundante Geräte) ist keine Option für die Hardware-Firewall (freigegeben). Denn für eine Hochverfügbarkeit (HA) ist eine Hardware-Firewall (dediziert mit Hochverfügbarkeit) oder eine FortiGate Security Appliance (Hochverfügbarkeit) erforderlich. Das Netzgateway-Produkt hat auch eine HA-Option mit Firewallfunktionalitäten.
+Nein. Die Hardware-Firewall-Plattform ist auf Unternehmen abgestimmt und sehr langlebig, aber echte Hochverfügbarkeit (redundante Geräte) ist keine Option für die Hardware-Firewall (freigegeben). Denn für eine Hochverfügbarkeit (HA) ist eine Hardware-Firewall (dediziert mit Hochverfügbarkeit) oder eine FortiGate Security Appliance (Hochverfügbarkeit) erforderlich.  Das Netzgateway-Produkt hat auch eine HA-Option mit Firewallfunktionalitäten.
 
 ## Auf einem IBM Cloud-Server wird ein Hypervisor ausgeführt. Schützt die Hardware-Firewall (freigegeben) auch die virtuellen Maschinen, die auf meinem Hypervisor ausgeführt werden?
 
-Nein. Portierbare IP-Adressen werden für die VMs in einer Hypervisor-Umgebung verwendet und sind nicht durch die gemeinsame Hardware-Firewall geschützt. Es wird eine Hardware-Firewall (dediziert) oder FortiGate Security Appliance empfohlen.
+Nein. Portierbare IP-Adressen werden für die VMs in einer Hypervisor-Umgebung verwendet und sind nicht durch die gemeinsame Hardware-Firewall geschützt.  Es wird eine Hardware-Firewall (dediziert) oder FortiGate Security Appliance empfohlen.
 
 ## Was bedeuten die ausgegrauten Ports in meiner Windows-Firewall?
 
@@ -72,7 +72,7 @@ Diese Ports können in der Regel nicht geändert werden. Wenn Sie jedoch die Fir
 
 ## Welche Hardware-Firewall-Optionen sind für 10-Gbit/s-Server verfügbar?
 
-Um öffentliche 10-Gbit/s-Uplinks zu unterstützen, ist ein Netzgateway erforderlich. Wenn 10 Gbit/s nur für das private Netz (für Datenbank, Sicherung, Speicher usw.) erforderlich sind, können Kunden ein Downgrade ihrer allgemein zugänglichen Uplinks anfordern und Hardware-Firewall-Produkte bestellen.
+Um öffentliche 10-Gbit/s-Uplinks zu unterstützen, ist ein Netzgateway erforderlich.  Wenn 10 Gbit/s nur für das private Netz (für Datenbank, Sicherung, Speicher usw.) erforderlich sind, können Kunden ein Downgrade ihrer allgemein zugänglichen Uplinks anfordern und Hardware-Firewall-Produkte bestellen.
 
 ## Welche IP-Bereiche sind für die Firewall zulässig?
 
@@ -80,7 +80,7 @@ Die Liste der IP-Adressen und IP-Bereiche, die die Firewall zulässt, finden Sie
 
 ## Welche VPN-Optionen sind mit jedem Firewallprodukt enthalten?
 
-Nicht alle Firewalls bieten VPN an und nicht alle VPN-Optionen sind identisch. Die allgemeinen Optionen für VPN lauten:
+Nicht alle Firewalls bieten VPN an und nicht alle VPN-Optionen sind identisch.  Die allgemeinen Optionen für VPN lauten:
 
 * Jeder Kunde erhält uneingeschränkte SSL-VPN-Verbindungen zu unserem privaten Netz. Diese Verbindungen können hergestellt werden, indem Sie oben auf der Seite auf den VPN-Link klicken, während Sie beim Kundenportal angemeldet sind.
 * Kunden erhalten außerdem pro Konto jeweils ein PPTP-VPN. Es können weitere PPTP-VPN-Benutzer in Paketen aus 5 Benutzern für 5 $ pro Monat zum Konto hinzugefügt werden.
@@ -90,6 +90,6 @@ Nicht alle Firewalls bieten VPN an und nicht alle VPN-Optionen sind identisch. D
 * Die NetScaler-Produkte können SSL- und IPSec-VPN im öffentlichen oder privaten Netz bereitstellen.
 * Kunden können in ihrer IBM Cloud-Umgebung auch eine VPN-Lösung auf einem Server bereitstellen.
 
-## Welche Firewallprodukte unterstützen die Public-to-Private-NAT- bzw. private VLAN-Segmentierung? 
+## Welche Firewallprodukte unterstützen die Public-to-Private-NAT- bzw. private VLAN-Segmentierung?
 
 Keines der Hardware-Firewallprodukte hat Zugriff auf das private Netz. Ein Netzgateway muss diese Funktionen inline bereitstellen. Die NetScaler-Produkte haben Zugriff auf das öffentliche und private Netz.

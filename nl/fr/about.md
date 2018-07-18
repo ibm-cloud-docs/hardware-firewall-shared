@@ -18,7 +18,7 @@ lastupdated: "2017-12-07"
 
 Un pare-feu matériel (partagé) est un périphérique réseau connecté en amont d'un serveur. Le pare-feu bloque le trafic indésirable avant même qu'il n'atteigne le serveur. Le principal avantage d'un pare-feu matériel est qu'un serveur n'a à traiter que le "bon" trafic et qu'aucune ressource n'est gaspillée dans le traitement du "mauvais" trafic. 
 
-Le pare-feu matériel (partagé) tire parti d'une plateforme d'entreprise à service partagé pour protéger un serveur individuel. Il peut être acheté avec le serveur ou ajouté ultérieurement. Il offre une sécurité des réseaux virtualisée via sa technologie de domaine virtuel (VDOM), en fournissant des domaines de sécurité virtuels mis à disposition et gérés séparément.  
+Le pare-feu matériel (partagé) tire parti d'une plateforme d'entreprise à service partagé pour protéger un serveur individuel.  Il peut être acheté avec le serveur ou ajouté ultérieurement.  Il offre une sécurité des réseaux virtualisée via sa technologie de domaine virtuel (VDOM), en fournissant des domaines de sécurité virtuels mis à disposition et gérés séparément.  
 
 Comme il y a plusieurs clients associés au matériel, si le pare-feu échoue ou est dépassé par une attaque, tous les clients qui partagent une instance de pare-feu matériel (partagé) sont susceptibles d'être impactés. 
 

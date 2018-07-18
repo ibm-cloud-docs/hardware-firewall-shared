@@ -38,7 +38,7 @@ Non. Les adresses IP portables ne peuvent pas faire l'objet d'une protection car
 
 ## Puis-je disposer d'un pare-feu matériel et d'une passerelle réseau associés au même réseau local virtuel (VLAN) ?
 
-Non, il est impossible d'avoir un pare-feu (dédié ou partagé) et une passerelle réseau affectés au même réseau local virtuel. La fonctionnalité étendue du dispositif de passerelle réseau fournit des fonctions de pare-feu pour votre réseau à la place d'un pare-feu dédié ou partagé.
+Non, il est impossible d'avoir un pare-feu (dédié ou partagé) et une passerelle réseau affectés au même réseau local virtuel.  La fonctionnalité étendue du dispositif de passerelle réseau fournit des fonctions de pare-feu pour votre réseau à la place d'un pare-feu dédié ou partagé.
 
 ## Le trafic public passe-t-il d'abord via mon équilibreur de charge ou par le pare-feu matériel ?
 
@@ -50,7 +50,7 @@ Le pare-feu matériel (partagé) n'a pas besoin de correspondre à la vitesse de
 
 ## IBM Cloud facture-t-il des frais pour la bande passante de pare-feu ?
 
-La bande passante du pare-feu matériel (partagé), du pare-feu matériel (dédié) et du dispositif de sécurité FortiGate (FSA) n'est pas comptabilisée. Par ailleurs, ces produits contribuent à réduire l'utilisation de la bande passante totale en limitant le trafic auquel les serveurs doivent répondre.
+La bande passante du pare-feu matériel (partagé), du pare-feu matériel (dédié) et du dispositif de sécurité FortiGate (FSA) n'est pas comptabilisée.  Par ailleurs, ces produits contribuent à réduire l'utilisation de la bande passante totale en limitant le trafic auquel les serveurs doivent répondre.
 
 ## Comment mettre à niveau la liaison montante de mon pare-feu matériel (partagé) ?
 
@@ -58,11 +58,11 @@ Le pare-feu matériel (partagé) est verrouillé par rapport à la vitesse de po
 
 ## La haute disponibilité est-elle possible avec le pare-feu matériel (partagé) ?
 
-Non. La plateforme du pare-feu matériel est de qualité professionnelle et extrêmement durable, mais la haute disponibilité véritable (unités redondantes) n'est pas une option du pare-feu matériel (partagé). Pour obtenir la fonction de haute disponibilité, un pare-feu matériel (dédié avec haute disponibilité) ou le dispositif de sécurité FortiGate (haute disponibilité) est requis. Le produit Passerelle réseau dispose également d'une option haute disponibilité avec des fonctions de pare-feu.
+Non. La plateforme du pare-feu matériel est de qualité professionnelle et extrêmement durable, mais la haute disponibilité véritable (unités redondantes) n'est pas une option du pare-feu matériel (partagé). Pour obtenir la fonction de haute disponibilité, un pare-feu matériel (dédié avec haute disponibilité) ou le dispositif de sécurité FortiGate (haute disponibilité) est requis.  Le produit Passerelle réseau dispose également d'une option haute disponibilité avec des fonctions de pare-feu.
 
 ## J'exécute un hyperviseur sur un serveur IBM Cloud. Le pare-feu matériel (partagé) protège-t-il les machines virtuelles qui s'exécutent sur mon hyperviseur ?
 
-Non. Des adresses IP portables sont utilisées pour les machines virtuelles dans un environnement à hyperviseur et ces adresses ne sont pas protégées par le pare-feu matériel partagé. Un pare-feu matériel (dédié) ou un dispositif de sécurité FortiGate est recommandé.
+Non. Des adresses IP portables sont utilisées pour les machines virtuelles dans un environnement à hyperviseur et ces adresses ne sont pas protégées par le pare-feu matériel partagé.  Un pare-feu matériel (dédié) ou un dispositif de sécurité FortiGate est recommandé.
 
 ## A quoi correspondent les ports grisés dans mon pare-feu Windows ?
 
@@ -72,7 +72,7 @@ En général, ces ports ne sont pas modifiables. Cependant si vous réinitialise
 
 ## Quelles sont les options de pare-feu matériel disponibles pour les serveurs 10 Gbit/s ?
 
-Pour prendre en charge les liaisons montantes 10 Gbit/s, une passerelle réseau est requise. Si 10 Gbit/s sont requis sur le réseau privé uniquement (pour la base de données, la sauvegarde, le stockage, etc.), les clients peuvent demander une rétromigration seulement pour leurs liaisons montantes publiques et commander n'importe quel produit de pare-feu matériel.
+Pour prendre en charge les liaisons montantes 10 Gbit/s, une passerelle réseau est requise.  Si 10 Gbit/s sont requis sur le réseau privé uniquement (pour la base de données, la sauvegarde, le stockage, etc.), les clients peuvent demander une rétromigration seulement pour leurs liaisons montantes publiques et commander n'importe quel produit de pare-feu matériel.
 
 ## Quelles plages d'adresses IP autoriser via le pare-feu ?
 

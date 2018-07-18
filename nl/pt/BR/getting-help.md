@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2017-12-07"
+  years: 2017,2018
+lastupdated: "2018-02-28"
 
 ---
 
@@ -16,16 +16,13 @@ lastupdated: "2017-12-07"
 
 # Obtendo Ajuda e Suporte
 
-Se você tiver problemas ou perguntas ao usar o Firewall de hardware (dedicado),
-poderá obter ajuda procurando informações ou fazendo perguntas por
-meio de um dos fóruns listados abaixo. Também
+Se tiver problemas ou questões ao usar o Hardware Firewall (Shared), será possível obter ajuda procurando informações ou fazendo perguntas em um dos fóruns listados abaixo. Também
 é possível abrir um chamado de suporte.
 
 Ao usar os fóruns para fazer uma pergunta, marque a sua pergunta para que ela seja vista pelas equipes de desenvolvimento do IBM Cloud.
 
-Se você tiver questões técnicas sobre o Firewall de hardware (compartilhado), poste sua pergunta em
-[Estouro de
-pilha](https://stackoverflow.com/search?q=hardware-firewalls+ibm-bluemix) e identifique sua pergunta com "hardware-firewalls" e "ibm-bluemix".
+* Se tiver questões técnicas sobre o Hardware Firewall (Shared), poste a questão no [Stack Overflow](https://stackoverflow.com/search?q=hardware-firewalls+ibm-cloud) e identifique-a com "hardware-firewalls" e "ibm-cloud".
+* Para perguntas sobre o serviço e instruções de introdução, use o fórum do [IBM developerWorks dW Answers](https://developer.ibm.com/answers/topics/hardware-firewalls.html?smartspace=ibm-cloud). Inclua as tags "hardware-firewalls" e "ibm-cloud".
 
 Consulte [Obtendo ajuda](https://console.bluemix.net/docs/support/index.html#getting-help) para mais detalhes sobre como usar os fóruns.
 

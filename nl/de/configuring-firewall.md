@@ -30,13 +30,13 @@ Stellen Sie sicher, dass der Status angibt, dass die Firewall alle Regeln verarb
 
 1. Öffnen Sie im Browser das [Kundenportal ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://control.softlayer.com/){: new_window} und melden Sie sich bei Ihrem Konto an.
 2. Wählen Sie in der Navigation des Kundenportals **Geräte > Geräteliste** aus und klicken Sie auf das durch die Firewall geschützte Gerät, das Sie konfigurieren möchten.
-3. Stellen Sie in der Registerkarte **Firewall** sicher, dass der Status angibt, dass die Firewall alle Regeln verarbeitet. Die Seite zeigt die aktuellen Regeln für IPv4- und IPv6-Adressen an. Wenn keine Regeln implementiert sind, wird ein ausgeblendeter Platzhalter angezeigt. Hier sind Links verfügbar, um die aktuellen Regeln zu bearbeiten. Diese Liste aus Regeln ist auch als 'working config' (Arbeitskonfiguration) bekannt. Die 'working config' ist ein Satz von Regeln, der erstellt, aber noch nicht auf die Firewall angewendet wurde. Ein Benutzer kann so lange Regeln bearbeiten, hinzufügen und löschen, bis der Regelsatz abgeschlossen ist. 
+3. Stellen Sie in der Registerkarte **Firewall** sicher, dass der Status angibt, dass die Firewall alle Regeln verarbeitet.  Die Seite zeigt die aktuellen Regeln für IPv4- und IPv6-Adressen an. Wenn keine Regeln implementiert sind, wird ein ausgeblendeter Platzhalter angezeigt. Hier sind Links verfügbar, um die aktuellen Regeln zu bearbeiten.  Diese Liste aus Regeln ist auch als 'working config' (Arbeitskonfiguration) bekannt. Die 'working config' ist ein Satz von Regeln, der erstellt, aber noch nicht auf die Firewall angewendet wurde. Ein Benutzer kann so lange Regeln bearbeiten, hinzufügen und löschen, bis der Regelsatz abgeschlossen ist. 
 
      Regeln werden in der Reihenfolge angezeigt, in der sie verarbeitet werden. Regeln mit geringeren Nummern erhalten Vorrang vor Regeln mit höheren Nummern. (Wenn Regel 1 ein Paket durchlässt, werden die Regeln 2 und höher vom Paket ignoriert.)
      
-     Felder: 
+     Felder:
 
-      **Reihenfolge:** Dieses Feld enthält die Regelnummer. Regeln können mit den angezeigten Pfeilen in der Liste nach oben oder nach unten verschoben werden. 
+      **Reihenfolge:** Dieses Feld enthält die Regelnummer.  Regeln können mit den angezeigten Pfeilen in der Liste nach oben oder nach unten verschoben werden.
       
       **Aktion:** Diese Auswahlliste wird verwendet, um den Datenverkehr, der dieser Regel entspricht, zuzulassen oder abzulehnen.
       
@@ -46,7 +46,7 @@ Stellen Sie sicher, dass der Status angibt, dass die Firewall alle Regeln verarb
       
       **Ziel:** Dieses Feld wählt die Ziel-IP-Adresse aus (bei Problemen siehe [Bekannte Einschränkungen](known-limitations.html)).
       
-      **CIDR:** Dieses Feld zeigt die Standard-CIDR-Notation für das ausgewählte Ziel an. 
+      **CIDR:** Dieses Feld zeigt die Standard-CIDR-Notation für das ausgewählte Ziel an.
       
       **Portbereich:** Die zwei Felder geben den Bereich der Ports (zwischen 1 und 65535) an, auf die die Regel angewendet wird.
       

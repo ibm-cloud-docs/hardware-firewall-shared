@@ -16,8 +16,6 @@ lastupdated: "2017-12-07"
 
 # Bekannte Einschränkungen
 
-Eine gemeinsam genutzte Hardware-Firewall kann nicht auf einem Server in einem VLAN bereitgestellt werden, das eines der folgenden Kriterien erfüllt. 
-
 Eine Hardware-Firewall (freigegeben) kann nicht auf einem Server in einem VLAN bereitgestellt werden, das eines der folgenden Kriterien erfüllt. 
 
 * Ist einem Netzgateway, einer Hardware-Firewall oder einer FortiGate Security Appliance zugeordnet.
@@ -28,8 +26,6 @@ In diesen Fällen muss ein neues VLAN für die Firewall eingerichtet oder ein an
 
 Weitere Einschränkungen für die Hardware-Firewall (freigegeben): 
 
-* Nicht für 10-GB-Server verfügbar
-* Maximal 79 Firewallregeln pro gemeinsam genutzter Hardware-Firewall
 * Portierbare Teilnetze sind nicht geschützt
 * Nicht für 10-GB-Server verfügbar
 * Maximal 79 Firewallregeln pro Hardware-Firewall (freigegeben)

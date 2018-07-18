@@ -1,4 +1,4 @@
-﻿---
+---
 
 copyright:
   years: 2017
@@ -16,7 +16,7 @@ lastupdated: "2017-12-07"
 
 # Limitations connues
 
-Un pare-feu matériel (partagé) ne peut pas être déployé sur un serveur dans un réseau virtuel local (VLAN) correspondant à l'un des critères suivants. 
+Un pare-feu matériel (partagé) ne peut pas être déployé sur un serveur dans un VLAN correspondant à l'un des critères suivants. 
 
 * Il est actuellement associé à une passerelle réseau, un pare-feu matériel ou un dispositif de sécurité FortiGate (FSA).
 * Il contient un nombre de serveurs supérieur ou égal à 30.

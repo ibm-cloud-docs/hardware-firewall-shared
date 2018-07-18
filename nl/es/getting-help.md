@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2017-12-07"
+  years: 2017,2018
+lastupdated: "2018-02-28"
 
 ---
 
@@ -16,11 +16,12 @@ lastupdated: "2017-12-07"
 
 # Obtención de ayuda y soporte
 
-Si tiene problemas o preguntas al utilizar el cortafuegos de hardware (dedicado), puede obtener ayuda buscando información o planteando preguntas en uno de los foros listados más abajo. También puede abrir una incidencia de soporte.
+Si tiene problemas o preguntas al utilizar el cortafuegos de hardware (compartido), puede obtener ayuda buscando información o planteando preguntas en uno de los foros listados más abajo. También puede abrir una incidencia de soporte.
 
 Al utilizar los foros para formular una pregunta, etiquete la pregunta para que la vea el equipo de desarrollo de IBM Cloud.
 
-Si tiene preguntas técnicas sobre el cortafuegos de hardware (compartido), publique su pregunta en [Stack Overflow](https://stackoverflow.com/search?q=hardware-firewalls+ibm-bluemix) y etiquétela con "hardware-firewalls" e "ibm-bluemix".
+* Si tiene preguntas técnicas sobre el cortafuegos de hardware (compartido), publique su pregunta en [Stack Overflow](https://stackoverflow.com/search?q=hardware-firewalls+ibm-cloud) y etiquétela con "hardware-firewalls" e "ibm-cloud".
+* Para formular preguntas sobre el servicio y obtener instrucciones de iniciación, utilice el foro [IBM developerWorks dW Answers](https://developer.ibm.com/answers/topics/hardware-firewalls.html?smartspace=ibm-cloud). Incluya las etiquetas "hardware-firewalls" e "ibm-cloud".
 
 Consulte [Obtención de ayuda](https://console.bluemix.net/docs/support/index.html#getting-help) para obtener más detalles sobre el uso de los foros.
 

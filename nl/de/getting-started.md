@@ -15,8 +15,7 @@ lastupdated: "2017-12-07"
 {:download: .download}
 
 # Einführung
-Die Hardware-Firewall (freigegeben) bietet Kunden eine zusätzliche Sicherheitsebene, die bei Bedarf ohne Serviceunterbrechung bereitgestellt wird. Sie verhindert unerwünschten Datenverkehr auf Ihren Servern und verringert die Wahrscheinlichkeit eines Angriffs, damit Ihre Serverressourcen stets für den beabsichtigen Verwendungszweck zur Verfügung stehen.
- 
+Die Hardware-Firewall (freigegeben) bietet Kunden eine zusätzliche Sicherheitsebene, die bei Bedarf ohne Serviceunterbrechung bereitgestellt wird. Sie verhindert unerwünschten Datenverkehr auf Ihren Servern und verringert die Wahrscheinlichkeit eines Angriffs, damit Ihre Serverressourcen stets für den beabsichtigen Verwendungszweck zur Verfügung stehen. 
 
 Um eine Hardware-Firewall (freigegeben) zu bestellen, navigieren Sie zuerst zur Bestellseite im Kundenportal:
 
@@ -36,7 +35,7 @@ Auf der Bestellseite für Multi-VLAN-Firewalls können Sie Ihre FSA-Firewall (1 
 6. Aktivieren Sie das Kontrollkästchen **Rahmenvereinbarung**, sobald Sie Ihre Bestellung überprüft haben. 
 7. Reichen Sie Ihre Bestellung ein, indem Sie auf **Bestellen** klicken.
 
-Die Hardware-Firewall (freigegeben) bietet Kunden eine zusätzliche Sicherheitsebene für ihre Server, die bei Bedarf ohne Serviceunterbrechung bereitgestellt wird. 
+Die Hardware-Firewall (freigegeben) bietet Kunden eine zusätzliche Sicherheitsebene für ihre Server, die bei Bedarf ohne Serviceunterbrechung bereitgestellt wird.
 
 Gehen Sie wie folgt vor, um einem Server eine Firewall hinzuzufügen:
 

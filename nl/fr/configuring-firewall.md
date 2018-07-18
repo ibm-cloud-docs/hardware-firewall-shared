@@ -30,10 +30,9 @@ Vérifiez que le "statut" indique "Traiter toutes les règles" pour le pare-feu.
 
 1. Depuis votre navigateur, ouvrez le [portail client ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://control.softlayer.com/){: new_window} et connectez-vous à votre compte.
 2. Dans la navigation du portail client, accédez à **Unités > Liste des unités** et cliquez sur l'unité protégée par le pare-feu que vous voulez configurer.
-3. Dans l'onglet **Pare-feu**, vérifiez que "Statut" indique "Traiter Toutes les Règles" pour le pare-feu. Cette page affiche les règles actuellement en vigueur pour les adresses IPv4 et IPv6. Si aucune règle n'est implémentée, une marque de réservation estompée est affichée. A ce stade, les liens sont disponibles pour éditer les règles en cours.  Cette liste de règles constitue la configuration opérationnelle ('working config'). Une configuration opérationnelle est un ensemble de règles en cours de création mais qui n'a pas encore été appliqué au pare-feu. L'utilisateur peut modifier, ajouter et supprimer des règles jusqu'à ce que l'ensemble de règles soit finalisé. 
+3. Dans l'onglet **Pare-feu**, vérifiez que "Statut" indique "Traiter Toutes les Règles" pour le pare-feu.  Cette page affiche les règles actuellement en vigueur pour les adresses IPv4 et IPv6. Si aucune règle n'est implémentée, une marque de réservation estompée est affichée. A ce stade, les liens sont disponibles pour éditer les règles en cours.  Cette liste de règles constitue la configuration opérationnelle ('working config'). Une configuration opérationnelle est un ensemble de règles en cours de création mais qui n'a pas encore été appliqué au pare-feu. L'utilisateur peut modifier, ajouter et supprimer des règles jusqu'à ce que l'ensemble de règles soit finalisé. 
 
-     Les règles sont affichées dans l'ordre dans lequel elles sont traitées, les règles ayant les numéros les moins élevés étant prioritaires par rapport à celles
-     ayant les numéros les plus élevés (si la règle un autorise le transfert d'un paquet, les règles deux et supérieures sont ignorées par le paquet).
+     Les règles sont affichées dans l'ordre dans lequel elles sont traitées, les règles ayant les numéros les moins élevés étant prioritaires par rapport à celles ayant les numéros les plus élevés (si la règle un autorise le transfert d'un paquet, les règles deux et supérieures sont ignorées par le paquet).
      
      Les zones sont les suivantes :
 

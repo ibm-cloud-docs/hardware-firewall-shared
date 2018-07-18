@@ -18,7 +18,7 @@ lastupdated: "2017-12-07"
 
 Eine Hardware-Firewall (freigegeben)ist ein Netzgerät, das einem Server vorgeschaltet ist. Die Firewall blockiert unerwünschten Datenverkehr, bevor dieser den Server erreicht. Der Hauptvorteil einer Hardware-Firewall besteht darin, dass ein Server nur "guten" Datenverkehr bewältigen muss und keine Ressourcen verschwendet werden, die mit "schlechtem" Datenverkehr umgehen. 
 
-Die Hardware-Firewall (freigegeben) nutzt eine Multi-Tenant-Unternehmensplattform, um einen einzelnen Server zu schützen. Sie kann mit einem Server gekauft werden. Der Server kann aber auch später hinzugefügt werden. Sie bietet über die VDOM-Technologie (Virtual Domain) virtualisierte Netzsicherheit und stellt virtualisierte Sicherheitsdomänen bereit, die separat bereitgestellt und verwaltet werden.  
+Die Hardware-Firewall (freigegeben) nutzt eine Multi-Tenant-Unternehmensplattform, um einen einzelnen Server zu schützen.  Sie kann mit einem Server gekauft werden. Der Server kann aber auch später hinzugefügt werden.  Sie bietet über die VDOM-Technologie (Virtual Domain) virtualisierte Netzsicherheit und stellt virtualisierte Sicherheitsdomänen bereit, die separat bereitgestellt und verwaltet werden.  
 
 Da mehrere Kunden mit der Hardware verbunden sind, kann sich ein Ausfall der Firewall oder ein Angriff auf die Firewall auf alle Kunden auswirken, die die Hardware-Firewall (freigegeben) gemeinsam nutzen. 
 

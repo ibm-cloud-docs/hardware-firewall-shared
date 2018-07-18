@@ -15,7 +15,7 @@ lastupdated: "2018-01-16"
 {:download: .download}
 
 # Perguntas mais frequentes
-A seguir estão as perguntas mais frequentes ao trabalhar com o Firewall de hardware (compartilhado).
+A seguir estão as perguntas mais frequentes ao trabalhar com o Hardware Firewall (Shared).
 
 ## O que é um firewall?
 
@@ -28,41 +28,41 @@ A principal vantagem de ter um firewall é que seu servidor terá de manipular a
 ## Quais produtos de firewall a IBM oferece?
 Você pode encontrar uma comparação detalhada de todos os produtos de firewall oferecidos no IBM Cloud revisando este [tópico ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://console.bluemix.net/docs/infrastructure/fortigate-10g/explore-firewalls.html#explore-firewalls){: new_window}. 
 
-## O Firewall de hardware (compartilhado) é compatível com produtos de balanceador de carga da IBM?
+## O Hardware Firewall (Shared) é compatível com produtos de balanceador de carga da IBM?
 
-Sim.O Firewall de hardware (compartilhado) é compatível com o serviço de balanceamento de carga em nuvem, balanceador de carga local, bem como o Citrix Netscaler VPX e MPX.
+Sim. O Hardware Firewall (Shared) é compatível com o serviço de balanceamento de carga em nuvem, balanceador de carga local, bem como o Citrix Netscaler VPX e MPX.
 
-## IPs móveis podem ser protegidos pelo Firewall de hardware (compartilhado)?
+## IPs móveis podem ser protegidos pelo Hardware Firewall (Shared)?
 
 Não. IDs móveis não estão disponíveis para proteção porque podem ser movidos entre servidores. Exceções são feitas caso a caso, visto que há várias advertências e requerem detalhes adicionais sobre o design do sistema do cliente.
 
-## Posso ter um Firewall de hardware e um Gateway de rede associados à mesma VLAN.
+## Posso ter um Hardware Firewall e um Gateway de rede associados à mesma VLAN.
 
-Não, não é possível ter um Firewall de hardware (compartilhado ou dedicado) e um dispositivo de Gateway de rede designado à mesma VLAN. A funcionalidade expandida do dispositivo de Gateway de rede fornece recursos de firewall para sua rede em vez de um firewall compartilhado ou dedicado.
+Não, não é possível ter um Hardware Firewall (compartilhado ou dedicado) e um dispositivo de Gateway de rede designado à mesma VLAN.  A funcionalidade expandida do dispositivo de Gateway de rede fornece recursos de firewall para sua rede em vez de um firewall compartilhado ou dedicado.
 
-## O tráfego público passa pelo meu balanceador de carga ou Firewall de hardware primeiro?
+## O tráfego público passa pelo meu balanceador de carga ou Hardware Firewall primeiro?
 
-Vindos da Internet pública, os produtos de balanceamento de carga são os primeiros, os produtos de Firewall de hardware vêm em seguida e os produtos NetScaler são os últimos (junto com os servidores dos clientes).
+Vindos da Internet pública, os produtos de balanceamento de carga são os primeiros, os produtos de Hardware Firewall vêm em seguida e os produtos NetScaler são os últimos (junto com os servidores dos clientes).
 
-## A velocidade da porta de uplink de um servidor precisa corresponder ao Firewall de hardware (compartilhado)?
+## A velocidade da porta de uplink de um servidor precisa corresponder ao Hardware Firewall (Shared)?
 
-O Firewall de hardware (compartilhado) precisa corresponder à velocidade de uplink público do servidor. No entanto, como ele só protege o lado público da rede, a velocidade de uplink público é o que deve corresponder à seleção de firewall. Os clientes podem criar um chamado para solicitar um downgrade somente das interfaces públicas, se desejado.
+O Hardware Firewall (Shared) precisa corresponder à velocidade de uplink público do servidor. No entanto, como ele só protege o lado público da rede, a velocidade de uplink público é o que deve corresponder à seleção de firewall.  Os clientes podem criar um chamado para solicitar um downgrade somente das interfaces públicas, se desejado.
 
 ## O IBM Cloud cobra pela largura de banda do firewall?
 
-O Firewall de hardware (compartilhado), Firewall de hardware (dedicado) e o FortiGate Security Appliance não são medidos em largura de banda. Além disso, esses produtos podem reduzir a utilização da largura de banda total limitando o tráfego ao qual os servidores devem responder.
+O Hardware Firewall (Shared), Hardware Firewall (Dedicated) e o FortiGate Security Appliance não são medidos em largura de banda.  Além disso, esses produtos podem reduzir a utilização da largura de banda total limitando o tráfego ao qual os servidores devem responder.
 
-## Como fazer upgrade do uplink do meu Firewall de hardware (compartilhado)?
+## Como fazer upgrade do uplink do meu Hardware Firewall (Shared)?
 
-O Firewall de hardware (compartilhado) é bloqueado para a velocidade da porta de uplink pública de um servidor. É possível fazer upgrade no local cancelando o firewall, fazendo upgrade da velocidade da porta para o servidor e pedindo um novo firewall. Como alternativa, é possível implementar um novo servidor com os uplinks desejados e o firewall associado.
+O Hardware Firewall (Shared) é bloqueado para a velocidade da porta de uplink pública de um servidor. É possível fazer upgrade no local cancelando o firewall, fazendo upgrade da velocidade da porta para o servidor e pedindo um novo firewall. Como alternativa, é possível implementar um novo servidor com os uplinks desejados e o firewall associado.
 
-## É possível alta disponibilidade com o Firewall de hardware (compartilhado)?
+## É possível alta disponibilidade com o Hardware Firewall (Shared)?
 
-Não. A plataforma de Firewall de hardware é de nível corporativo e altamente durável, mas alta disponibilidade verdadeira (dispositivos redundantes) não é uma opção para o Firewall de hardware (compartilhado). Para HA, um Firewall de hardware (dedicado com alta disponibilidade) ou FortiGate Security Appliance (alta disponibilidade) é necessário. O produto Network Gateway também tem uma opção de HA com recursos de firewall.
+Não. A plataforma de Hardware Firewall é de nível corporativo e altamente durável, mas alta disponibilidade verdadeira (dispositivos redundantes) não é uma opção para o Hardware Firewall (Shared). Para HA, um Hardware Firewall (dedicado com alta disponibilidade) ou FortiGate Security Appliance (alta disponibilidade) é necessário.  O produto Network Gateway também tem uma opção de HA com recursos de firewall.
 
-## Estou executando um hypervisor em um servidor IBM Cloud. O Firewall de hardware (compartilhado) protegerá as máquinas virtuais que estão sendo executadas em meu hypervisor.
+## Estou executando um hypervisor em um servidor IBM Cloud. O Hardware Firewall (Shared) protegerá as máquinas virtuais que estão sendo executadas em meu hypervisor.
 
-Não. IPs móveis são usados para as VMs em um ambiente de hypervisor e IPs móveis não são protegidos pelo firewall de hardware compartilhado. Um Firewall de hardware (dedicado) ou o FortiGate Security Appliance é recomendado.
+Não. IPs móveis são usados para as VMs em um ambiente de hypervisor e IPs móveis não são protegidos pelo firewall de hardware compartilhado.  Um Hardware Firewall (Dedicated) ou o FortiGate Security Appliance é recomendado.
 
 ## Quais são as portas esmaecidas no meu firewall do Windows?
 
@@ -70,9 +70,9 @@ O IBM Cloud oferece muitos serviços diferentes que você pode utilizar com seu 
 
 Essas portas geralmente não podem ser modificadas; no entanto, se você reconfigurar as regras de firewall, ele as limpará da lista Exceções. Esteja ciente de que a reconfiguração das regras de firewall pode ter um efeito negativo não somente nesses serviços adicionais, mas pode causar outros problemas também com seu servidor dependendo da configuração atual dele.
 
-## Quais opções de Firewall de hardware estão disponíveis para servidores de 10Gbps?
+## Quais opções de Hardware Firewall estão disponíveis para servidores de 10Gbps?
 
-Para suportar uplinks públicos de 10Gbps, um Gateway de rede é necessário. Se 10Gbps for necessário apenas na rede privada (para banco de dados, backup, armazenamento etc.), os clientes poderão solicitar um downgrade apenas de seus uplinks públicos e pedir quaisquer produtos de Firewall de hardware.
+Para suportar uplinks públicos de 10Gbps, um Gateway de rede é necessário.  Se 10Gbps for necessário apenas na rede privada (para banco de dados, backup, armazenamento etc.), os clientes poderão solicitar um downgrade apenas de seus uplinks públicos e pedir quaisquer produtos de Hardware Firewall.
 
 ## Quais intervalos de IP permitir por meio do firewall?
 
@@ -80,7 +80,7 @@ Para obter a lista de endereços IP e intervalos de IP a serem permitidos por me
 
 ## Quais opções de VPN são incluídas com cada produto de Firewall?
 
-Nem todos os firewalls oferecem VPN e nem todas as opções VPN são as mesmas. As opções gerais para VPN são:
+Nem todos os firewalls oferecem VPN e nem todas as opções VPN são as mesmas.  As opções gerais para VPN são:
 
 * Cada cliente recebe conexões SSL VPN ilimitadas com nossa rede privada. Essas conexões podem ser estabelecidas clicando no link VPN na parte superior da página enquanto com login efetuado no portal do cliente.
 * Os clientes também recebem um PPTP VPN por conta. Eles podem incluir usuários adicionais PPTP VPN em suas contas em pacotes de 5 por US$5/mês extra.
@@ -92,4 +92,4 @@ Nem todos os firewalls oferecem VPN e nem todas as opções VPN são as mesmas. 
 
 ## Quais produtos de firewall suportam NAT público para privado e/ou segmentação de VLAN privada?
 
-Nenhum dos produtos Firewall de hardware tem acesso à rede privada. Um Gateway de rede é necessário para fornecer esses recursos sequenciais e os produtos NetScaler têm acesso às redes pública e privada.
+Nenhum dos produtos Hardware Firewall tem acesso à rede privada. Um Gateway de rede é necessário para fornecer esses recursos sequenciais e os produtos NetScaler têm acesso às redes pública e privada.

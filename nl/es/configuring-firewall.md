@@ -30,13 +30,13 @@ Asegúrese de que en el "estado" se indica que el cortafuegos está "Procesando 
 
 1. En el navegador, abra el [Portal de clientes ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://control.softlayer.com/){: new_window} e inicie sesión en su cuenta.
 2. En la navegación del Portal de clientes, vaya a **Dispositivos > Lista de dispositivos** y pulse el dispositivo protegido por cortafuegos que desee configurar.
-3. En el separador **Cortafuegos**, asegúrese de que en el "estado" se indica que el cortafuegos está "Procesando todas las reglas". La página muestra las reglas actuales en vigor para las direcciones IPv4 e IPv6. Si no hay reglas implementadas, aparece un marcador sin color. En este punto, los enlaces están disponibles para editar las reglas actuales. Esta lista de reglas se conoce como "configuración operativa". Una "configuración operativa" es un conjunto de reglas que está en proceso de creación pero que todavía no se han aplicado al cortafuegos. Un usuario puede editar, añadir y suprimir reglas hasta que el conjunto de reglas se haya completado. 
+3. En el separador **Cortafuegos**, asegúrese de que en el "estado" se indica que el cortafuegos está "Procesando todas las reglas".  La página muestra las reglas actuales en vigor para las direcciones IPv4 e IPv6. Si no hay reglas implementadas, aparece un marcador sin color. En este punto, los enlaces están disponibles para editar las reglas actuales.  Esta lista de reglas se conoce como "configuración operativa". Una "configuración operativa" es un conjunto de reglas que está en proceso de creación pero que todavía no se han aplicado al cortafuegos. Un usuario puede editar, añadir y suprimir reglas hasta que el conjunto de reglas se haya completado. 
 
      Las reglas se visualizan en el orden en que se procesan, y las reglas con números más bajos tienen prioridad sobre las reglas con números más altos (si la regla número uno permite que un paquete pase, el paquete ignora las reglas número dos en adelante).
      
      Los campos son:
 
-      **Orden**: este campo contiene el número de regla. Las reglas se pueden mover hacia arriba o hacia abajo con las flechas.
+      **Orden**: este campo contiene el número de regla.  Las reglas se pueden mover hacia arriba o hacia abajo con las flechas.
       
       **Acción**: esta lista se utiliza para 'permitir' o 'denegar' el tráfico que coincida con esta regla.
       

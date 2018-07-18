@@ -18,7 +18,7 @@ lastupdated: "2017-12-07"
 
 Un cortafuegos de hardware (compartido) es un dispositivo de red que está conectado en sentido ascendente desde un servidor. El cortafuegos bloquea el tráfico no deseado de un servidor antes de que el tráfico llegue al servidor. La ventaja principal de tener un cortafuegos de hardware es que el servidor sólo tiene que manejar el tráfico 'bueno' y no se desperdician recursos en el tráfico 'malo'. 
 
-El cortafuegos de hardware (compartido) aprovecha una plataforma empresarial multiarrendatario para proteger a un servidor individual. Se puede adquirir con el servidor o añadirlo después. Ofrece seguridad virtualizada de red a través de su tecnología de dominio virtual (VDOM), proporcionando dominios de seguridad virtualizados que se suministran y gestionan por separado.  
+El cortafuegos de hardware (compartido) aprovecha una plataforma empresarial multiarrendatario para proteger a un servidor individual.  Se puede adquirir con el servidor o añadirlo después.  Ofrece seguridad virtualizada de red a través de su tecnología de dominio virtual (VDOM), proporcionando dominios de seguridad virtualizados que se suministran y gestionan por separado.  
 
 Dado que hay varios clientes asociados con el hardware, si el cortafuegos falla o se sobrecarga por un ataque, todos los clientes que comparten una instancia del cortafuegos de hardware (compartido) pueden verse afectados. 
 

@@ -2,12 +2,12 @@
 {:topicgroup: .topicgroup}
 
 {: .toc subcollection="hardware-firewall-shared" audience="network" href="/docs/infrastructure/hardware-firewall-shared/getting-started.html"}
-硬體防火牆（共用）
+Hardware Firewall (Shared)
 
     {: .navgroup id="learn"}
     getting-started.md
     about.md
-    [探索防火牆](https://console.bluemix.net/docs/infrastructure/fortigate-10g/explore-firewalls.html#explore-firewalls)
+    [探索防火牆](../fortigate-10g/explore-firewalls.html)
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
@@ -19,7 +19,7 @@
     {: .navgroup-end}
     
     {: .navgroup id="reference"}
-    [IBM Cloud IP 範圍](https://console.bluemix.net/docs/infrastructure/hardware-firewall-dedicated/ips.html)
+    [IBM Cloud IP 範圍](../hardware-firewall-dedicated/ips.html)
     {: .navgroup-end}
 
 

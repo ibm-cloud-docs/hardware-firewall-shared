@@ -16,8 +16,6 @@ lastupdated: "2017-12-07"
 
 # Limitaciones conocidas
 
-Un cortafuegos de hardware compartido no se puede desplegar en un servidor en una VLAN que cumpla alguno de los siguientes criterios. 
-
 Un cortafuegos de hardware (compartido) no se puede desplegar en un servidor en una VLAN que cumpla alguno de los siguientes criterios. 
 
 * Que esté actualmente asociado con una pasarela de red, un cortafuegos de hardware o un dispositivo de seguridad FortiGate.
@@ -28,8 +26,6 @@ En estos casos, se debe establecer una nueva VLAN para el cortafuegos o se debe 
 
 Entre otras limitaciones para el cortafuegos de hardware (compartido), se incluyen: 
 
-* No está disponible para servidores 10Gb
-* 79 reglas de cortafuegos como máximo por cortafuegos de hardware compartido
 * Las subredes portátiles no están protegidas
 * No está disponible para servidores 10Gb
 * 79 reglas de cortafuegos como máximo por cortafuegos de hardware (compartido)

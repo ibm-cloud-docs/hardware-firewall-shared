@@ -24,7 +24,7 @@ Para obtener una visión general de los cortafuegos del sistema, además de inic
 
 **NOTA:** Para ver sólo las VLAN públicas, pulse el desplegable **Filtrar** y escriba ``fcr`` en **Direccionador primario**. 
 
-Cada fila representa una VLAN en la infraestructura. IBM Cloud rellena la información de **NÚMERO DE VLAN** y **DIRECCIONADOR PRINCIPAL** automáticamente con el número exacto de VLAN y el direccionador en el que está configurada. Utilice el campo **NOMBRE** para definir un nombre reconocible. 
+Cada fila representa una VLAN en la infraestructura.  IBM Cloud rellena la información de **NÚMERO DE VLAN** y **DIRECCIONADOR PRINCIPAL** automáticamente con el número exacto de VLAN y el direccionador en el que está configurada. Utilice el campo **NOMBRE** para definir un nombre reconocible. 
 
 La columna **PASARELA/CORTAFUEGOS** contiene detalles sobre la protección de cortafuegos de hardware que está activa, por ejemplo:
 
@@ -48,7 +48,7 @@ Una vez que haya pulsado en un dispositivo, desplácese hasta la parte inferior 
 
 En la pantalla de VLAN, identifique una fila con el valor **Cortafuegos-vlanXXXX.networklayer.com** en la columna **Pasarela/cortafuegos** y pulse ese cortafuegos. Aparecerá un cortafuegos de hardware (dedicado) o un dispositivo de seguridad FortiGate. Los detalles del dispositivo incluyen el direccionador asociado, la VLAN y las subredes IPv4/IPv6, los dispositivos asociados con la VLAN y los controles para direccionar el tráfico a través del cortafuegos o sortear el cortafuegos.
 
-Los **dispositivos de seguridad FortiGate** incluirán la IP de gestión, el nombre de usuario y la contraseña. La gestión se completa mediante la GUI de gestión o la consola basada en SSH.
+Los **dispositivos de seguridad FortiGate** incluirán la IP de gestión, el nombre de usuario y la contraseña.  La gestión se completa mediante la GUI de gestión o la consola basada en SSH.
 
 ## Vista de pasarela de red
 

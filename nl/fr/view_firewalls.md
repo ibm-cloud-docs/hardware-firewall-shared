@@ -48,7 +48,7 @@ Lorsque vous avez cliqué sur une unité, faites défiler l'écran vers le bas d
 
 Sur l'écran VLAN, identifiez une ligne avec **Firewall-vlanXXXX.networklayer.com** indiqué das la colonne **Passerelle/pare-feu** et cliquez sur ce pare-feu. Vous obtenez alors un pare-feu matériel (dédié) ou un dispositif de sécurité FortiGate (FSA). Les détails de l'unité comprennent le routeur associé, le réseau local virtuel (VLAN), les sous-réseaux IPv4/IPv6, les unités associées à ce VLAN et les commandes permettant de router le trafic via ou hors du pare-feu.
 
-Les **dispositifs de sécurité FortiGate** (FSA) ont une adresse IP de gestion, un nom d'utilisateur et un mot de passe. La gestion s'effectue via l'interface graphique de gestion ou la console SSH.
+Les **dispositifs de sécurité FortiGate** (FSA) ont une adresse IP de gestion, un nom d'utilisateur et un mot de passe.  La gestion s'effectue via l'interface graphique de gestion ou la console SSH.
 
 ## Vue de la passerelle réseau
 

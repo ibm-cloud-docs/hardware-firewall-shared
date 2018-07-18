@@ -24,7 +24,7 @@ Um eine Übersicht über die Firewalls auf Ihrem System zu erhalten und eine gru
 
 **HINWEIS:** Um ausschließlich öffentliche VLANs anzuzeigen, klicken Sie auf das Dropdown-Menü **Filtern** und geben Sie ``fcr`` für den **Primären Router** ein. 
 
-Jede Zeile stellt ein VLAN in Ihrer Infrastruktur dar. IBM Cloud gibt die Informationen für **VLAN-NUMMER** und **PRIMÄRER ROUTER** automatisch ein. Dabei wird die echte VLAN-Nummer und der Router angegeben, auf die sie konfiguriert ist. Definieren Sie mit dem Feld **NAME** einen erkennbaren Namen. 
+Jede Zeile stellt ein VLAN in Ihrer Infrastruktur dar.  IBM Cloud gibt die Informationen für **VLAN-NUMMER** und **PRIMÄRER ROUTER** automatisch ein. Dabei wird die echte VLAN-Nummer und der Router angegeben, auf die sie konfiguriert ist. Definieren Sie mit dem Feld **NAME** einen erkennbaren Namen. 
 
 Die Spalte **GATEWAY/FIREWALL** enthält Details dazu, welcher Hardware-Firewall-Schutz vorhanden ist. Beispiel:
 
@@ -34,7 +34,7 @@ Die Spalte **GATEWAY/FIREWALL** enthält Details dazu, welcher Hardware-Firewall
 
 **Firewall-vlanXXXX.networklayer.com** gibt an, dass eine Hardware-Firewall (dediziert) oder eine FortiGate Security Appliance vorhanden ist. Einem VLAN kann nur eine VLAN-Firewall oder ein Netzgateway zugeordnet werden. Ein Server kann jedoch im öffentlichen VLAN durch eine VLAN-Firewall geschützt und im privaten Netz mit einem Netzgateway verknüpft werden.
 
-**Gateway-Name** gibt an, dass das VLAN mit diesem Netzgateway verknüpft ist. 
+**Gateway-Name** gibt an, dass das VLAN mit diesem Netzgateway verknüpft ist.
 
 ## Ansicht zu einzeln geschützten Servern
 
@@ -42,13 +42,13 @@ Suchen Sie im VLAN-Bildschirm eine Zeile mit **einzeln geschützten Servern** in
 
 Von hier aus können Sie auf jedes Gerät klicken und prüfen, ob eine Firewall für diesen bestimmten Server vorhanden ist.
 
-Sobald Sie auf ein Gerät geklickt haben, blättern Sie auf der Registerkarte "Konfiguration" nach unten. Angezeigt wird **Firewall** im Abschnitt "Add-ons" mit dem Status **Installiert** oder **Nicht installiert**.**Nicht installiert** gibt an, dass für diese Einheit keine Firewall vorhanden ist.**Installiert** gibt an, dass eine Firewall vorhanden ist und auf der Einheit eine Registerkarte **Firewall** verfügbar ist, auf der Sie die Firewallkonfiguration verwalten können.
+Sobald Sie auf ein Gerät geklickt haben, blättern Sie auf der Registerkarte "Konfiguration" nach unten. Angezeigt wird **Firewall** im Abschnitt "Add-ons" mit dem Status **Installiert** oder **Nicht installiert**. **Nicht installiert** gibt an, dass für diese Einheit keine Firewall vorhanden ist. **Installiert** gibt an, dass eine Firewall vorhanden ist und auf der Einheit eine Registerkarte **Firewall** verfügbar ist, auf der Sie die Firewallkonfiguration verwalten können.
 
 ## Ansicht zur dedizierten Firewall
 
 Suchen Sie im VLAN-Bildschirm eine Zeile mit **Firewall-vlanXXXX.networklayer.com** in der Spalte **Gateway/Firewall** und klicken Sie auf diese Firewall. Es wird entweder eine Hardware-Firewall (dediziert) oder eine FortiGate Security Appliance angezeigt. Zu den Einheitendetails gehören die zugehörigen Router, VLANs und IPv4/IPv6-Teilnetze, die mit diesem VLAN verbundenen Einheiten sowie die Steuerelemente für die Weiterleitung des Datenverkehrs durch oder um die Firewall herum.
 
-Die **FortiGate Security Appliance**-Einheiten enthalten Verwaltungs-IP-Adresse, Benutzername und Kennwort. Die Verwaltung erfolgt über die Benutzerschnittstelle für die Verwaltung oder über die SSH-basierte Konsole.
+Die **FortiGate Security Appliance**-Einheiten enthalten Verwaltungs-IP-Adresse, Benutzername und Kennwort.  Die Verwaltung erfolgt über die Benutzerschnittstelle für die Verwaltung oder über die SSH-basierte Konsole.
 
 ## Ansicht zum Netzgateway
 

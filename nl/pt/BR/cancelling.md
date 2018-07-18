@@ -16,7 +16,7 @@ lastupdated: "2017-10-30"
 
 # Cancelar um Firewall
 
-Os firewalls podem ser cancelados a qualquer momento. Para cancelar um Firewall de hardware (compartilhado), 
+Os firewalls podem ser cancelados a qualquer momento. Para cancelar um Hardware Firewall (Shared), 
 
 1. Em seu navegador, abra [Portal do Cliente ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://control.softlayer.com/){: new_window} e efetue login em sua conta.
 2. Na navegação do Portal do cliente, acesse **Dispositivos > Lista de

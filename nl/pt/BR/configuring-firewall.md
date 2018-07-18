@@ -24,7 +24,7 @@ específicos enquanto nega o tráfego de outras fontes.
 
 Para incluir um firewall em um servidor, clique no link **Dispositivos >
 Lista de dispositivos > Clique no servidor desejado > Configuração > Parte inferior da
-página: Pedir firewall de hardware** no Portal do cliente. Isso inicia o
+página: Pedir Hardware Firewall** no Portal do cliente. Isso inicia o
 processo de ordem para um firewall apropriado com base na velocidade de uplink do
 servidor selecionado. Se você receber um erro, consulte as
 [Limitações conhecidas](known-limitations.html) e/ou entre em contato
@@ -47,10 +47,10 @@ implementadas tenham um impacto indesejado no ambiente, clicando em
 dispositivos** e clique no dispositivo protegido por firewall que você deseja
 configurar.
 3. Na guia **Firewall**, assegure-se de que o "Status" indique
-que o firewall está "Processando todas as regras". A página exibe as regras atuais em
+que o firewall está "Processando todas as regras".  A página exibe as regras atuais em
 vigor para endereços IPv4 e IPv6. Se nenhuma regra estiver implementada, um sinalizador
 esmaecido será exibido. Nesse ponto, os links estão disponíveis para editar as regras
-atuais. Essa lista de regras é conhecida como 'configuração de trabalho'. Uma
+atuais.  Essa lista de regras é conhecida como 'configuração de trabalho'. Uma
 'configuração de trabalho' é um conjunto de regras que está no processo de ser criado,
 mas ainda não foi aplicado ao firewall. Um usuário pode editar, incluir e excluir regras
 até que o conjunto de regras seja concluído. 
@@ -61,7 +61,7 @@ permitir um pacote, as regras dois e acima serão ignoradas pelo pacote).
      
      Os campos são:
 
-      **Ordem** - esse campo contém o número da regra. As
+      **Ordem** - esse campo contém o número da regra.  As
 regras podem ser movidas para cima ou para baixo na lista com as setas fornecidas.
       
       **Ação** - essa lista de seleção é usada para 'permitir' ou 'negar' o tráfego que correspondem a essa regra.
