@@ -15,9 +15,9 @@ lastupdated: "2018-11-12"
 {:download: .download}
 
 # Getting Started
-The Hardware Firewall (Shared) provides customers with an essential layer of security that is provisioned on demand without service interruptions. It prevents unwanted traffic from hitting your servers, reducing your attack surface, and allowing your server resources to be dedicated for their intended use. 
+The Hardware Firewall provides customers with an essential layer of security that is provisioned on demand without service interruptions. It prevents unwanted traffic from hitting your servers, reducing your attack surface, and allowing your server resources to be dedicated for their intended use. 
 
-To order a Hardware Firewall (Shared), first navigate to the order page in the customer portal:
+To order a Hardware Firewall, first navigate to the order page in the customer portal:
 
 1. From your browser, open the [Customer Portal](https://control.softlayer.com/) and log into your account.
 2. In the Customer Portal select **Security > Network Security  > Firewalls**.
@@ -35,7 +35,7 @@ From the Multi VLAN Firewall order page, you can order your FSA 1Gbps firewall:
 6. Select the **Master Service Agreement** checkbox once you review your order. 
 7. Submit your order by clicking **Place Order**.
 
-The Hardware Firewall (Shared) provides customers with an essential layer of security for your servers that is provisioned on demand without service interruptions.
+The Hardware Firewall provides customers with an essential layer of security for your servers that is provisioned on demand without service interruptions.
 
 To add a firewall to a server:
 
