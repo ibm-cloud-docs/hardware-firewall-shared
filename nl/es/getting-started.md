@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-12-07"
+lastupdated: "2018-11-12"
 
 ---
 
@@ -31,7 +31,7 @@ En la página de pedido de cortafuegos de varias VLAN, puede pedir el cortafuego
 2. Seleccione el centro de datos y el pod que desee en los menús desplegables. La disponibilidad está limitada a determinadas ubicaciones.
 3. Elija la configuración deseada de las VLAN.
 4. Elija tener un cortafuegos único o habilite la protección de migración tras error con la opción Alta disponibilidad.
-5. Seleccione en la lista todos los complementos o paquetes que desee en conjunto para obtener un precio con descuento. El recuadro Resumen del pedido muestra la información actualizada del pedido actual. 
+5. Elija los complementos de la lista o empaquételos todos juntos para obtener un precio con descuento. El recuadro Resumen del pedido muestra la información actualizada del pedido actual. 
 6. Marque el recuadro de selección **Acuerdo de servicio maestro** cuando haya revisado el pedido. 
 7. Envíe el pedido pulsando **Realizar pedidos**.
 

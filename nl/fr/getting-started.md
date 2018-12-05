@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-12-07"
+lastupdated: "2018-11-12"
 
 ---
 
@@ -25,7 +25,7 @@ Pour commander un pare-feu matériel (partagé), accédez d'abord à la page des
 
 Si votre compte ne dispose pas encore de pare-feux pour plusieurs réseaux locaux virtuels associés, un message s'affiche avec un lien vers la page des commandes.
 
-Dans la page de commande d'un pare-feu pour plusieurs VLAN, vous pouvez commander le pare-feu FSA 1 gigabit par seconde :
+Dans la page de commande d'un pare-feu pour plusieurs VLAN, vous pouvez commander le pare-feu FSA 1 Gbit/s :
 
 1. Attribuez un nom au pare-feu.
 2. Sélectionnez le centre de données et le pod de votre choix dans les menus déroulants. La disponibilité est limitée à certains emplacements.
