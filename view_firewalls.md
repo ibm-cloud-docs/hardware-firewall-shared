@@ -24,7 +24,7 @@ To get an overview of firewalls on your system, as well as initiate basic manage
 
 **NOTE:** To view only public VLANS, click on the **Filter** drop down and enter ``fcr`` for **Primary Router**. 
 
-Each row represents a VLAN in your infrastructure.  IBM Cloud populates the **VLAN NUMBER** and **PRIMARY ROUTER** information automatically indicating the true VLAN number and the router that it is configured on. Use the **NAME** field to define a recognizable name. 
+Each row represents a VLAN in your infrastructure. IBM© Cloud populates the **VLAN NUMBER** and **PRIMARY ROUTER** information automatically indicating the true VLAN number and the router that it is configured on. Use the **NAME** field to define a recognizable name. 
 
 The **GATEWAY/FIREWALL** column contains details about which hardware firewall protection is in place, for example:
 

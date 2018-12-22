@@ -31,7 +31,7 @@ The primary advantage of having a firewall is that your server only has to handl
 ## What firewall products does IBM offer?
 {:faq}
 
-You can find a detailed comparison of all firewall products offered in the IBM Cloud by reviewing this [topic ![External link icon](../../icons/launch-glyph.svg "External link icon")](/docs/infrastructure/fortigate-10g/explore-firewalls.html#explore-firewalls){: new_window}. 
+You can find a detailed comparison of all firewall products offered in the IBM© Cloud by reviewing this [topic ![External link icon](../../icons/launch-glyph.svg "External link icon")](/docs/infrastructure/fortigate-10g/explore-firewalls.html#explore-firewalls){: new_window}. 
 
 ## Is the Hardware Firewall (Shared) compatible with IBM's load balancer products?
 {:faq}
