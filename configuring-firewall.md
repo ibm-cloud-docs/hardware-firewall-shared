@@ -20,7 +20,7 @@ Configuring the firewall is as simple as creating a set of rules to allow access
 
 ## Adding a Firewall to a Server
 
-To add a firewall to a server, follow the steps in [Getting Started](getting-started.md). If you receive an error, see the [Known Limitations](known-limitations.html) and/or contact SoftLayer support.
+To add a firewall to a server, follow the steps in [Getting Started](getting-started.html). If you receive an error, see the [Known Limitations](known-limitations.html) and/or contact SoftLayer support.
 
 ## Editing Rules
 
