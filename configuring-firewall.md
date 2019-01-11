@@ -20,7 +20,7 @@ Configuring the firewall is as simple as creating a set of rules to allow access
 
 ## Adding a Firewall to a Server
 
-To add a firewall to a server, click on the link **Devices > Device List > Click the desired server > Configuration > Bottom of the page: Order Hardware Firewall** in the Customer Portal. This begins the order process for an appropriate firewall based on the uplink speed of the selected server. If you receive an error, see the [Known Limitations](known-limitations.html) and/or contact SoftLayer support.
+To add a firewall to a server, follow the steps in [Getting Started](getting-started.md). If you receive an error, see the [Known Limitations](known-limitations.html) and/or contact SoftLayer support.
 
 ## Editing Rules
 
@@ -43,13 +43,10 @@ Ensure the "status" indicates that the firewall is "Processing All Rules." Users
       
       **Source** - This field can be either 'any' or a specific IP address or the network address for a specific subnet.
       
-      **CIDR** - This field indicates the standard CIDR notation for the selected source. "32" will implement the rule for a 
-      single IP while, for example, "24" will implement the rule for 256 IPs.
-      
       **Destination** - This field selects the destination IP (see [Known Limitations](known-limitations.html) if there are 
       issues).
       
-      **CIDR** - This field indicates the standard CIDR notation for the selected destination.
+      **CIDR** - This field indicates the standard CIDR notation for the selected source/destination.
       
       **Port Range** - These two fields indicate the range of ports (between 1 and 65535) that the rule will apply to.
       
