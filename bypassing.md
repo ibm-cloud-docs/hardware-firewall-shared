@@ -14,7 +14,7 @@ lastupdated: "2018-11-12"
 {:tip: .tip}
 {:download: .download}
 
-# Bypass the Firewall Rules
+# Bypassing the Hardware Firewall (Shared) Rules
 
 To bypass the firewall rules, 
 

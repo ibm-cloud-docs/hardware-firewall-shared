@@ -14,7 +14,7 @@ lastupdated: "2018-11-12"
 {:tip: .tip}
 {:download: .download}
 
-# View your Firewalls 
+# Viewing your Various Firewalls 
 
 You can identify the firewalls in use on an account and their associated VLANs, as well as identify unprotected VLANs and plan the deployment of a firewall solution.
 

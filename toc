@@ -1,13 +1,13 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="hardware-firewall-shared" audience="network" arm="3662773" href="/docs/infrastructure/hardware-firewall-shared/getting-started.html" path="infrastructure/hardware-firewall-shared"}
+{: .toc subcollection="hardware-firewall-shared" audience="network" arm="3662773" href="/docs/infrastructure/hardware-firewall-shared?topic=infrastructure/hardware-firewall-shared-getting-started-with-hardware-firewall-shared" path="infrastructure/hardware-firewall-shared"}
 Hardware Firewall (Shared)
 
     {: .navgroup id="learn"}
     getting-started.md
     about.md
-    [Explore Firewalls](../docs/infrastructure/fortigate-10g/explore-firewalls.html)
+    /fortigate-10g/fortigate-10g-exploring-firewalls
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
@@ -19,7 +19,7 @@ Hardware Firewall (Shared)
     {: .navgroup-end}
     
     {: .navgroup id="reference"}
-    [IBM Cloud IP Ranges](../docs/infrastructure/hardware-firewall-dedicated/ips.html)
+    /hardware-firewall-dedicated/hardware-firewall-dedicated-ibm-cloud-ip-ranges
     {: .navgroup-end}
 
 

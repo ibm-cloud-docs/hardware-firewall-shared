@@ -14,7 +14,7 @@ lastupdated: "2018-11-12"
 {:tip: .tip}
 {:download: .download}
 
-# Known Limitations
+# Known Limitations with Hardware Firewall (Shared)
 
 A Hardware Firewall (Shared) cannot be deployed to a server on a VLAN that meets any of the following criteria. 
 

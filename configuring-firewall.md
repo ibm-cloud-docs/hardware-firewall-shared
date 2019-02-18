@@ -14,13 +14,13 @@ lastupdated: "2018-11-12"
 {:tip: .tip}
 {:download: .download}
 
-# Configure the Firewall
+# Configuring the Hardware Firewall (Shared)
 
 Configuring the firewall is as simple as creating a set of rules to allow access to certain IP addresses/ports from specific internet addresses while denying traffic from other sources.
 
 ## Adding a Firewall to a Server
 
-To add a firewall to a server, follow the steps in [Getting Started](getting-started.html). If you receive an error, see the [Known Limitations](known-limitations.html) and/or contact SoftLayer support.
+To add a firewall to a server, follow the steps in [Getting Started](/docs/infrastructure/hardware-firewall-shared?topic=hardware-firewall-shared-getting-started-with-hardware-firewall-shared). If you receive an error, see the [Known Limitations](/docs/infrastructure/hardware-firewall-shared?topic=hardware-firewall-shared-known-limitations-with-hardware-firewall-shared-) and/or contact SoftLayer support.
 
 ## Editing Rules
 
@@ -43,8 +43,7 @@ Ensure the "status" indicates that the firewall is "Processing All Rules." Users
       
       **Source** - This field can be either 'any' or a specific IP address or the network address for a specific subnet.
       
-      **Destination** - This field selects the destination IP (see [Known Limitations](known-limitations.html) if there are 
-      issues).
+      **Destination** - This field selects the destination IP (see [Known Limitations](/docs/infrastructure/hardware-firewall-shared?topic=hardware-firewall-shared-known-limitations-with-hardware-firewall-shared-) if there are issues).
       
       **CIDR** - This field indicates the standard CIDR notation for the selected source/destination.
       
@@ -77,5 +76,3 @@ Ensure the "status" indicates that the firewall is "Processing All Rules." Users
 | VNC Web | 5800 |
 | VNC Client | 5900 |
 | Urchin | 9999 or 10000 ||
-
-    
