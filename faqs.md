@@ -61,7 +61,7 @@ The Hardware Firewall (Shared) does need to match the public uplink speed of the
 ## Does IBM Cloud charge for firewall bandwidth?
 {:faq}
 
-The Hardware Firewall (Shared), Hardware Firewall (Dedicated), and FortiGate Security Appliance are not metered for bandwidth.  Additionally, these products can reduce total bandwidth utilization by limiting the traffic that servers must respond to.
+The Hardware Firewall (Shared), Hardware Firewall (Dedicated), and FortiGate Security Appliance (FSA) 1G are not metered for bandwidth.  FSA 10G is charged for firewall bandwidth after 20 TB are used. Additionally, these products can reduce total bandwidth utilization by limiting the traffic that servers must respond to.
 
 ## How do I upgrade the uplink of my Hardware Firewall (Shared)?
 {:faq}
@@ -88,7 +88,7 @@ These ports generally cannot be modified; however, if you reset the firewall rul
 ## What Hardware Firewall options are available for 10Gbps servers?
 {:faq}
 
-To support 10Gbps public uplinks, a Network Gateway is required.  If 10Gbps is only required on the private network (for database, backup, storage, etc), then customers can request a downgrade of only their public uplinks and order any of the Hardware Firewall products.
+FSA 10G is the only option to support 10Gbps servers for both public and private traffic. If 10Gbps is only required on the private network (for database, backup, storage, etc), then customers can request a downgrade of only their public uplinks and order any of the Hardware Firewall products.
 
 ## What IP ranges do I allow through the firewall?
 {:faq}
@@ -103,7 +103,7 @@ Not all firewalls offer VPN and not all VPN options are the same.  The general o
 * Each customer receives unlimited SSL VPN connections to our private network. These connections can be established by clicking the VPN link at the top of the page while logged into the customer portal.
 * Customers also receive one PPTP VPN per account. They can add additional PPTP VPN users to their account in packs of 5 for $5/month extra.
 * SoftLayer also offers a basic multi-tenant IPSec VPN service starting at $99/month.
-* The FortiGate Security Appliance provides SSL and IPSec VPN options with Public network access only (no access to the SoftLayer private network).
+* The FortiGate Security Appliance 1G provides SSL and IPSec VPN options with Public network access only (no access to the SoftLayer private network). FSA 10G provides SSL and IPSec VPN options with Public or Private network access. 
 * The Network Gateway provides SSL, IPSec and OpenVPN capabilities on the public or private network
 * The NetScaler products can provide SSL and IPSec VPN on the public or private network.
 * Customers can also deploy a VPN solution on to a server within their IBM Cloud environment.
@@ -111,4 +111,4 @@ Not all firewalls offer VPN and not all VPN options are the same.  The general o
 ## Which firewall products support public-to-private NAT and/or private VLAN segmentation?
 {:faq}
 
-None of the Hardware Firewall products have access to the private network. A Network Gateway is required to supply these capabilities in-line and the NetScaler products have access to both the public and private networks.
+Fortigate Security Appliance 10G supports NAT and private VLAN segmentation. The other firewall offerings only support public traffic.
