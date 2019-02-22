@@ -31,3 +31,4 @@ Further limitations for the Hardware Firewall (Shared) include:
 * Maximum of 79 firewall rules per Hardware Firewall (Shared)
 * Incompatible with Windows Network Load Balancing (NLB) due to the way ARP is processed
 * The rule destination subnet is limited to the IP of the protected server. Hardware Firewall (Dedicated) does not have this limitation.
+* Hourly billed servers are not allowed. Hardware Firewall can be applied to a monthly billed server.
