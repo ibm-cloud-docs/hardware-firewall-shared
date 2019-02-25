@@ -15,6 +15,7 @@ lastupdated: "2018-11-12"
 {:download: .download}
 
 # Canceling a Hardware Firewall (Shared)
+{: #canceling-a-hardware-firewall-shared-}
 
 Firewalls can be cancelled at any time. To cancel a Hardware Firewall (Shared), 
 

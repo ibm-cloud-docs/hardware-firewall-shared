@@ -15,6 +15,7 @@ lastupdated: "2018-11-12"
 {:download: .download}
 
 # About Hardware Firewall (Shared)
+{: #about-hardware-firewall-shared-}
 
 A Hardware Firewall (Shared) is a network device that is connected upstream from a server. The firewall blocks unwanted traffic from a server before the traffic ever reaches the server. The main advantage to having a Hardware Firewall is that a server only has to handle 'good' traffic and no resources are wasted dealing with the 'bad' traffic. 
 

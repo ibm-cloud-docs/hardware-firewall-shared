@@ -15,6 +15,7 @@ lastupdated: "2018-11-12"
 {:download: .download}
 
 # Configuring the Hardware Firewall (Shared)
+{: #configuring-the-hardware-firewall-shared-}
 
 Configuring the firewall is as simple as creating a set of rules to allow access to certain IP addresses/ports from specific internet addresses while denying traffic from other sources.
 

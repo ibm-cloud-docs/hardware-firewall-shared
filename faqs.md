@@ -16,6 +16,8 @@ lastupdated: "2018-11-12"
 {:faq: data-hd-content-type='faq'}
 
 # FAQs for Hardware Firewall (Shared)
+{: #faqs-for-hardware-firewall-shared-}
+
 The following are frequently asked questions when working with the Hardware Firewall (Shared).
 
 ## What is a firewall?

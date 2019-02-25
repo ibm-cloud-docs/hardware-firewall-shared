@@ -15,6 +15,8 @@ lastupdated: "2018-11-12"
 {:download: .download}
 
 # Getting Started With Hardware Firewall Shared
+{: #getting-started-with-hardware-firewall-shared}
+
 The Hardware Firewall (Shared) provides customers with an essential layer of security that is provisioned on demand without service interruptions. It prevents unwanted traffic from hitting your servers, reducing your attack surface, and allowing your server resources to be dedicated for their intended use. 
 
 To add a firewall to a server:
