@@ -14,7 +14,8 @@ lastupdated: "2018-11-12"
 {:tip: .tip}
 {:download: .download}
 
-# Contournement des règles de pare-feu
+# Contournement des règles de pare-feu matériel (partagé)
+{: #bypassing-the-hardware-firewall-shared-rules}
 
 Pour contourner les règles de pare-feu : 
 

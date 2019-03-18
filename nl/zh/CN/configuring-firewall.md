@@ -14,13 +14,14 @@ lastupdated: "2018-11-12"
 {:tip: .tip}
 {:download: .download}
 
-# 配置防火墙
+# 配置 Hardware Firewall (Shared)
+{: #configuring-the-hardware-firewall-shared-}
 
 配置防火墙与创建一组可实现以下目的的规则一样简单：允许从特定因特网地址访问特定 IP 地址/端口，同时拒绝来自其他源的流量。
 
 ## 将防火墙添加到服务器
 
-要将防火墙添加到服务器，请单击客户门户网站中的链接**设备 > 设备列表 > 单击所需服务器 > 配置 >“订购硬件防火墙”页面底部**。这会基于所选服务器的上行链路速度开始相应防火墙的订购流程。如果收到错误，那么会看到[已知限制](known-limitations.html)和/或“联系 SoftLayer 支持”。
+要将防火墙添加到服务器，请按照[开始使用](/docs/infrastructure/hardware-firewall-shared?topic=hardware-firewall-shared-getting-started-with-hardware-firewall-shared)中的步骤进行操作。如果收到错误，那么会看到[已知限制](/docs/infrastructure/hardware-firewall-shared?topic=hardware-firewall-shared-known-limitations-with-hardware-firewall-shared-)和/或“联系 SoftLayer 支持”。
 
 ## 编辑规则
 
@@ -42,11 +43,9 @@ lastupdated: "2018-11-12"
       
       **源** - 此字段可以为“任何”、特定 IP 地址或特定子网的网络地址。
       
-      **CIDR** - 此字段指示所选源的标准 CIDR 注释。例如，“32”将针对单个 IP 实施规则，而“24”将针对 256 个 IP 实施规则。
+      **目标** - 此字段用于选择目标 IP（如果遇到问题，请参阅[已知限制](/docs/infrastructure/hardware-firewall-shared?topic=hardware-firewall-shared-known-limitations-with-hardware-firewall-shared-)）。
       
-      **目标** - 此字段用于选择目标 IP（如果遇到问题，请参阅[已知限制](known-limitations.html)）。
-      
-      **CIDR** - 此字段指示所选目标的标准 CIDR 注释。
+      **CIDR** - 此字段指示所选源/目标的标准 CIDR 表示法。
       
       **端口范围** - 这两个字段指示将向其应用规则的端口范围（1 到 65535 之间）。
       
@@ -77,5 +76,3 @@ lastupdated: "2018-11-12"
 |VNC Web |5800 |
 |VNC 客户端|5900 |
 |Urchin |9999 或 10000 ||
-
-    

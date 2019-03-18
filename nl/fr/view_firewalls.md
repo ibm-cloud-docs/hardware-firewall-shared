@@ -14,7 +14,8 @@ lastupdated: "2018-11-12"
 {:tip: .tip}
 {:download: .download}
 
-# Affichage de vos pare-feux 
+# Affichage de vos divers pare-feux
+{: #viewing-your-various-firewalls} 
 
 Vous pouvez identifier les pare-feux utilisés sur un compte et les réseaux locaux virtuels (VLAN) associés, ainsi qu'identifier les VLAN non protégés et envisager le déploiement d'une solution de pare-feu.
 
@@ -24,7 +25,7 @@ Pour obtenir une vue d'ensemble des pare-feux présents sur votre système et in
 
 **REMARQUE :** pour afficher uniquement les VLAN publics, cliquez sur le menu déroulant **Filtre** et entrez ``fcr`` pour **Routeur principal**. 
 
-Chaque ligne représente un réseau local virtuel dans votre infrastructure.  IBM Cloud remplit automatiquement les informations **NUMERO DE VLAN** et **ROUTEUR PRINCIPAL** en indiquant le vrai numéro de réseau local virtuel et le routeur sur lequel il est configuré. Utilisez la zone **NOM** pour définir un nom reconnaissable. 
+Chaque ligne représente un réseau local virtuel dans votre infrastructure. IBM© Cloud renseigne automatiquement les informations **NUMERO DE VLAN** et **ROUTEUR PRINCIPAL** en indiquant le vrai numéro de réseau local virtuel et le routeur sur lequel il est configuré. Utilisez la zone **NOM** pour définir un nom reconnaissable. 
 
 La colonne intitulée **PASSERELLE/PARE-FEU** contient les détails de la protection par pare-feu matériel en vigueur, par exemple :
 

@@ -14,7 +14,8 @@ lastupdated: "2018-11-12"
 {:tip: .tip}
 {:download: .download}
 
-# 방화벽 규칙 무시
+# Hardware Firewall (Shared) 규칙 무시
+{: #bypassing-the-hardware-firewall-shared-rules}
 
 방화벽 규칙을 무시하려면 다음을 수행하십시오. 
 

@@ -14,9 +14,10 @@ lastupdated: "2018-11-12"
 {:tip: .tip}
 {:download: .download}
 
-# 取消防火墙
+# 取消 Hardware Firewall (Shared)
+{: #canceling-a-hardware-firewall-shared-}
 
-可以随时取消防火墙。要取消硬件防火墙（共享）： 
+可以随时取消防火墙。要取消 Hardware Firewall (Shared)： 
 
 1. 从浏览器，打开[客户门户网站![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://control.softlayer.com/){: new_window}，并登录到帐户。
 2. 在“客户门户网站”导航中，转至**设备 > 设备列表**，并单击要取消的受防火墙保护的设备。

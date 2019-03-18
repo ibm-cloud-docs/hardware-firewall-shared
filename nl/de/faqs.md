@@ -15,8 +15,10 @@ lastupdated: "2018-11-12"
 {:download: .download}
 {:faq: data-hd-content-type='faq'}
 
-# Häufig gestellte Fragen
-Die folgenden Fragen sind häufig gestellte Fragen zur Hardware-Firewall (freigegeben).
+# Häufig gestellte Fragen zur Hardware-Firewall (gemeinsam genutzt)
+{: #faqs-for-hardware-firewall-shared-}
+
+Die folgenden Fragen sind häufig gestellte Fragen zur Hardware-Firewall (gemeinsam genutzt).
 
 ## Was ist eine Firewall?
 {:faq}
@@ -28,17 +30,17 @@ Eine Firewall ist eine Netzeinheit, die einem Server vorgeschaltet ist. Die Fire
 
 Der Hauptvorteil einer Firewall besteht darin, dass Ihr Server nur den "guten" Datenverkehr verarbeiten muss. Das bedeutet, dass Ihre Ressource ausschließlich für den beabsichtigten Zweck verwendet wird und für unerwünschten Datenverkehr.
 
-## Welche Firewall bietet IBM an?
+## Welche Firewallprodukte bietet IBM© an?
 {:faq}
 
-In diesem [Abschnitt ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](/docs/infrastructure/fortigate-10g/explore-firewalls.html#explore-firewalls){: new_window} finden Sie einen detaillierten Vergleich aller in der IBM Cloud angebotenen Firewall-Produkte. 
+Einen detaillierten Vergleich aller in IBM© Cloud angebotenen Firewallprodukte finden Sie in diesem [Abschnitt](/docs/infrastructure/fortigate-10g?topic=fortigate-10g-exploring-firewalls).  
 
-## Ist die Hardware-Firewall (freigegeben) mit den Load-Balancer-Produkten von IBM kompatibel?
+## Ist die Hardware-Firewall (gemeinsam genutzt) mit den Load-Balancer-Produkten von IBM kompatibel?
 {:faq}
 
-Ja. Die Hardware-Firewall (freigegeben) ist mit dem Lastausgleichsservice, der lokalen Lastausgleichsfunktion sowie dem Citrix Netscaler VPX und MPX kompatibel.
+Ja. Die Hardware-Firewall (gemeinsam genutzt) ist mit dem Lastausgleichsservice, der lokalen Lastausgleichsfunktion sowie dem Citrix Netscaler VPX und MPX kompatibel.
 
-## Können portierbare IP-Adressen durch die Hardware-Firewall (freigegeben) geschützt werden?
+## Können portierbare IP-Adressen durch die Hardware-Firewall (gemeinsam genutzt) geschützt werden?
 {:faq}
 
 Nein. Portierbare IP-Adressen können nicht geschützt werden, da sie zwischen Servern verschoben werden können. Ausnahmen werden auf Fallbasis getroffen, da es zahlreiche Vorbehalte gibt und zusätzliche Details zum Systemdesign des Kunden erforderlich sind.
@@ -46,34 +48,34 @@ Nein. Portierbare IP-Adressen können nicht geschützt werden, da sie zwischen S
 ## Kann ich eine Hardware-Firewall und ein Netzgateway mit demselben VLAN verbinden?
 {:faq}
 
-Nein, es ist nicht möglich, eine Hardware-Firewall (freigegeben oder dediziert) und ein Netzgateway-Gerät demselben VLAN zuzuweisen.  Die erweiterte Funktionalität des Netzgateway-Geräts bietet Firewall-Features für Ihr Netz anstelle einer freigegebenen oder dedizierten Firewall.
+Nein, es ist nicht möglich, eine Hardware-Firewall (gemeinsam genutzt oder dediziert) und ein Netzgateway-Gerät demselben VLAN zuzuweisen.  Die erweiterte Funktionalität des Netzgateway-Geräts bietet Firewall-Features für Ihr Netz anstelle einer gemeinsam genutzten oder dedizierten Firewall.
 
 ## Fließt der öffentliche Datenverkehr zuerst durch die Einrichtung für den Lastausgleich oder die Hardware-Firewall?
 {:faq}
 
 Aus dem öffentlichen Internet kommen zuerst die Lastausgleich-Produkte, dann die Hardware-Firewall-Produkte und als letztes die NetScaler-Produkte (zusammen mit den Kundenservern).
 
-## Muss die Uplink-Port-Geschwindigkeit eines Servers mit der Hardware-Firewall (freigegeben) übereinstimmen?
+## Muss die Uplink-Port-Geschwindigkeit eines Servers mit der Hardware-Firewall (gemeinsam genutzt) übereinstimmen?
 {:faq}
 
-Die Hardware-Firewall (freigegeben) muss der öffentlichen Uplink-Geschwindigkeit des Servers entsprechen. Da jedoch nur die öffentliche Seite des Netzwerks geschützt wird, muss die öffentliche Uplink-Geschwindigkeit mit der Auswahl der Firewall übereinstimmen.  Kunden können ein Ticket erstellen, um ein Downgrade der allgemein zugänglichen Schnittstellen anzufordern.
+Die Hardware-Firewall (gemeinsam genutzt) muss der öffentlichen Uplink-Geschwindigkeit des Servers entsprechen. Da jedoch nur die öffentliche Seite des Netzwerks geschützt wird, muss die öffentliche Uplink-Geschwindigkeit mit der Auswahl der Firewall übereinstimmen.  Kunden können ein Ticket erstellen, um ein Downgrade der allgemein zugänglichen Schnittstellen anzufordern.
 
 ## Berechnet IBM Cloud für die Firewall-Bandbreite eine Gebühr?
 {:faq}
 
-Die Bandbreite für die Hardware-Firewall (freigegeben), die Hardware-Firewall (dediziert) und die FortiGate Security Appliance wird nicht abgerechnet.  Darüber hinaus können diese Produkte die gesamte Bandbreitenauslastung reduzieren, indem sie den Datenverkehr begrenzt, auf den Server reagieren müssen.
+Die Bandbreite für die Hardware-Firewall (gemeinsam genutzt), die Hardware-Firewall (dediziert) und die FortiGate Security Appliance wird nicht abgerechnet.  Darüber hinaus können diese Produkte die gesamte Bandbreitenauslastung reduzieren, indem sie den Datenverkehr begrenzt, auf den Server reagieren müssen.
 
-## Wie aktualisiere ich den Uplink meiner Hardware Firewall (freigegeben)?
+## Wie aktualisiere ich den Uplink meiner Hardware Firewall (gemeinsam genutzt)?
 {:faq}
 
-Die Hardware-Firewall (freigegeben) ist mit der öffentlichen Uplink-Port-Geschwindigkeit eines Servers verbunden. Sie können ein Upgrade durchführen, indem Sie die Firewall inaktivieren, die Portgeschwindigkeit für den Server erhöhen und eine neue Firewall bestellen. Alternativ können Sie einen neuen Server mit den gewünschten Uplinks und der zugehörigen Firewall bereitstellen.
+Die Hardware-Firewall (gemeinsam genutzt) ist mit der öffentlichen Uplink-Port-Geschwindigkeit eines Servers verbunden. Sie können ein Upgrade durchführen, indem Sie die Firewall inaktivieren, die Portgeschwindigkeit für den Server erhöhen und eine neue Firewall bestellen. Alternativ können Sie einen neuen Server mit den gewünschten Uplinks und der zugehörigen Firewall bereitstellen.
 
-## Gibt es für die Hardware-Firewall (freigegeben) eine Hochverfügbarkeit?
+## Gibt es für die Hardware-Firewall (gemeinsam genutzt) eine Hochverfügbarkeit?
 {:faq}
 
-Nein. Die Hardware-Firewall-Plattform ist auf Unternehmen abgestimmt und sehr langlebig, aber echte Hochverfügbarkeit (redundante Geräte) ist keine Option für die Hardware-Firewall (freigegeben). Denn für eine Hochverfügbarkeit (HA) ist eine Hardware-Firewall (dediziert mit Hochverfügbarkeit) oder eine FortiGate Security Appliance (Hochverfügbarkeit) erforderlich.  Das Netzgateway-Produkt hat auch eine HA-Option mit Firewallfunktionalitäten.
+Nein. Die Hardware-Firewall-Plattform ist auf Unternehmen abgestimmt und sehr langlebig, aber echte Hochverfügbarkeit (redundante Geräte) ist keine Option für die Hardware-Firewall (gemeinsam genutzt). Denn für eine Hochverfügbarkeit (HA) ist eine Hardware-Firewall (dediziert mit Hochverfügbarkeit) oder eine FortiGate Security Appliance (Hochverfügbarkeit) erforderlich.  Das Netzgateway-Produkt hat auch eine HA-Option mit Firewallfunktionalitäten.
 
-## Auf einem IBM Cloud-Server wird ein Hypervisor ausgeführt. Schützt die Hardware-Firewall (freigegeben) auch die virtuellen Maschinen, die auf meinem Hypervisor ausgeführt werden?
+## Auf einem IBM Cloud-Server wird ein Hypervisor ausgeführt. Schützt die Hardware-Firewall (gemeinsam genutzt) auch die virtuellen Maschinen, die auf meinem Hypervisor ausgeführt werden?
 {:faq}
 
 Nein. Portierbare IP-Adressen werden für die VMs in einer Hypervisor-Umgebung verwendet und sind nicht durch die gemeinsame Hardware-Firewall geschützt.  Es wird eine Hardware-Firewall (dediziert) oder FortiGate Security Appliance empfohlen.
@@ -93,7 +95,7 @@ Um öffentliche 10-Gbit/s-Uplinks zu unterstützen, ist ein Netzgateway erforder
 ## Welche IP-Bereiche sind für die Firewall zulässig?
 {:faq}
 
-Die Liste der IP-Adressen und IP-Bereiche, die die Firewall zulässt, finden Sie [hier](/docs/infrastructure/hardware-firewall-dedicated/ips.html){: new_window}. 
+Die Liste der IP-Adressen und IP-Bereiche, die die Firewall zulässt, finden Sie [hier](/docs/infrastructure/hardware-firewall-dedicated?topic=hardware-firewall-dedicated-ibm-cloud-ip-ranges){: new_window}. 
 
 ## Welche VPN-Optionen sind mit jedem Firewallprodukt enthalten?
 {:faq}

@@ -14,7 +14,8 @@ lastupdated: "2018-11-12"
 {:tip: .tip}
 {:download: .download}
 
-# 已知限制
+# Hardware Firewall (Shared) 的已知限制
+{: #known-limitations-with-hardware-firewall-shared-}
 
 Hardware Firewall (Shared) 無法部署到符合下列任何準則的 VLAN 上的伺服器中。 
 

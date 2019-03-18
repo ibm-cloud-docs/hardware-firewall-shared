@@ -14,13 +14,14 @@ lastupdated: "2018-11-12"
 {:tip: .tip}
 {:download: .download}
 
-# Configurar el cortafuegos
+# Configuración del cortafuegos de hardware (compartido)
+{: #configuring-the-hardware-firewall-shared-}
 
 La configuración del cortafuegos es tan sencilla como crear un conjunto de reglas para permitir el acceso a determinados puertos/direcciones IP de direcciones de Internet específicas y denegar el tráfico de otras fuentes.
 
 ## Adición de un cortafuegos a un servidor
 
-Para añadir un cortafuegos a un servidor, pulse el enlace **Dispositivos > Lista de dispositivos > pulse el servidor deseado > Configuración > parte inferior de la página: Pedir cortafuegos de hardware** en el portal de clientes. Esta acción inicia el proceso de pedido para un cortafuegos adecuado en función de la velocidad de enlace ascendente del servidor seleccionado. Si recibe un error, consulte las [Limitaciones conocidas](known-limitations.html) o póngase en contacto con el equipo de soporte de SoftLayer.
+Para añadir un cortafuegos a un servidor, siga los pasos de [Iniciación](/docs/infrastructure/hardware-firewall-shared?topic=hardware-firewall-shared-getting-started-with-hardware-firewall-shared). Si recibe un error, consulte las [Limitaciones conocidas](/docs/infrastructure/hardware-firewall-shared?topic=hardware-firewall-shared-known-limitations-with-hardware-firewall-shared-) o póngase en contacto con el equipo de soporte de SoftLayer.
 
 ## Edición de reglas
 
@@ -42,11 +43,9 @@ Asegúrese de que en el "estado" se indica que el cortafuegos está "Procesando 
       
       **Origen**: este campo puede ser 'todos' o una dirección IP específica o la dirección de red para una subred específica.
       
-      **CIDR**: este campo indica la notación CIDR estándar para el origen seleccionado. "32" implementará la regla para una sola IP, por ejemplo, y "24" implementará la regla para 256 IP.
+      **Destino**: este campo selecciona la IP de destino (consulte [Limitaciones conocidas](/docs/infrastructure/hardware-firewall-shared?topic=hardware-firewall-shared-known-limitations-with-hardware-firewall-shared-) si hay problemas).
       
-      **Destino**: este campo selecciona la IP de destino (consulte [Limitaciones conocidas](known-limitations.html) si hay problemas).
-      
-      **CIDR**: este campo indica la notación CIDR estándar para el destino seleccionado.
+      **CIDR**: este campo indica la notación CIDR estándar para el origen/destino seleccionado.
       
       **Rango de puertos**: estos dos campos indican el rango de puertos (entre 1 y 65535) a los que se aplicará la regla.
       
@@ -77,5 +76,3 @@ Asegúrese de que en el "estado" se indica que el cortafuegos está "Procesando 
 | VNC Web | 5800 |
 | VNC Client | 5900 |
 | Urchin | 9999 o 10000 ||
-
-    

@@ -14,7 +14,8 @@ lastupdated: "2018-11-12"
 {:tip: .tip}
 {:download: .download}
 
-## 查看日志报告
+# 查看 Hardware Firewall 日志报告
+{: #viewing-log-reports-for-hardware-firewall}
 
 通过浏览至受保护设备、选择**防火墙**选项卡并单击**操作 > 防火墙日志**基于每个 IP 提供日志。日志以 .CSV 格式提供并包含以下内容：
 

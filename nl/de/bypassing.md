@@ -14,7 +14,8 @@ lastupdated: "2018-11-12"
 {:tip: .tip}
 {:download: .download}
 
-# Firewallregeln umgehen
+# Regeln für die Hardware-Firewall (gemeinsam genutzt) umgehen
+{: #bypassing-the-hardware-firewall-shared-rules}
 
 Führen Sie die folgenden Schritte aus, um die Firewallregeln zu umgehen: 
 

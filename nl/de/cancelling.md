@@ -14,9 +14,10 @@ lastupdated: "2018-11-12"
 {:tip: .tip}
 {:download: .download}
 
-# Eine Firewall stornieren
+# Hardware-Firewall (gemeinsam genutzt) stornieren
+{: #canceling-a-hardware-firewall-shared-}
 
-Firewalls können jederzeit storniert werden. Führen Sie die folgenden Schritte aus, um eine Hardware-Firewall (freigegeben) zu stornieren. 
+Firewalls können jederzeit storniert werden. Führen Sie die folgenden Schritte aus, um eine Hardware-Firewall (gemeinsam genutzt) zu stornieren. 
 
 1. Öffnen Sie im Browser das [Kundenportal ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://control.softlayer.com/){: new_window} und melden Sie sich bei Ihrem Konto an.
 2. Wählen Sie in der Navigation des Kundenportals **Geräte > Geräteliste** aus und klicken Sie auf das durch die Firewall geschützte Gerät, das Sie stornieren möchten.

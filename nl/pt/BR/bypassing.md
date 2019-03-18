@@ -14,7 +14,8 @@ lastupdated: "2018-11-12"
 {:tip: .tip}
 {:download: .download}
 
-# Efetuar bypass das regras de firewall
+# Efetuando bypass das regras do Hardware Firewall (Shared)
+{: #bypassing-the-hardware-firewall-shared-rules}
 
 Para efetuar bypass das regras de firewall, 
 

@@ -14,7 +14,8 @@ lastupdated: "2018-11-12"
 {:tip: .tip}
 {:download: .download}
 
-# Ver los cortafuegos 
+# Ver los cortafuegos distintos
+{: #viewing-your-various-firewalls} 
 
 Puede identificar los cortafuegos en uso en una cuenta y sus VLAN asociadas, así como identificar las VLAN desprotegidas y planificar el despliegue de una solución de cortafuegos.
 
@@ -24,7 +25,7 @@ Para obtener una visión general de los cortafuegos del sistema, además de inic
 
 **NOTA:** Para ver sólo las VLAN públicas, pulse el desplegable **Filtrar** y escriba ``fcr`` en **Direccionador primario**. 
 
-Cada fila representa una VLAN en la infraestructura.  IBM Cloud rellena la información de **NÚMERO DE VLAN** y **DIRECCIONADOR PRINCIPAL** automáticamente con el número exacto de VLAN y el direccionador en el que está configurada. Utilice el campo **NOMBRE** para definir un nombre reconocible. 
+Cada fila representa una VLAN en la infraestructura. IBM© Cloud rellena la información de **NÚMERO DE VLAN** y **DIRECCIONADOR PRINCIPAL** automáticamente con el número exacto de VLAN y el direccionador en el que está configurada. Utilice el campo **NOMBRE** para definir un nombre reconocible. 
 
 La columna **PASARELA/CORTAFUEGOS** contiene detalles sobre la protección de cortafuegos de hardware que está activa, por ejemplo:
 

@@ -14,7 +14,8 @@ lastupdated: "2018-11-12"
 {:tip: .tip}
 {:download: .download}
 
-## 檢視日誌報告
+# 檢視 Hardware Firewall 的日誌報告
+{: #viewing-log-reports-for-hardware-firewall}
 
 日誌可按照每一個 IP 來取得，方法是導覽至受保護的裝置、選取**防火牆**標籤，然後按一下**動作 > 防火牆日誌**。日誌會以 .CSV 格式呈現並包含下列內容：
 

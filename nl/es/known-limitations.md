@@ -14,7 +14,8 @@ lastupdated: "2018-11-12"
 {:tip: .tip}
 {:download: .download}
 
-# Limitaciones conocidas
+# Limitaciones conocidas del cortafuegos de hardware (compartido)
+{: #known-limitations-with-hardware-firewall-shared-}
 
 Un cortafuegos de hardware (compartido) no se puede desplegar en un servidor en una VLAN que cumpla alguno de los siguientes criterios. 
 

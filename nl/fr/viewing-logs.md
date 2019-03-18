@@ -14,7 +14,8 @@ lastupdated: "2018-11-12"
 {:tip: .tip}
 {:download: .download}
 
-## Affichage des rapports de journaux
+# Affichage des rapports de journaux pour le pare-feu matériel
+{: #viewing-log-reports-for-hardware-firewall}
 
 Les journaux sont disponibles par adresse IP en accédant à l'unité protégée, en sélectionnant l'onglet **Pare-feu** et en cliquant sur **Actions > Journaux pare-feu**. Les journaux sont présentés au format .CSV et contiennent les éléments suivants :
 
