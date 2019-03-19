@@ -14,7 +14,8 @@ lastupdated: "2018-11-12"
 {:tip: .tip}
 {:download: .download}
 
-# Ignorar las reglas de cortafuegos
+# Ignorar las reglas del cortafuegos de hardware (compartido)
+{: #bypassing-the-hardware-firewall-shared-rules}
 
 Para ignorar las reglas de cortafuegos: 
 

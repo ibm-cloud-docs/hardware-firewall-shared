@@ -4,6 +4,10 @@ copyright:
   years: 2017
 lastupdated: "2018-11-12"
 
+keywords: viewing, logs, reports, firewall, troubleshooting
+
+subcollection: hardware-firewall-shared
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -14,7 +18,8 @@ lastupdated: "2018-11-12"
 {:tip: .tip}
 {:download: .download}
 
-## Viewing Log Reports for Hardware Firewall (Shared)
+# Viewing Log Reports for Hardware Firewall
+{: #viewing-log-reports-for-hardware-firewall}
 
 Logs are available on a per-IP basis by navigating to the protected device, selecting the **Firewall** tab, and clicking **Actions > Firewall Logs**. Logs are presented in .CSV format and contain the following:
 

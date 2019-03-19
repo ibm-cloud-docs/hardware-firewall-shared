@@ -14,7 +14,8 @@ lastupdated: "2018-11-12"
 {:tip: .tip}
 {:download: .download}
 
-## Protokollberichte anzeigen
+# Protokollberichte zur Hardware-Firewall anzeigen
+{: #viewing-log-reports-for-hardware-firewall}
 
 Für jede IP-Adresse stehen Protokolle zur Verfügung. Navigieren Sie dazu zum geschützten Gerät, wählen Sie die Registerkarte **Firewall** aus und klicken Sie auf **Aktionen > Firewallprotokolle**. Die Protokolle liegen im CSV-Format vor und enthalten Folgendes:
 

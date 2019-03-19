@@ -14,7 +14,8 @@ lastupdated: "2018-11-12"
 {:tip: .tip}
 {:download: .download}
 
-# 略過防火牆規則
+# 略過 Hardware Firewall (Shared) 規則
+{: #bypassing-the-hardware-firewall-shared-rules}
 
 若要略過防火牆規則，請執行下列步驟： 
 

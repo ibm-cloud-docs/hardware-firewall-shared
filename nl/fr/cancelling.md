@@ -14,7 +14,8 @@ lastupdated: "2018-11-12"
 {:tip: .tip}
 {:download: .download}
 
-# Annulation d'un pare-feu
+# Annulation d'un pare-feu matériel (partagé)
+{: #canceling-a-hardware-firewall-shared-}
 
 Les pare-feux peuvent être annulés à tout moment. Pour annuler un pare-feu matériel (partagé), procédez comme suit : 
 

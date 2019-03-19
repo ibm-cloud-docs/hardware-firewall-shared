@@ -14,7 +14,8 @@ lastupdated: "2018-11-12"
 {:tip: .tip}
 {:download: .download}
 
-## 로그 보고서 보기
+# Hardware Firewall에 대한 로그 보고서 보기
+{: #viewing-log-reports-for-hardware-firewall}
 
 보호된 디바이스로 이동하고, **방화벽** 탭을 선택한 후 **조치 > 방화벽 로그**를 클릭하여 IP 기준으로 로그를 사용할 수 있습니다. 로그는 .CSV 형식으로 표시되며 다음을 포함합니다.
 

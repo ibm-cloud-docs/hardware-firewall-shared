@@ -15,7 +15,9 @@ lastupdated: "2018-11-12"
 {:download: .download}
 {:faq: data-hd-content-type='faq'}
 
-# FAQ
+# Hardware Firewall (Shared)에 대한 FAQ
+{: #faqs-for-hardware-firewall-shared-}
+
 다음은 Hardware Firewall (Shared)에 대한 작업을 할 때 자주 묻는 질문(FAQ)입니다.
 
 ## 방화벽이 무엇인가요?
@@ -28,10 +30,10 @@ lastupdated: "2018-11-12"
 
 방화벽을 사용할 때의 기본적인 장점은 서버에서 "양호한" 트래픽만 처리하면 된다는 것입니다. 이것은 원치 않는 트래픽도 처리해야 하는 것이 아니라 의도한 목적에 대해서만 리소스가 사용된다는 것을 의미합니다.
 
-## IBM에서 제공하는 방화벽 제품은 무엇이 있나요?
+## IBM©에서 제공하는 방화벽 제품
 {:faq}
 
-IBM Cloud에서 제공하는 모든 방화벽 제품에 대한 자세한 비교 정보는 이 [주제 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](/docs/infrastructure/fortigate-10g/explore-firewalls.html#explore-firewalls){: new_window}를 검토하십시오. 
+[주제](/docs/infrastructure/fortigate-10g?topic=fortigate-10g-exploring-firewalls)를 검토하여 IBM© Cloud에서 제공되는 모든 방화벽 제품에 대한 상세한 비교를 볼 수 있습니다. 
 
 ## Hardware Firewall (Shared)은 IBM의 로드 밸런서 제품과 호환 가능한가요?
 {:faq}
@@ -61,7 +63,7 @@ Hardware Firewall (Shared)은 서버의 공용 업링크 속도와 일치해야 
 ## IBM Cloud는 방화벽 대역폭의 비용을 청구하나요?
 {:faq}
 
-Hardware Firewall (Shared), Hardware Firewall (Dedicated) 및 FortiGate 보안 어플라이언스는 대역폭에 대해 측정되지 않습니다.  또한 이러한 제품들은 해당 서버가 응답해야 하는 트래픽을 제한함으로써 전체 대역폭 이용도를 줄일 수 있습니다.
+Hardware Firewall (Shared), Hardware Firewall (Dedicated) 및 FortiGate Security Appliance는 대역폭에 대해 측정되지 않습니다.  또한 이러한 제품들은 해당 서버가 응답해야 하는 트래픽을 제한함으로써 전체 대역폭 이용도를 줄일 수 있습니다.
 
 ## 내 Hardware Firewall (Shared)의 업링크를 어떻게 업그레이드하나요?
 {:faq}
@@ -71,12 +73,12 @@ Hardware Firewall (Shared)은 서버의 공용 업링크 포트 속도에 대해
 ## 고가용성이 Hardware Firewall (Shared)에서도 가능한가요?
 {:faq}
 
-아니오. Hardware Firewall 플랫폼은 엔터프라이즈급으로 내구성이 강하지만, 실제 고가용성(중복 디바이스)은 Hardware Firewall (Shared)에 대한 옵션이 아닙니다. HA의 경우, Hardware Firewall (Dedicated with High Availability) 또는 FortiGate 보안 어플라이언스(고가용성)가 필수입니다.  네트워크 게이트웨이 제품도 방화벽 기능에 HA 옵션이 있습니다.
+아니오. Hardware Firewall 플랫폼은 엔터프라이즈급으로 내구성이 강하지만, 실제 고가용성(중복 디바이스)은 Hardware Firewall (Shared)에 대한 옵션이 아닙니다. HA의 경우, Hardware Firewall (Dedicated with High Availability) 또는 FortiGate Security Appliance(고가용성)가 필수입니다.  네트워크 게이트웨이 제품도 방화벽 기능에 HA 옵션이 있습니다.
 
 ## IBM Cloud 서버에서 하이퍼바이저를 실행 중입니다. Hardware Firewall (Shared)이 내 하이퍼바이저에서 실행 중인 가상 머신을 보호하나요?
 {:faq}
 
-아니오. 하이퍼바이저 환경의 VM에 대해 포터블 IP가 사용되며 포터블 IP는 공유된 Hardware Firewall에 의해 보호되지 않습니다.  Hardware Firewall (Dedicated) 또는 FortiGate 보안 어플라이언스가 권장됩니다.
+아니오. 하이퍼바이저 환경의 VM에 대해 포터블 IP가 사용되며 포터블 IP는 공유된 Hardware Firewall에 의해 보호되지 않습니다.  Hardware Firewall (Dedicated) 또는 FortiGate Security Appliance가 권장됩니다.
 
 ## 내 Windows 방화벽에서 회색으로 표시되는 포트는 무엇인가요?
 {:faq}
@@ -93,7 +95,7 @@ IBM Cloud는 Evault, SNMP 및 Nagios 모니터링을 포함하여 서버와 함�
 ## 방화벽에서 허용되는 IP 범위는 어떻게 되나요?
 {:faq}
 
-방화벽에서 허용되는 IP 주소 및 IP 범위 목록은 [여기](/docs/infrastructure/hardware-firewall-dedicated/ips.html){: new_window}로 이동하십시오. 
+방화벽에서 허용되는 IP 주소 및 IP 범위 목록은 [여기](/docs/infrastructure/hardware-firewall-dedicated?topic=hardware-firewall-dedicated-ibm-cloud-ip-ranges){: new_window}로 이동하십시오. 
 
 ## 각 방화벽 제품에 포함되는 VPN 옵션은 무엇인가요?
 {:faq}
@@ -103,7 +105,7 @@ IBM Cloud는 Evault, SNMP 및 Nagios 모니터링을 포함하여 서버와 함�
 * 각 고객은 사설 네트워크에 대한 무제한 SSL VPN 연결을 수신합니다. 고객 포털에 로그인되어 있는 동안 페이지의 맨 위에 있는 VPN 링크를 클릭하여 이러한 연결을 설정할 수 있습니다.
 * 또한 고객은 계정 당 하나의 PPTP VPN을 수신합니다. $5/월에 5씩 추가하여 계정에 PPTP VPN 사용자를 추가할 수 있습니다.
 * 또한 SoftLayer는 월 $99부터 기본 다중 테넌트 IPSec VPN 서비스를 제공합니다.
-* FortiGate 보안 어플라이언스는 공용 네트워크 전용으로 SSL 및 IPSec VPN 옵션을 제공합니다(SoftLayer 사설 네트워크에 액세스할 수 없음).
+* FortiGate Security Appliance는 공용 네트워크 전용으로 SSL 및 IPSec VPN 옵션을 제공합니다(SoftLayer 사설 네트워크에 액세스할 수 없음).
 * 네트워크 게이트웨이는 공용 또는 사설 네트워크에서 SSL, IPSec 및 OpenVPN 기능을 제공합니다.
 * NetScaler 제품에서는 공용 또는 사설 네트워크에서 SSL 및 IPSec VPN을 제공할 수 있습니다.
 * 또한 고객은 VPN 솔루션을 IBM Cloud 환경 내의 서버로 배치할 수 있습니다.

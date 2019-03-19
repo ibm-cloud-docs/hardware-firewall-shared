@@ -4,6 +4,10 @@ copyright:
   years: 2017
 lastupdated: "2018-11-12"
 
+keywords: cancel, canceling, firewall, vlan
+
+subcollection: hardware-firewall-shared
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -15,8 +19,9 @@ lastupdated: "2018-11-12"
 {:download: .download}
 
 # Canceling a Hardware Firewall (Shared)
+{: #canceling-a-hardware-firewall-shared-}
 
-Firewalls can be cancelled at any time. To cancel a Hardware Firewall (Shared), 
+Firewalls can be cancelled at any time. To cancel a Hardware Firewall (Shared),
 
 1. From your browser, open  [Customer Portal ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/){: new_window} and log into your account.
 2. In the Customer Portal navigation, go to **Devices > Device List** and click on the firewall protected device you want to cancel.

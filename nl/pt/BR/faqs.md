@@ -15,23 +15,26 @@ lastupdated: "2018-11-12"
 {:download: .download}
 {:faq: data-hd-content-type='faq'}
 
-# Perguntas mais frequentes
+# Perguntas frequentes para o Hardware Firewall (Shared)
+{: #faqs-for-hardware-firewall-shared-}
+
 A seguir estão as perguntas mais frequentes ao trabalhar com o Hardware Firewall (Shared).
 
 ## O que é um firewall?
 {:faq}
 
-Um firewall é um dispositivo de rede que está conectado para envio de dados de um servidor. O firewall bloqueia tráfego indesejado de um servidor antes que o servidor seja atingido.
+Um firewall é um dispositivo de rede que está conectado para envio de dados de um servidor. O firewall bloqueia o
+tráfego indesejado de um servidor antes que servidor seja atingido.
 
 ## Por que devo usar um firewall?
 {:faq}
 
 A principal vantagem de ter um firewall é que seu servidor terá de manipular apenas o tráfego "bom", significando que seu recurso está sendo usado exclusivamente para seu propósito desejado e não para manipular o tráfego indesejado também.
 
-## Quais produtos de firewall a IBM oferece?
+## Quais produtos de firewall a IBM© oferece?
 {:faq}
 
-Você pode encontrar uma comparação detalhada de todos os produtos de firewall oferecidos no IBM Cloud revisando este [tópico ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](/docs/infrastructure/fortigate-10g/explore-firewalls.html#explore-firewalls){: new_window}. 
+É possível localizar uma comparação detalhada de todos os produtos de firewall oferecidos no IBM© Cloud revisando este [tópico](/docs/infrastructure/fortigate-10g?topic=fortigate-10g-exploring-firewalls). 
 
 ## O Hardware Firewall (Shared) é compatível com produtos de balanceador de carga da IBM?
 {:faq}
@@ -93,7 +96,7 @@ Para suportar uplinks públicos de 10Gbps, um Gateway de rede é necessário.  S
 ## Quais intervalos de IP permitir por meio do firewall?
 {:faq}
 
-Para obter a lista de endereços IP e intervalos de IP a serem permitidos por meio do firewall, acesse [aqui](/docs/infrastructure/hardware-firewall-dedicated/ips.html){: new_window}. 
+Para obter a lista de endereços IP e intervalos de IP a serem permitidos por meio do firewall, acesse [aqui](/docs/infrastructure/hardware-firewall-dedicated?topic=hardware-firewall-dedicated-ibm-cloud-ip-ranges){: new_window}. 
 
 ## Quais opções de VPN são incluídas com cada produto de Firewall?
 {:faq}

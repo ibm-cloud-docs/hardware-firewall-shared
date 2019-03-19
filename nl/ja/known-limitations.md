@@ -14,7 +14,8 @@ lastupdated: "2018-11-12"
 {:tip: .tip}
 {:download: .download}
 
-# 既知の制限
+# ハードウェア・ファイアウォール (共有) の既知の制限
+{: #known-limitations-with-hardware-firewall-shared-}
 
 ハードウェア・ファイアウォール (共有) は、以下のいずれかの条件を満たす VLAN 上のサーバーにはデプロイできません。 
 

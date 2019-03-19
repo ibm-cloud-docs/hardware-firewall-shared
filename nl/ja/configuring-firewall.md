@@ -14,13 +14,14 @@ lastupdated: "2018-11-12"
 {:tip: .tip}
 {:download: .download}
 
-# ファイアウォールの構成
+# ハードウェア・ファイアウォール (共有) の構成
+{: #configuring-the-hardware-firewall-shared-}
 
 ファイアウォールの構成手順は、一連のルールを作成して、特定のインターネット・アドレスから特定の IP アドレス/ポートへのアクセスを許容し、その他のソースからのトラフィックを拒否するという程度の単純なものです。
 
 ## サーバーへのファイアウォールの追加
 
-サーバーにファイアウォールを追加するには、カスタマー・ポータルで、**「デバイス」>「デバイス・リスト」リンクをクリック > 目的のサーバーをクリック >「構成」をクリック > ページの下部で「ハードウェア・ファイアウォールの注文」をクリック**の順に操作を行います。 これにより、選択したサーバーのアップリンク速度に基づいて、適切なファイアウォールの注文プロセスが開始されます。 エラーを受け取った場合、[既知の制限](known-limitations.html)の参照、SoftLayer サポートへの問い合わせ、またはこの両方を行ってください。
+サーバーにファイアウォールを追加するには、[開始](/docs/infrastructure/hardware-firewall-shared?topic=hardware-firewall-shared-getting-started-with-hardware-firewall-shared)の手順に従います。エラーを受け取った場合、[既知の制限](/docs/infrastructure/hardware-firewall-shared?topic=hardware-firewall-shared-known-limitations-with-hardware-firewall-shared-)の参照、SoftLayer サポートへの問い合わせ、またはこの両方を行ってください。
 
 ## ルールの編集
 
@@ -42,11 +43,9 @@ lastupdated: "2018-11-12"
       
       **ソース** - このフィールドには、「すべて (any)」、特定の IP アドレス、または特定のサブネットのネットワーク・アドレスを指定できます。
       
-      **CIDR** - このフィールドは、選択したソースの標準 CIDR 表記を示します。 例えば、「32」では 1 つの IP に対してルールが実施され、一方「24」では 256 個の IP に対してルールが実施されます。
+      **宛先** - このフィールドでは、宛先 IP を選択します (問題が発生した場合は、[既知の制限](/docs/infrastructure/hardware-firewall-shared?topic=hardware-firewall-shared-known-limitations-with-hardware-firewall-shared-)を参照してください)。
       
-      **宛先** - このフィールドでは、宛先 IP を選択します (問題が発生した場合は、[既知の制限](known-limitations.html)を参照してください)。
-      
-      **CIDR** - このフィールドは、選択した宛先の標準 CIDR 表記を示します。
+      **CIDR** - このフィールドは、選択したソース/宛先の標準 CIDR 表記を示します。
       
       **ポートの範囲** - これらの 2 つのフィールドは、ルールを適用するポートの範囲 (1 から 65535 の間) を示します。
       
@@ -77,5 +76,3 @@ lastupdated: "2018-11-12"
 | VNC Web | 5800 |
 | VNC クライアント | 5900 |
 | Urchin | 9999 または 10000 ||
-
-    

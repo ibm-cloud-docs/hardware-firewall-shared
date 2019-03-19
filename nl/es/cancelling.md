@@ -14,7 +14,8 @@ lastupdated: "2018-11-12"
 {:tip: .tip}
 {:download: .download}
 
-# Cancelar un cortafuegos
+# Cancelación del cortafuegos de hardware (compartido)
+{: #canceling-a-hardware-firewall-shared-}
 
 Los cortafuegos se pueden cancelar en cualquier momento. Para cancelar un cortafuegos de hardware (compartido): 
 

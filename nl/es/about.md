@@ -14,7 +14,8 @@ lastupdated: "2018-11-12"
 {:tip: .tip}
 {:download: .download}
 
-# Acerca de
+# Acerca del cortafuegos de hardware (compartido)
+{: #about-hardware-firewall-shared-}
 
 Un cortafuegos de hardware (compartido) es un dispositivo de red que está conectado en sentido ascendente desde un servidor. El cortafuegos bloquea el tráfico no deseado de un servidor antes de que el tráfico llegue al servidor. La ventaja principal de tener un cortafuegos de hardware es que el servidor sólo tiene que manejar el tráfico 'bueno' y no se desperdician recursos en el tráfico 'malo'. 
 
@@ -23,7 +24,7 @@ El cortafuegos de hardware (compartido) aprovecha una plataforma empresarial mul
 Dado que hay varios clientes asociados con el hardware, si el cortafuegos falla o se sobrecarga por un ataque, todos los clientes que comparten una instancia del cortafuegos de hardware (compartido) pueden verse afectados. 
 
 Se pueden configurar hasta 79 reglas de cortafuegos para las direcciones IP primarias y direccionadas estáticamente asignadas al servidor. Hay disponibles informes para cortafuegos compartidos en función de la actividad de una sola dirección IP para un rango de fechas seleccionado.
-Los clientes pueden gestionar el cortafuegos a través de la GUI de FortiOS basada en web o la CLI (interfaz de línea de mandatos) utilizando SSH. También se puede pedir alta disponibilidad, que proporciona dos dispositivos en despliegue activo-pasivo con configuraciones sincronizadas.
+Los clientes pueden administrar el cortafuegos de dos maneras: SoftLayer Control Portal (el separador cortafuegos en la página de detalles del servidor protegido) y SoftLayer SLDN API.
 
 Puesto que el ancho de banda mensual del servidor se registra en el puerto de conmutador del servidor, el tráfico bloqueado por el cortafuegos de hardware (compartido) no cuenta para la asignación mensual, y así no es necesario pagar por el tráfico no deseado.
 

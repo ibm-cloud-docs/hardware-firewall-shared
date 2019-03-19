@@ -14,7 +14,8 @@ lastupdated: "2018-11-12"
 {:tip: .tip}
 {:download: .download}
 
-# Firewalls anzeigen 
+# Verschiedene Firewalls anzeigen
+{: #viewing-your-various-firewalls} 
 
 Sie können die verwendeten Firewalls für ein Konto und ihre zugehörigen VLANs sowie nicht geschützte VLANs ermitteln sowie die Bereitstellung einer Firewall-Lösung planen.
 
@@ -24,13 +25,13 @@ Um eine Übersicht über die Firewalls auf Ihrem System zu erhalten und eine gru
 
 **HINWEIS:** Um ausschließlich öffentliche VLANs anzuzeigen, klicken Sie auf das Dropdown-Menü **Filtern** und geben Sie ``fcr`` für den **Primären Router** ein. 
 
-Jede Zeile stellt ein VLAN in Ihrer Infrastruktur dar.  IBM Cloud gibt die Informationen für **VLAN-NUMMER** und **PRIMÄRER ROUTER** automatisch ein. Dabei wird die echte VLAN-Nummer und der Router angegeben, auf die sie konfiguriert ist. Definieren Sie mit dem Feld **NAME** einen erkennbaren Namen. 
+Jede Zeile stellt ein VLAN in Ihrer Infrastruktur dar. IBM© Cloud gibt die Informationen für **VLAN-NUMMER** und **PRIMÄRER ROUTER** automatisch ein. Dabei wird die echte VLAN-Nummer und der Router angegeben, auf die sie konfiguriert ist. Definieren Sie mit dem Feld **NAME** einen erkennbaren Namen. 
 
 Die Spalte **GATEWAY/FIREWALL** enthält Details dazu, welcher Hardware-Firewall-Schutz vorhanden ist. Beispiel:
 
 **Firewall hinzufügen** gibt an, dass in diesem VLAN keine Firewalls für Server vorhanden sind.
 
-**Einzeln geschützte Server** gibt an, dass mindestens ein Server eine Hardware-Firewall (freigegeben) verwendet und keine Hardware-Firewall (dediziert), keine FortiGate Security Appliance und kein Netzgateway vorhanden ist. VLAN-Firewalls und Netzgateways können nicht auf einem VLAN mit einzeln geschützten Servern platziert werden.
+**Einzeln geschützte Server** gibt an, dass mindestens ein Server eine Hardware-Firewall (gemeinsam genutzt) verwendet und keine Hardware-Firewall (dediziert), keine FortiGate Security Appliance und kein Netzgateway vorhanden ist. VLAN-Firewalls und Netzgateways können nicht auf einem VLAN mit einzeln geschützten Servern platziert werden.
 
 **Firewall-vlanXXXX.networklayer.com** gibt an, dass eine Hardware-Firewall (dediziert) oder eine FortiGate Security Appliance vorhanden ist. Einem VLAN kann nur eine VLAN-Firewall oder ein Netzgateway zugeordnet werden. Ein Server kann jedoch im öffentlichen VLAN durch eine VLAN-Firewall geschützt und im privaten Netz mit einem Netzgateway verknüpft werden.
 
