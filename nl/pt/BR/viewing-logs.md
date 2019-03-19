@@ -14,7 +14,8 @@ lastupdated: "2018-11-12"
 {:tip: .tip}
 {:download: .download}
 
-## Visualizando relatórios de log
+# Visualizando os relatórios de log para o Hardware Firewall
+{: #viewing-log-reports-for-hardware-firewall}
 
 Os logs estão disponíveis por IP navegando para o dispositivo
 protegido, selecionando a guia **Firewall** e clicando em

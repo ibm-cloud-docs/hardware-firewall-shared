@@ -14,13 +14,14 @@ lastupdated: "2018-11-12"
 {:tip: .tip}
 {:download: .download}
 
-# 配置防火牆
+# 配置 Hardware Firewall (Shared)
+{: #configuring-the-hardware-firewall-shared-}
 
 配置防火牆與建立一組規則一樣簡單，以容許從特定的網際網路位址存取特定 IP 位址/埠，同時拒絕來自其他來源的資料流量。
 
 ## 將防火牆新增至伺服器
 
-若要將防火牆新增至伺服器，請在「客戶入口網站」中按一下鏈結**裝置 > 裝置清單 > 按一下想要的伺服器 > 配置 > 頁面底端：訂購 Hardware Firewall**。這將根據所選伺服器的上行鏈路速度開始適當防火牆的訂購程序。若收到錯誤，請參閱[已知限制](known-limitations.html)，以及（或）聯絡 SoftLayer 支援人員。
+若要將防火牆新增至伺服器中，請遵循[開始使用](/docs/infrastructure/hardware-firewall-shared?topic=hardware-firewall-shared-getting-started-with-hardware-firewall-shared)中的步驟。若收到錯誤，請參閱[已知限制](/docs/infrastructure/hardware-firewall-shared?topic=hardware-firewall-shared-known-limitations-with-hardware-firewall-shared-)，以及（或）聯絡 SoftLayer 支援人員。
 
 ## 編輯規則
 
@@ -42,11 +43,9 @@ lastupdated: "2018-11-12"
       
       **來源** - 此欄位可以是「任何」或特定的 IP 位址，也可以是特定子網路的網址。
       
-      **CIDR** - 此欄位表示所選來源的標準 CIDR 表示法。例如，"32" 會實作單一 IP 的規則，而 "24" 會實作 256 個 IP 的規則。
+      **目的地** - 此欄位會選取目的地 IP（若有問題，請參閱[已知限制](/docs/infrastructure/hardware-firewall-shared?topic=hardware-firewall-shared-known-limitations-with-hardware-firewall-shared-)）。
       
-      **目的地** - 此欄位會選取目的地 IP（若有問題，請參閱[已知限制](known-limitations.html)）。
-      
-      **CIDR** - 此欄位表示所選目的地的標準 CIDR 表示法。
+      **CIDR** - 此欄位表示所選來源/目的地的標準 CIDR 表示法。
       
       **埠範圍** - 這兩個欄位表示規則將套用至其中的埠範圍（介於 1 和 65535 之間）。
       
@@ -77,5 +76,3 @@ lastupdated: "2018-11-12"
 |VNC Web |5800 |
 |VNC 用戶端 |5900 |
 |Urchin |9999 或 10000 ||
-
-    

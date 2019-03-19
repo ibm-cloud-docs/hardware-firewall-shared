@@ -4,6 +4,10 @@ copyright:
   years: 2017,2018
 lastupdated: "2018-11-12"
 
+keywords: help, support, troubleshooting
+
+subcollection: hardware-firewall-shared
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -15,6 +19,7 @@ lastupdated: "2018-11-12"
 {:download: .download}
 
 # Getting Help and Support for Hardware Firewall (Shared)
+{: #getting-help-and-support-for-hardware-firewall-shared-}
 
 If you have problems or questions when using the Hardware Firewall (Shared), you can get help by searching for information or by asking questions through one of the forums listed below. You can also open a support ticket.
 

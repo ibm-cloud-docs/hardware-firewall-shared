@@ -14,7 +14,8 @@ lastupdated: "2018-11-12"
 {:tip: .tip}
 {:download: .download}
 
-# Visualizar seus firewalls 
+# Visualizando vários firewalls
+{: #viewing-your-various-firewalls} 
 
 Você pode identificar os firewalls em uso em uma conta e suas VLANs associadas, bem como identificar as VLANs desprotegidas e planejar a implementação de uma solução de firewall.
 
@@ -24,7 +25,9 @@ Para obter uma visão geral de firewalls em seu sistema, bem como iniciar o gere
 
 **NOTA:** Para visualizar apenas VLANs públicas, clique no menu suspenso **Filtrar** e insira ``fcr`` para **Roteador primário**. 
 
-Cada linha representa uma VLAN em sua infraestrutura.  O IBM Cloud preenche as informações **NÚMERO DA VLAN** e **ROTEADOR PRIMÁRIO** automaticamente indicando o número verdadeiro da VLAN e o roteador no qual ela está configurada. Use o campo **NAME** para definir um nome reconhecível. 
+Cada linha representa uma VLAN em sua infraestrutura. O IBM© Cloud preenche as informações de **NÚMERO DA
+VLAN** e **ROTEADOR PRIMÁRIO** automaticamente, indicando o número verdadeiro
+da VLAN e o roteador no qual ela está configurada. Use o campo **NAME** para definir um nome reconhecível. 
 
 A coluna **GATEWAY/FIREWALL** contém detalhes sobre qual proteção de firewall de hardware está em vigor, por exemplo:
 

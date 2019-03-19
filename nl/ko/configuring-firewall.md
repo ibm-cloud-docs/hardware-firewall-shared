@@ -14,13 +14,14 @@ lastupdated: "2018-11-12"
 {:tip: .tip}
 {:download: .download}
 
-# 방화벽 구성
+# Hardware Firewall (Shared) 구성
+{: #configuring-the-hardware-firewall-shared-}
 
 방화벽을 구성하는 작업은 다른 소스의 트래픽은 거부하는 반면 특정 인터넷 주소의 IP 주소/포트에 대한 액세스는 허용하도록 규칙 세트를 작성하는 것만큼 간단합니다.
 
 ## 서버에 방화벽 추가
 
-서버에 방화벽을 추가하려면, 고객 포털에서 **디바이스 > 디바이스 목록 > 원하는 서버 클릭 > 구성 > 페이지 맨 아래: Hardware Firewall 주문** 링크를 클릭하십시오. 선택한 서버의 업링크 속도를 기반으로 적합한 방화벽에 대한 주문 프로세스가 시작됩니다. 오류가 발생하는 경우 [알려진 제한사항](known-limitations.html)을 참조하거나 SoftLayer 지원 팀에 문의하십시오.
+서버에 방화벽을 추가하려면 [시작하기](/docs/infrastructure/hardware-firewall-shared?topic=hardware-firewall-shared-getting-started-with-hardware-firewall-shared)의 단계를 따르십시오. 오류가 발생하는 경우 [알려진 제한사항](/docs/infrastructure/hardware-firewall-shared?topic=hardware-firewall-shared-known-limitations-with-hardware-firewall-shared-)을 참조하거나 SoftLayer 지원 팀에 문의하십시오.
 
 ## 규칙 편집
 
@@ -42,11 +43,9 @@ lastupdated: "2018-11-12"
       
       **소스** - 이 필드는 '임의', 특정 IP 주소 또는 특성 서브넷의 네트워크 주소 중 하나일 수 있습니다.
       
-      **CIDR** - 이 필드는 선택한 소스에 대한 표준 CIDR 표기법을 나타냅니다. 예를 들어, "24"는 256개 IP에 대한 규칙을 구현하는 반면, "32"는 단일 IP에 대한 규칙을 구현합니다.
+      **대상** - 이 필드는 대상 IP를 선택합니다(문제가 있는 경우 [알려진 제한사항](/docs/infrastructure/hardware-firewall-shared?topic=hardware-firewall-shared-known-limitations-with-hardware-firewall-shared-) 참조).
       
-      **대상** - 이 필드는 대상 IP를 선택합니다(문제가 있는 경우 [알려진 제한사항](known-limitations.html) 참조).
-      
-      **CIDR** - 이 필드는 선택한 대상의 표준 CIDR 표기법을 나타냅니다.
+      **CIDR** - 이 필드는 선택한 소스/대상의 표준 CIDR 표기법을 나타냅니다.
       
       **포트 범위** - 이러한 두 개 필드는 규칙을 적용하는 포트의 범위를 나타냅니다(1 - 65535 사이).
       
@@ -77,5 +76,3 @@ lastupdated: "2018-11-12"
 |VNC 웹 |5800 |
 |VNC 클라이언트 |5900 |
 |Urchin |9999 또는 10000 ||
-
-    

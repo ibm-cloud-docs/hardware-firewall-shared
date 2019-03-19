@@ -14,7 +14,8 @@ lastupdated: "2018-11-12"
 {:tip: .tip}
 {:download: .download}
 
-# ファイアウォール・ルールのバイパス
+# ハードウェア・ファイアウォール (共有) のルールのバイパス
+{: #bypassing-the-hardware-firewall-shared-rules}
 
 ファイアウォール・ルールをバイパスするには、以下のようにします。 
 

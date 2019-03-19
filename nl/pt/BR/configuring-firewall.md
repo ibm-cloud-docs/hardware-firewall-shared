@@ -14,7 +14,8 @@ lastupdated: "2018-11-12"
 {:tip: .tip}
 {:download: .download}
 
-# Configurar o firewall
+# Configurando o Hardware Firewall (Shared)
+{: #configuring-the-hardware-firewall-shared-}
 
 A configuração do firewall é tão simples quanto criar um conjunto de regras para
 permitir o acesso a determinados endereços IP/portas de endereços de Internet
@@ -22,12 +23,9 @@ específicos enquanto nega o tráfego de outras fontes.
 
 ## Incluindo um firewall em um servidor
 
-Para incluir um firewall em um servidor, clique no link **Dispositivos >
-Lista de dispositivos > Clique no servidor desejado > Configuração > Parte inferior da
-página: Pedir Hardware Firewall** no Portal do cliente. Isso inicia o
-processo de ordem para um firewall apropriado com base na velocidade de uplink do
-servidor selecionado. Se você receber um erro, consulte as
-[Limitações conhecidas](known-limitations.html) e/ou entre em contato
+Para incluir um firewall em um servidor, siga as etapas em
+[Introdução](/docs/infrastructure/hardware-firewall-shared?topic=hardware-firewall-shared-getting-started-with-hardware-firewall-shared). Se você receber um erro, consulte as
+[Limitações conhecidas](/docs/infrastructure/hardware-firewall-shared?topic=hardware-firewall-shared-known-limitations-with-hardware-firewall-shared-) e/ou entre em contato
 com o suporte do SoftLayer.
 
 ## Editando regras
@@ -68,13 +66,11 @@ regras podem ser movidas para cima ou para baixo na lista com as setas fornecida
       
       **Origem** - esse campo pode ser 'any' ou um endereço IP específico ou o endereço de rede para uma sub-rede específica.
       
-      **CIDR** - esse campo indica a notação CIDR padrão para a origem selecionada. "32" implementará a regra para um IP único, enquanto, por exemplo, "24" implementará a regra para 256 IPs.
-      
       **Destino** - esse campo seleciona o IP de destino
-(consulte [Limitações conhecidas](known-limitations.html) se houver
+(consulte [Limitações conhecidas](/docs/infrastructure/hardware-firewall-shared?topic=hardware-firewall-shared-known-limitations-with-hardware-firewall-shared-) se houver
 problemas).
       
-      **CIDR** - esse campo indica a notação CIDR padrão para o destino selecionado.
+      **CIDR**: esse campo indica a notação CIDR padrão para a origem/destino selecionado.
       
       **Intervalo de portas** - esses dois campos indicam o intervalo de portas (entre 1 e 65535) ao qual a regra será aplicada.
       
@@ -110,5 +106,3 @@ aplicada ao firewall. Em dois minutos, as regras deverão entrar em vigor.
 | VNC Web | 5800 |
 | VNC Client | 5900 |
 | Urchin | 9999 ou 10000 ||
-
-    

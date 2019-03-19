@@ -14,7 +14,8 @@ lastupdated: "2018-11-12"
 {:tip: .tip}
 {:download: .download}
 
-# 取消防火牆
+# 取消 Hardware Firewall (Shared)
+{: #canceling-a-hardware-firewall-shared-}
 
 防火牆可以隨時取消。若要取消 Hardware Firewall (Shared)，請執行下列步驟： 
 

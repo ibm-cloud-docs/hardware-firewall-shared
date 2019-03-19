@@ -14,7 +14,8 @@ lastupdated: "2018-11-12"
 {:tip: .tip}
 {:download: .download}
 
-# Limitations connues
+# Limitations connues du pare-feu matériel (partagé)
+{: #known-limitations-with-hardware-firewall-shared-}
 
 Un pare-feu matériel (partagé) ne peut pas être déployé sur un serveur dans un VLAN correspondant à l'un des critères suivants. 
 

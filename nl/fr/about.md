@@ -14,7 +14,8 @@ lastupdated: "2018-11-12"
 {:tip: .tip}
 {:download: .download}
 
-# A propos de
+# A propos du pare-feu matériel (partagé)
+{: #about-hardware-firewall-shared-}
 
 Un pare-feu matériel (partagé) est un périphérique réseau connecté en amont d'un serveur. Le pare-feu bloque le trafic indésirable avant même qu'il n'atteigne le serveur. Le principal avantage d'un pare-feu matériel est qu'un serveur n'a à traiter que le "bon" trafic et qu'aucune ressource n'est gaspillée dans le traitement du "mauvais" trafic. 
 
@@ -23,7 +24,7 @@ Le pare-feu matériel (partagé) tire parti d'une plateforme d'entreprise à ser
 Comme il y a plusieurs clients associés au matériel, si le pare-feu échoue ou est dépassé par une attaque, tous les clients qui partagent une instance de pare-feu matériel (partagé) sont susceptibles d'être impactés. 
 
 Jusqu'à 79 règles de pare-feu peuvent être configurées pour les adresses IP principales et à routage statique affectées au serveur. Les rapports pour les pare-feux partagés sont disponibles en fonction de l'activité d'une adresse IP unique dans une plage de dates sélectionnée.
-Les clients peuvent gérer le pare-feu via l'interface graphique Web FortiOS ou l'interface de ligne de commande (CLI) en utilisant SSH. Vous pouvez également commander l'option Haute disponibilité, qui fournit deux dispositifs en déploiement actif-passif avec des configurations synchronisées.
+Les clients peuvent gérer le pare-feu de deux manières : via le portail de contrôle de SoftLayer (onglet Pare-feu de la page des détails du serveur protégé) et à l'aide des API SLDN (SoftLayer Development Network).
 
 Comme la bande passante mensuelle du serveur est enregistrée au niveau du port de commutation du serveur, le trafic bloqué par le pare-feu matériel (partagé) n'est pas comptabilisé dans vos allocations mensuelles, donc vous n'avez pas à payer le trafic non souhaité.
 

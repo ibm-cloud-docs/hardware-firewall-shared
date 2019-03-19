@@ -14,13 +14,14 @@ lastupdated: "2018-11-12"
 {:tip: .tip}
 {:download: .download}
 
-# Die Firewall konfigurieren
+# Hardware-Firewall (gemeinsam genutzt) konfigurieren
+{: #configuring-the-hardware-firewall-shared-}
 
 Das Konfigurieren der Firewall ist so einfach wie das Erstellen eines Regelsatzes, der den Zugriff auf bestimmte IP-Adressen/Ports von spezifischen Internetadressen erlaubt, während der Datenverkehr aus anderen Quellen abgewiesen wird.
 
 ## Eine Firewall zu einem Server hinzufügen
 
-Um einem Server eine Firewall hinzuzufügen, klicken Sie auf der Seite unten auf den Link **Geräte > Geräteliste > Klick auf den gewünschten Server > Konfiguration >: Hardware-Firewall bestellen** im Kundenportal. Dadurch startet der Bestellvorgang für eine geeignete Firewall anhand der Uplink-Geschwindigkeit des ausgewählten Servers. Wenn eine Fehlermeldung angezeigt wird, erhalten Sie weitere Informationen unter [bekannte Einschränkungen](known-limitations.html) oder wenden Sie sich an den SoftLayer-Support.
+Führen Sie zum Hinzufügen einer Firewall zu einem Server die Schritte aus, die in [Einführung](/docs/infrastructure/hardware-firewall-shared?topic=hardware-firewall-shared-getting-started-with-hardware-firewall-shared) beschrieben sind. Wenn eine Fehlermeldung angezeigt wird, erhalten Sie weitere Informationen unter [bekannte Einschränkungen](/docs/infrastructure/hardware-firewall-shared?topic=hardware-firewall-shared-known-limitations-with-hardware-firewall-shared-) oder wenden Sie sich an den SoftLayer-Support.
 
 ## Regeln bearbeiten
 
@@ -42,11 +43,9 @@ Stellen Sie sicher, dass der Status angibt, dass die Firewall alle Regeln verarb
       
       **Quelle:** Dieses Feld kann entweder 'alle' oder eine bestimmte IP-Adresse oder die Netzadresse für ein Teilnetz sein.
       
-      **CIDR:** Dieses Feld zeigt die Standard-CIDR-Notation für die ausgewählte Quelle an. Mit "32" wird die Regel für eine einzelne IP-Adresse implementiert, und beispielsweise mit "24" wird die Regel für 256 IP-Adressen implementiert.
+      **Ziel:** Dieses Feld wählt die Ziel-IP-Adresse aus (bei Problemen siehe [Bekannte Einschränkungen](/docs/infrastructure/hardware-firewall-shared?topic=hardware-firewall-shared-known-limitations-with-hardware-firewall-shared-)).
       
-      **Ziel:** Dieses Feld wählt die Ziel-IP-Adresse aus (bei Problemen siehe [Bekannte Einschränkungen](known-limitations.html)).
-      
-      **CIDR:** Dieses Feld zeigt die Standard-CIDR-Notation für das ausgewählte Ziel an.
+      **CIDR:** Dieses Feld zeigt die Standard-CIDR-Notation für die ausgewählte Quelle bzw. das ausgewählte Ziel an. 
       
       **Portbereich:** Die zwei Felder geben den Bereich der Ports (zwischen 1 und 65535) an, auf die die Regel angewendet wird.
       
@@ -77,5 +76,3 @@ Stellen Sie sicher, dass der Status angibt, dass die Firewall alle Regeln verarb
 | VNC Web | 5800 |
 | VNC-Client | 5900 |
 | Urchin | 9999 oder 10000 ||
-
-    

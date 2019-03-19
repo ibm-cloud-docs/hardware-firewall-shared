@@ -14,13 +14,14 @@ lastupdated: "2018-11-12"
 {:tip: .tip}
 {:download: .download}
 
-# Configuration du pare-feu
+# Configuration du pare-feu matériel (partagé)
+{: #configuring-the-hardware-firewall-shared-}
 
 La configuration du pare-feu est aussi simple que la création d'un ensemble de règles pour autoriser l'accès à une sélection d'adresses IP ou de ports à partir d'adresses IP Internet spécifiques tout en refusant le trafic provenant d'autres sources.
 
 ## Ajout d'un pare-feu à un serveur
 
-Pour ajouter un pare-feu à un serveur, dans le portail client, cliquez sur le lien **Unités > Liste des unités > Cliquez sur le serveur de votre choix > Configuration > Bas de la page : Commander pare-feu matériel** dans le portail client. Vous lancez ainsi le processus de commande du pare-feu approprié en fonction de la vitesse de liaison montante du serveur sélectionné. Si vous recevez un message d'erreur, consultez la rubrique [Limitations connues](known-limitations.html) et/ou contactez le support SoftLayer.
+Pour ajouter un pare-feu à un serveur, suivez la procédure décrite dans [Initiation](/docs/infrastructure/hardware-firewall-shared?topic=hardware-firewall-shared-getting-started-with-hardware-firewall-shared). Si vous recevez un message d'erreur, consultez la rubrique [Limitations connues](/docs/infrastructure/hardware-firewall-shared?topic=hardware-firewall-shared-known-limitations-with-hardware-firewall-shared-) et/ou contactez le support SoftLayer.
 
 ## Edition de règles
 
@@ -42,11 +43,9 @@ Vérifiez que le "statut" indique "Traiter toutes les règles" pour le pare-feu.
       
       **Source** - Cette zone peut avoir la valeur 'tout' ou une adresse IP spécifique, ou l'adresse réseau d'un sous-réseau particulier.
       
-      **CIDR** - Cette zone indique la notation CIDR standard correspondant à la source sélectionnée. "32" implémentera la règle pour une seule adresse IP alors que "24", par exemple, l'implémentera pour 256 adresses IP.
+      **Destination** - Cette zone sélectionne l'adresse IP de destination (voir la rubrique [Limitations connues](/docs/infrastructure/hardware-firewall-shared?topic=hardware-firewall-shared-known-limitations-with-hardware-firewall-shared-) en cas d'erreur).
       
-      **Destination** - Cette zone sélectionne l'adresse IP de destination (voir la rubrique [Limitations connues](known-limitations.html) en cas d'erreur).
-      
-      **CIDR** - Cette zone indique la notation CIDR standard correspondant à la destination sélectionnée.
+      **CIDR** - Cette zone indique la notation CIDR standard correspondant à la source/destination sélectionnée.
       
       **Plage de Ports** - Ces deux zones indiquent la plage de ports (comprise entre 1 et 65535) à laquelle la règle va s'appliquer.
       
@@ -77,5 +76,3 @@ Vérifiez que le "statut" indique "Traiter toutes les règles" pour le pare-feu.
 | Web VNC | 5800 |
 | Client VNC | 5900 |
 | Urchin | 9999 ou 10000 ||
-
-    

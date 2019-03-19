@@ -14,7 +14,8 @@ lastupdated: "2018-11-12"
 {:tip: .tip}
 {:download: .download}
 
-# 방화벽 취소
+# Hardware Firewall (Shared) 취소
+{: #canceling-a-hardware-firewall-shared-}
 
 언제든지 방화벽을 취소할 수 있습니다. Hardware Firewall (Shared)을 취소하려면 다음을 수행하십시오. 
 

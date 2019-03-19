@@ -14,7 +14,8 @@ lastupdated: "2018-11-12"
 {:tip: .tip}
 {:download: .download}
 
-## Visualización de informes de registro
+# Visualización de informes de registro del cortafuegos de hardware
+{: #viewing-log-reports-for-hardware-firewall}
 
 Los registros están disponibles por cada IP navegando al dispositivo protegido, seleccionando el separador **Cortafuegos** y pulsando **Acciones > Registros de cortafuegos**. Los registros se presentan en formato .CSV y contienen lo siguiente:
 

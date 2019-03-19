@@ -4,6 +4,10 @@ copyright:
   years: 2017
 lastupdated: "2018-11-12"
 
+keywords: limitations, firewall, gateway, fortigate, fsa, subnet, vlan, problems, issues
+
+subcollection: hardware-firewall-shared
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -15,8 +19,9 @@ lastupdated: "2018-11-12"
 {:download: .download}
 
 # Known Limitations with Hardware Firewall (Shared)
+{: #known-limitations-with-hardware-firewall-shared-}
 
-A Hardware Firewall (Shared) cannot be deployed to a server on a VLAN that meets any of the following criteria. 
+A Hardware Firewall (Shared) cannot be deployed to a server on a VLAN that meets any of the following criteria.
 
 * Is currently associated with a Network Gateway, Hardware Firewall, or FortiGate Security Appliance.
 * Contains 30 or more servers.
@@ -24,7 +29,7 @@ A Hardware Firewall (Shared) cannot be deployed to a server on a VLAN that meets
 
 In these instances, a new VLAN must be established for the Firewall or another product must be selected.
 
-Further limitations for the Hardware Firewall (Shared) include: 
+Further limitations for the Hardware Firewall (Shared) include:
 
 * Portable subnets are not protected
 * Not available for 10Gb servers

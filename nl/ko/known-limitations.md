@@ -14,11 +14,12 @@ lastupdated: "2018-11-12"
 {:tip: .tip}
 {:download: .download}
 
-# 알려진 제한사항
+# Hardware Firewall (Shared)의 알려진 제한사항
+{: #known-limitations-with-hardware-firewall-shared-}
 
 Hardware Firewall (Shared)을 다음 기준에 해당하는 VLAN의 서버에 배치할 수 없습니다. 
 
-* 현재 네트워크 게이트웨이, Hardware Firewall 또는 FortiGate 보안 어플라이언스와 연관되어 있습니다.
+* 현재 네트워크 게이트웨이, Hardware Firewall 또는 FortiGate Security Appliance와 연관되어 있습니다.
 * 30개 이상의 서버를 포함합니다.
 * /28 보다 큰 기본 서브넷이 있습니다.
 

@@ -4,6 +4,10 @@ copyright:
   years: 2017
 lastupdated: "2018-11-12"
 
+keywords: views, firewalls, overview, vlan, 
+
+subcollection: hardware-firewall-shared
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -14,7 +18,8 @@ lastupdated: "2018-11-12"
 {:tip: .tip}
 {:download: .download}
 
-# Viewing your Various Firewalls 
+# Viewing your Various Firewalls
+{: #viewing-your-various-firewalls}
 
 You can identify the firewalls in use on an account and their associated VLANs, as well as identify unprotected VLANs and plan the deployment of a firewall solution.
 
@@ -22,9 +27,9 @@ You can identify the firewalls in use on an account and their associated VLANs, 
 
 To get an overview of firewalls on your system, as well as initiate basic management, navigate to **Network > IP Management > VLANs** in the [Customer Portal ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/){: new_window}.
 
-**NOTE:** To view only public VLANS, click on the **Filter** drop down and enter ``fcr`` for **Primary Router**. 
+**NOTE:** To view only public VLANS, click on the **Filter** drop down and enter ``fcr`` for **Primary Router**.
 
-Each row represents a VLAN in your infrastructure. IBM© Cloud populates the **VLAN NUMBER** and **PRIMARY ROUTER** information automatically indicating the true VLAN number and the router that it is configured on. Use the **NAME** field to define a recognizable name. 
+Each row represents a VLAN in your infrastructure. IBM© Cloud populates the **VLAN NUMBER** and **PRIMARY ROUTER** information automatically indicating the true VLAN number and the router that it is configured on. Use the **NAME** field to define a recognizable name.
 
 The **GATEWAY/FIREWALL** column contains details about which hardware firewall protection is in place, for example:
 
