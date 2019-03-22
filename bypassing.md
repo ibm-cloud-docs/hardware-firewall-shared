@@ -17,6 +17,8 @@ subcollection: hardware-firewall-shared
 {:screen: .screen}
 {:tip: .tip}
 {:download: .download}
+{:note: .note}
+{:important: .important}
 
 # Bypassing the Hardware Firewall (Shared) Rules
 {: #bypassing-the-hardware-firewall-shared-rules}

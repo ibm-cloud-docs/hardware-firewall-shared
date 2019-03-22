@@ -4,7 +4,7 @@ copyright:
   years: 2017
 lastupdated: "2018-11-12"
 
-keywords: views, firewalls, overview, vlan, 
+keywords: views, firewalls, overview, vlan,
 
 subcollection: hardware-firewall-shared
 
@@ -16,6 +16,8 @@ subcollection: hardware-firewall-shared
 {:pre: .pre}
 {:screen: .screen}
 {:tip: .tip}
+{:note: .note}
+{:important: .important}
 {:download: .download}
 
 # Viewing your Various Firewalls
@@ -27,7 +29,8 @@ You can identify the firewalls in use on an account and their associated VLANs, 
 
 To get an overview of firewalls on your system, as well as initiate basic management, navigate to **Network > IP Management > VLANs** in the [Customer Portal ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/){: new_window}.
 
-**NOTE:** To view only public VLANS, click on the **Filter** drop down and enter ``fcr`` for **Primary Router**.
+To view only public VLANS, click on the **Filter** drop down and enter `fcr` for **Primary Router**.
+{: tip}
 
 Each row represents a VLAN in your infrastructure. IBM© Cloud populates the **VLAN NUMBER** and **PRIMARY ROUTER** information automatically indicating the true VLAN number and the router that it is configured on. Use the **NAME** field to define a recognizable name.
 
@@ -47,7 +50,7 @@ On the VLANs screen, identify a row with **Individually Protected Servers** in t
 
 From here, you can click on each device and review whether a firewall is in place for that particular Server.
 
-Once you have clicked on a device, scroll to the bottom of the Configuration tab. You will see **Firewall** in the addons section with **Installed** or **Not Installed** for the status. **Not Installed** indicates that no firewall is in place for this device. **Installed** indicates that a firewall is in place and you will have a **Firewall** tab available on the device where you can manage the firewall configuration.
+Once you have clicked on a device, scroll to the bottom of the Configuration tab. You will see **Firewall** in the Addons section with **Installed** or **Not Installed** for the status. **Not Installed** indicates that no firewall is in place for this device. **Installed** indicates that a firewall is in place and you will have a **Firewall** tab available on the device where you can manage the firewall configuration.
 
 ## Dedicated Firewall View
 

@@ -17,6 +17,8 @@ subcollection: hardware-firewall-shared
 {:screen: .screen}
 {:tip: .tip}
 {:download: .download}
+{:note: .note}
+{:important: .important}
 
 # Configuring the Hardware Firewall (Shared)
 {: #configuring-the-hardware-firewall-shared-}
@@ -59,6 +61,7 @@ Ensure the "status" indicates that the firewall is "Processing All Rules." Users
       **Notes:** Freeform field to enter any note about this rule.
 
 4. Click on a rule to edit it or click on the plus sign at the bottom of the table to add an additional rule. Clicking on the minus icon will delete the rule. The rules are automatically validated as you enter them.
+
 5. Once the 'working config' is complete, press the **Update Rules** button to have the 'working config' applied to the firewall. The rules should take effect within two minutes.
 
 ## Common Ports

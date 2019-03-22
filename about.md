@@ -17,6 +17,8 @@ subcollection: hardware-firewall-shared
 {:screen: .screen}
 {:tip: .tip}
 {:download: .download}
+{:note: .note}
+{:important: .important}
 
 # About Hardware Firewall (Shared)
 {: #about-hardware-firewall-shared-}

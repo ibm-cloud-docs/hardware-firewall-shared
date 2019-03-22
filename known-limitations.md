@@ -16,6 +16,8 @@ subcollection: hardware-firewall-shared
 {:pre: .pre}
 {:screen: .screen}
 {:tip: .tip}
+{:note: .note}
+{:important: .important}
 {:download: .download}
 
 # Known Limitations with Hardware Firewall (Shared)

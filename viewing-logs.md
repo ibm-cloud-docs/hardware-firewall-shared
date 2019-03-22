@@ -17,6 +17,8 @@ subcollection: hardware-firewall-shared
 {:screen: .screen}
 {:tip: .tip}
 {:download: .download}
+{:note: .note}
+{:important: .important}
 
 # Viewing Log Reports for Hardware Firewall
 {: #viewing-log-reports-for-hardware-firewall}
