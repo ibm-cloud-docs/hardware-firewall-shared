@@ -20,16 +20,18 @@ subcollection: hardware-firewall-shared
 {:note: .note}
 {:important: .important}
 
-# Configuring the Hardware Firewall (Shared)
+# Configuring the Hardware Firewall
 {: #configuring-the-hardware-firewall-shared-}
 
 Configuring the firewall is as simple as creating a set of rules to allow access to certain IP addresses/ports from specific internet addresses while denying traffic from other sources.
 
 ## Adding a Firewall to a Server
+{: #adding-a-firewall-to-a-server}
 
 To add a firewall to a server, follow the steps in [Getting Started](/docs/infrastructure/hardware-firewall-shared?topic=hardware-firewall-shared-getting-started-with-hardware-firewall-shared). If you receive an error, see the [Known Limitations](/docs/infrastructure/hardware-firewall-shared?topic=hardware-firewall-shared-known-limitations-with-hardware-firewall-shared-) and/or contact SoftLayer support.
 
 ## Editing Rules
+{: #editing-rules}
 
 When a firewall is first added to a server, a set of rules is initially put in place that allows all traffic to reach the server. The rules can then be edited to control the traffic reaching the server.
 
@@ -65,6 +67,7 @@ Ensure the "status" indicates that the firewall is "Processing All Rules." Users
 5. Once the 'working config' is complete, press the **Update Rules** button to have the 'working config' applied to the firewall. The rules should take effect within two minutes.
 
 ## Common Ports
+{: #common-ports}
 
 | Protocol | Port |
 | :-----: | :-----: |

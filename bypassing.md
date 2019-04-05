@@ -20,7 +20,7 @@ subcollection: hardware-firewall-shared
 {:note: .note}
 {:important: .important}
 
-# Bypassing the Hardware Firewall (Shared) Rules
+# Bypassing the Hardware Firewall Rules
 {: #bypassing-the-hardware-firewall-shared-rules}
 
 To bypass the firewall rules,
@@ -30,5 +30,6 @@ To bypass the firewall rules,
 3.  In the **Firewall** tab, click on the **Actions** dropdown menu and choose **Bypass Rules**. Click **Yes** to confirm the action. Bypassing the rules takes approximately two minutes to take effect. While in bypass mode, the "Status" will be "Bypassing All Rules".
 
 ## Enable the Rules Again
+{: #enable-the-rules-again}
 
 To enable the rules again, follow the instructions above to reach the Firewall tab of the device and click on the **Actions** dropdown menu and choose **Process Rules**. The "Status" should change back to "Processing All Rules" within two minutes.

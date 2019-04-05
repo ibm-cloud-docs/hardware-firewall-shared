@@ -21,10 +21,10 @@ subcollection: hardware-firewall-shared
 {:note: .note}
 {:important: .important}
 
-# FAQs for Hardware Firewall (Shared)
+# FAQs for Hardware Firewall
 {: #faqs-for-hardware-firewall-shared-}
 
-The following are frequently asked questions when working with the Hardware Firewall (Shared).
+The following are frequently asked questions when working with the Hardware Firewall.
 
 ## What is a firewall?
 {: faq}
@@ -41,12 +41,12 @@ The primary advantage of having a firewall is that your server only has to handl
 
 You can find a detailed comparison of all firewall products offered in the IBM© Cloud by reviewing this [topic](/docs/infrastructure/fortigate-10g?topic=fortigate-10g-exploring-firewalls).
 
-## Is the Hardware Firewall (Shared) compatible with IBM's load balancer products?
+## Is the Hardware Firewall compatible with IBM's load balancer products?
 {: faq}
 
-Yes. The Hardware Firewall (Shared) is compatible with the cloud load balancing service, local load balancer, as well as the Citrix Netscaler VPX and MPX.
+Yes. The Hardware Firewall is compatible with the cloud load balancing service, local load balancer, as well as the Citrix Netscaler VPX and MPX.
 
-## Can portable IP’s be protected by the Hardware Firewall (Shared)?
+## Can portable IP’s be protected by the Hardware Firewall?
 {: faq}
 
 No. Portable IPs are not available for protection because they can be moved between servers. Exceptions are made on a case by case basis as there are numerous caveats and require additional details about the customer's system design.
@@ -54,37 +54,37 @@ No. Portable IPs are not available for protection because they can be moved betw
 ## Can I have a Hardware Firewall and a Network Gateway associated with the same VLAN?
 {: faq}
 
-No, it is not possible to have a Hardware Firewall (Shared or Dedicated)  and a Network Gateway device assigned to the same VLAN.  The expanded functionality of the Network Gateway device provides firewall features for your network in place of a shared or dedicated firewall.
+No, it is not possible to have a Hardware Firewall (standard or Dedicated)  and a Network Gateway device assigned to the same VLAN.  The expanded functionality of the Network Gateway device provides firewall features for your network in place of a standard or dedicated firewall.
 
 ## Does public traffic pass through my load balancer or Hardware Firewall first?
 {: faq}
 
 Coming from the public internet in, the load balancing products are first, the Hardware Firewall products are next, and the NetScaler products are last (along with the customers servers).
 
-## Does a server's uplink port speed need to match the Hardware Firewall (Shared)?
+## Does a server's uplink port speed need to match the Hardware Firewall?
 {: faq}
 
-The Hardware Firewall (Shared) does need to match the public uplink speed of the server. However, because it only protects the public side of the network, the public uplink speed is what must match the firewall selection.  Customers can create a ticket to request a downgrade of only the public interfaces if desired.
+The Hardware Firewall does need to match the public uplink speed of the server. However, because it only protects the public side of the network, the public uplink speed is what must match the firewall selection.  Customers can create a ticket to request a downgrade of only the public interfaces if desired.
 
 ## Does IBM Cloud charge for firewall bandwidth?
 {: faq}
 
-The Hardware Firewall (Shared), Hardware Firewall (Dedicated), and FortiGate Security Appliance (FSA) 1G are not metered for bandwidth.  FSA 10G is charged for firewall bandwidth after 20 TB are used. Additionally, these products can reduce total bandwidth utilization by limiting the traffic that servers must respond to.
+The Hardware Firewall, Hardware Firewall (Dedicated), and FortiGate Security Appliance (FSA) 1G are not metered for bandwidth.  FSA 10G is charged for firewall bandwidth after 20 TB are used. Additionally, these products can reduce total bandwidth utilization by limiting the traffic that servers must respond to.
 
-## How do I upgrade the uplink of my Hardware Firewall (Shared)?
+## How do I upgrade the uplink of my Hardware Firewall?
 {: faq}
 
-The Hardware Firewall (Shared) is locked to the public uplink port speed of a server. You can upgrade in place by cancelling the firewall, upgrading the port speed for the server, and ordering a new firewall. Alternatively, you can deploy a new server with the desired uplinks and associated firewall.
+The Hardware Firewall is locked to the public uplink port speed of a server. You can upgrade in place by cancelling the firewall, upgrading the port speed for the server, and ordering a new firewall. Alternatively, you can deploy a new server with the desired uplinks and associated firewall.
 
-## Is High Availability possible with the Hardware Firewall (Shared)?
+## Is High Availability possible with the Hardware Firewall?
 {: faq}
 
-No. The Hardware Firewall platform is enterprise-grade and highly durable, but true High Availability (redundant devices) is not an option for the Hardware Firewall (Shared). For HA, a Hardware Firewall (Dedicated with High Availability) or FortiGate Security Appliance (High Availability) is required.  The Network Gateway product also has an HA option with firewall capabilities.
+No. The Hardware Firewall platform is enterprise-grade and highly durable, but true High Availability (redundant devices) is not an option for the Hardware Firewall. For HA, a Hardware Firewall (Dedicated with High Availability) or FortiGate Security Appliance (High Availability) is required.  The Network Gateway product also has an HA option with firewall capabilities.
 
-## I am running a hypervisor on an IBM Cloud server. Will the Hardware Firewall (Shared) protect the Virtual Machines running on my hypervisor?
+## I am running a hypervisor on an IBM Cloud server. Will the Hardware Firewall protect the Virtual Machines running on my hypervisor?
 {: faq}
 
-No. Portable IPs are used for the VMs in a hypervisor environment and portable IPs are not protected by the shared hardware firewall.  A Hardware Firewall (Dedicated) or FortiGate Security Appliance is recommended.
+No. Portable IPs are used for the VMs in a hypervisor environment and portable IPs are not protected by the hardware firewall.  A Hardware Firewall (Dedicated) or FortiGate Security Appliance is recommended.
 
 ## What are the grayed out ports in my Windows Firewall?
 {: faq}
