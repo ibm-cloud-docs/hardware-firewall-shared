@@ -54,7 +54,7 @@ No. Portable IPs are not available for protection because they can be moved betw
 ## Can I have a Hardware Firewall and a Network Gateway associated with the same VLAN?
 {: faq}
 
-No, it is not possible to have a Hardware Firewall (standard or Dedicated)  and a Network Gateway device assigned to the same VLAN.  The expanded functionality of the Network Gateway device provides firewall features for your network in place of a standard or dedicated firewall.
+No, it is not possible to have a Hardware Firewall (Shared or Dedicated)  and a Network Gateway device assigned to the same VLAN.  The expanded functionality of the Network Gateway device provides firewall features for your network in place of a standard or dedicated firewall.
 
 ## Does public traffic pass through my load balancer or Hardware Firewall first?
 {: faq}
