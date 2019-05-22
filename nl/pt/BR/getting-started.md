@@ -15,12 +15,12 @@ lastupdated: "2018-11-12"
 {:download: .download}
 
 # Introdução ao Hardware Firewall Shared
-{: #getting-started-with-hardware-firewall-shared}
+{: #getting-started}
 
 O Hardware Firewall (Shared) fornece aos clientes uma camada essencial de
 segurança que é provisionada sob demanda sem interrupções de serviço. Ele evita a
 ocorrência de tráfego indesejado nos servidores, reduzindo a superfície de ataque
-e permitindo que os recursos do servidor sejam dedicados para o uso desejado. 
+e permitindo que os recursos do servidor sejam dedicados para o uso desejado.
 
 Para incluir um firewall em um servidor:
 
@@ -28,8 +28,8 @@ Para incluir um firewall em um servidor:
 2. Na navegação do Portal do cliente, acesse **Dispositivos > Lista de dispositivos** e clique no servidor que você deseja que seja protegido.  
 3. Na página **Detalhes do dispositivo**, na guia
 **Configuração**, role para a parte inferior da página até a seção
-**Complementos** e clique no link **Pedir Hardware Firewall**. 
+**Complementos** e clique no link **Pedir Hardware Firewall**.
 4. Na caixa de diálogo **Pedir Hardware Firewall**, escolha entre as
 opções apresentadas (se aplicável) e pressione **Continuar** para
 concluir o processo de pedido. A velocidade do firewall será padronizada para a velocidade da interface de rede pública de
-seu servidor. 
+seu servidor.
