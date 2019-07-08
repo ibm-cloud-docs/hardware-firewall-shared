@@ -4,6 +4,10 @@ copyright:
   years: 2017,2018
 lastupdated: "2018-11-12"
 
+keywords: help, support, troubleshooting
+
+subcollection: hardware-firewall-shared
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -13,15 +17,17 @@ lastupdated: "2018-11-12"
 {:screen: .screen}
 {:tip: .tip}
 {:download: .download}
+{:note: .note}
+{:important: .important}
 
-# Ayuda y soporte del cortafuegos de hardware (compartido)
+# Ayuda y soporte del cortafuegos de hardware
 {: #getting-help-and-support-for-hardware-firewall-shared-}
 
-Si tiene problemas o preguntas al utilizar el cortafuegos de hardware (compartido), puede obtener ayuda buscando información o planteando preguntas en uno de los foros listados más abajo. También puede abrir una incidencia de soporte.
+Si tiene problemas o preguntas al utilizar el cortafuegos de hardware, puede obtener ayuda buscando información o planteando preguntas en uno de los foros listados más abajo. También puede abrir una incidencia de soporte.
 
 Al utilizar los foros para formular una pregunta, etiquete la pregunta para que la vean los equipos de desarrollo de IBM© Cloud.
 
-* Si tiene preguntas técnicas sobre el cortafuegos de hardware (compartido), publique su pregunta en [Stack Overflow](https://stackoverflow.com/search?q=hardware-firewalls+ibm-cloud) y etiquétela con "hardware-firewalls" e "ibm-cloud".
+* Si tiene preguntas técnicas sobre el cortafuegos de hardware, publique su pregunta en [Stack Overflow](https://stackoverflow.com/search?q=hardware-firewalls+ibm-cloud) y etiquétela con "hardware-firewalls" e "ibm-cloud".
 * Para formular preguntas sobre el servicio y obtener instrucciones de iniciación, utilice el foro [IBM developerWorks dW Answers](https://developer.ibm.com/answers/topics/hardware-firewalls.html?smartspace=ibm-cloud). Incluya las etiquetas "hardware-firewalls" e "ibm-cloud".
 
 Consulte [Obtención de ayuda](https://{DomainName}/docs/get-support?topic=get-support-using-avatar) para obtener más detalles sobre el uso de los foros.

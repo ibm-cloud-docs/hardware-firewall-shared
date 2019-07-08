@@ -4,6 +4,10 @@ copyright:
   years: 2017
 lastupdated: "2018-11-12"
 
+keywords: cancel, canceling, firewall, vlan
+
+subcollection: hardware-firewall-shared
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -13,11 +17,13 @@ lastupdated: "2018-11-12"
 {:screen: .screen}
 {:tip: .tip}
 {:download: .download}
+{:note: .note}
+{:important: .important}
 
-# Cancelación del cortafuegos de hardware (compartido)
+# Cancelación del cortafuegos de hardware
 {: #canceling-a-hardware-firewall-shared-}
 
-Los cortafuegos se pueden cancelar en cualquier momento. Para cancelar un cortafuegos de hardware (compartido): 
+Los cortafuegos se pueden cancelar en cualquier momento. Para cancelar un cortafuegos de hardware, realice el siguiente procedimiento:
 
 1. En el navegador, abra el [Portal de clientes ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://control.softlayer.com/){: new_window} e inicie sesión en su cuenta.
 2. En la navegación del Portal de clientes, vaya a **Dispositivos > Lista de dispositivos** y pulse el dispositivo protegido por cortafuegos que desee cancelar.

@@ -4,6 +4,10 @@ copyright:
   years: 2017
 lastupdated: "2018-11-12"
 
+keywords: cancel, canceling, firewall, vlan
+
+subcollection: hardware-firewall-shared
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -13,11 +17,13 @@ lastupdated: "2018-11-12"
 {:screen: .screen}
 {:tip: .tip}
 {:download: .download}
+{:note: .note}
+{:important: .important}
 
-# Hardware Firewall (Shared) 취소
+# Hardware Firewall 취소
 {: #canceling-a-hardware-firewall-shared-}
 
-언제든지 방화벽을 취소할 수 있습니다. Hardware Firewall (Shared)을 취소하려면 다음을 수행하십시오. 
+언제든지 방화벽을 취소할 수 있습니다. Hardware Firewall을 취소하려면 다음 프로시저를 수행하십시오. 
 
 1. 브라우저에서 [고객 포털 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://control.softlayer.com/){: new_window}을 열고 계정에 로그인하십시오.
 2. 고객 포털 탐색에서 **디바이스 > 디바이스 목록**으로 이동하여 취소하려는 디바이스를 보호하는 방화벽을 클릭하십시오.

@@ -4,6 +4,10 @@ copyright:
   years: 2017,2018
 lastupdated: "2018-11-12"
 
+keywords: help, support, troubleshooting
+
+subcollection: hardware-firewall-shared
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -13,15 +17,17 @@ lastupdated: "2018-11-12"
 {:screen: .screen}
 {:tip: .tip}
 {:download: .download}
+{:note: .note}
+{:important: .important}
 
-# 取得 Hardware Firewall (Shared) 的協助及支援
+# 取得 Hardware Firewall 的協助及支援
 {: #getting-help-and-support-for-hardware-firewall-shared-}
 
-如果您在使用 Hardware Firewall (Shared) 時有問題或疑問，可以搜尋資訊或透過下列其中一個討論區提問來取得協助。您也可以開立支援問題單。
+如果您在使用 Hardware Firewall 時有問題或疑問，可以搜尋資訊或透過下列其中一個討論區提問來取得協助。您也可以開立支援問題單。
 
 使用討論區提問時，請標記您的問題，以便 IBM© Cloud 開發團隊能看到它。
 
-* 如果您有 Hardware Firewall (Shared) 的相關技術問題，請將問題張貼在 [Stack Overflow](https://stackoverflow.com/search?q=hardware-firewalls+ibm-cloud)，並使用 "hardware-firewalls" 和 "ibm-cloud" 來標記問題。
+* 如果您有 Hardware Firewall 的相關技術問題，請將問題張貼在 [Stack Overflow](https://stackoverflow.com/search?q=hardware-firewalls+ibm-cloud)，並使用 "hardware-firewalls" 和 "ibm-cloud" 來標記問題。
 * 若為服務及開始使用指示的相關問題，請使用 [IBM developerWorks dW Answers](https://developer.ibm.com/answers/topics/hardware-firewalls.html?smartspace=ibm-cloud) 討論區。請包含 "hardware-firewalls" 和 "ibm-cloud" 標籤。
 
 如需使用討論區的詳細資料，請參閱[取得協助](https://{DomainName}/docs/get-support?topic=get-support-using-avatar)。

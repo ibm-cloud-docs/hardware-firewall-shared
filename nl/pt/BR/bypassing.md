@@ -4,6 +4,10 @@ copyright:
   years: 2017
 lastupdated: "2018-11-12"
 
+keywords: bypass, bypassing, firewall, rules, enable, enabling
+
+subcollection: hardware-firewall-shared
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -13,11 +17,13 @@ lastupdated: "2018-11-12"
 {:screen: .screen}
 {:tip: .tip}
 {:download: .download}
+{:note: .note}
+{:important: .important}
 
-# Efetuando bypass das regras do Hardware Firewall (Shared)
+# Efetuando bypass das regras do Hardware Firewall
 {: #bypassing-the-hardware-firewall-shared-rules}
 
-Para efetuar bypass das regras de firewall, 
+Para efetuar bypass das regras de firewall,
 
 1. Em seu navegador, abra [Portal do Cliente ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://control.softlayer.com/){: new_window} e efetue login em sua conta.
 2. Na navegação do Portal do cliente, acesse **Dispositivos > Lista de
@@ -30,6 +36,7 @@ aproximadamente dois minutos para entrar em vigor. Enquanto no modo bypass, o "S
 será "Efetuando bypass de todas as regras".
 
 ## Ativar as regras novamente
+{: #enable-the-rules-again}
 
 Para ativar as regras novamente, siga as instruções acima para acessar a guia
 Firewall do dispositivo e clique no menu suspenso **Ações** e

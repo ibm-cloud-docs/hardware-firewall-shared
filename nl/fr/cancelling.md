@@ -4,6 +4,10 @@ copyright:
   years: 2017
 lastupdated: "2018-11-12"
 
+keywords: cancel, canceling, firewall, vlan
+
+subcollection: hardware-firewall-shared
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -13,11 +17,13 @@ lastupdated: "2018-11-12"
 {:screen: .screen}
 {:tip: .tip}
 {:download: .download}
+{:note: .note}
+{:important: .important}
 
-# Annulation d'un pare-feu matériel (partagé)
+# Annulation d'un pare-feu matériel 
 {: #canceling-a-hardware-firewall-shared-}
 
-Les pare-feux peuvent être annulés à tout moment. Pour annuler un pare-feu matériel (partagé), procédez comme suit : 
+Les pare-feux peuvent être annulés à tout moment. Pour annuler un pare-feu matériel, procédez comme suit :
 
 1. Depuis votre navigateur, ouvrez le [portail client ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://control.softlayer.com/){: new_window} et connectez-vous à votre compte.
 2. Dans la navigation du portail client, accédez à **Unités > Liste des unités** et cliquez sur l'unité protégée par un pare-feu que vous souhaitez annuler.

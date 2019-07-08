@@ -4,6 +4,10 @@ copyright:
   years: 2017
 lastupdated: "2018-11-12"
 
+keywords: cancel, canceling, firewall, vlan
+
+subcollection: hardware-firewall-shared
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -13,11 +17,13 @@ lastupdated: "2018-11-12"
 {:screen: .screen}
 {:tip: .tip}
 {:download: .download}
+{:note: .note}
+{:important: .important}
 
-# ハードウェア・ファイアウォール (共有) のキャンセル
+# ハードウェア・ファイアウォールのキャンセル
 {: #canceling-a-hardware-firewall-shared-}
 
-ファイアウォールはいつでもキャンセルできます。 ハードウェア・ファイアウォール (共有) をキャンセルするには、以下のようにします。 
+ファイアウォールはいつでもキャンセルできます。 ハードウェア・ファイアウォールをキャンセルするには、以下の手順を実行します。
 
 1. ブラウザーから、[カスタマー・ポータル![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://control.softlayer.com/){: new_window}を開き、アカウントにログインします。
 2. カスタマー・ポータル・ナビゲーションで、**「デバイス」>「デバイス・リスト」**に移動し、ファイアウォールで保護されているデバイスのうち、キャンセルするものをクリックします。

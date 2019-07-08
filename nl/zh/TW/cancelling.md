@@ -4,6 +4,10 @@ copyright:
   years: 2017
 lastupdated: "2018-11-12"
 
+keywords: cancel, canceling, firewall, vlan
+
+subcollection: hardware-firewall-shared
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -13,11 +17,13 @@ lastupdated: "2018-11-12"
 {:screen: .screen}
 {:tip: .tip}
 {:download: .download}
+{:note: .note}
+{:important: .important}
 
-# 取消 Hardware Firewall (Shared)
+# 取消 Hardware Firewall
 {: #canceling-a-hardware-firewall-shared-}
 
-防火牆可以隨時取消。若要取消 Hardware Firewall (Shared)，請執行下列步驟： 
+防火牆可以隨時取消。若要取消 Hardware Firewall，請執行下列步驟：
 
 1. 從瀏覽器中，開啟[客戶入口網站 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://control.softlayer.com/){: new_window} 並登入您的帳戶。
 2. 在「客戶入口網站」導覽中，移至**裝置 > 裝置清單**，然後按一下您要取消的防火牆受保護裝置。

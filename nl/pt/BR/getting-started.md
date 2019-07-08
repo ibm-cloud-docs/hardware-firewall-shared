@@ -1,9 +1,12 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2018-11-12"
+  years: 2017, 2019
+lastupdated: "2019-06-11"
 
+keywords: firewall, overview, features, ordering, adding
+
+subcollection: hardware-firewall-shared
 ---
 
 {:shortdesc: .shortdesc}
@@ -13,19 +16,20 @@ lastupdated: "2018-11-12"
 {:screen: .screen}
 {:tip: .tip}
 {:download: .download}
+{:note: .note}
+{:important: .important}
 
-# Introdução ao Hardware Firewall Shared
+# Introdução ao Hardware Firewall
 {: #getting-started}
 
-O Hardware Firewall (Shared) fornece aos clientes uma camada essencial de
-segurança que é provisionada sob demanda sem interrupções de serviço. Ele evita a
+O Hardware Firewall fornece aos clientes uma camada essencial de segurança que é provisionada on demand sem interrupções de serviço. Ele evita a
 ocorrência de tráfego indesejado nos servidores, reduzindo a superfície de ataque
 e permitindo que os recursos do servidor sejam dedicados para o uso desejado.
 
 Para incluir um firewall em um servidor:
 
-1. Em seu navegador, abra [Portal do Cliente ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://control.softlayer.com/){: new_window} e efetue login em sua conta.
-2. Na navegação do Portal do cliente, acesse **Dispositivos > Lista de dispositivos** e clique no servidor que você deseja que seja protegido.  
+1. No seu navegador, abra o [Portal do cliente de infraestrutura do {{site.data.keyword.cloud}} ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://control.softlayer.com/){: new_window} e efetue login em sua conta.
+2. Na navegação do portal do cliente, acesse **Dispositivos > Lista de dispositivos** e clique no servidor que deseja proteger.  
 3. Na página **Detalhes do dispositivo**, na guia
 **Configuração**, role para a parte inferior da página até a seção
 **Complementos** e clique no link **Pedir Hardware Firewall**.
