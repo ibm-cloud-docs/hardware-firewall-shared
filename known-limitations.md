@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2018-11-12"
+lastupdated: "2019-11-12"
 
 keywords: limitations, firewall, gateway, fortigate, fsa, subnet, vlan, problems, issues
 
@@ -22,6 +22,9 @@ subcollection: hardware-firewall-shared
 
 # Known Limitations with Hardware Firewall
 {: #known-limitations-with-hardware-firewall-shared-}
+
+There are some limitations to know about when working with your Hardware Firewall.
+{: shortdesc}
 
 A Hardware Firewall cannot be deployed to a server on a VLAN that meets any of the following criteria.
 

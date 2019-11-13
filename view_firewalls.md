@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2018-11-12"
+lastupdated: "2019-11-12"
 
 keywords: views, firewalls, overview, vlan,
 
@@ -23,7 +23,8 @@ subcollection: hardware-firewall-shared
 # Viewing your Various Firewalls
 {: #viewing-your-various-firewalls}
 
-You can identify the firewalls in use on an account and their associated VLANs, as well as identify unprotected VLANs and plan the deployment of a firewall solution.
+You can identify the Hardware Firewalls in use on an account and their associated VLANs, as well as identify unprotected VLANs and plan the deployment of a firewall solution.
+{: shortdesc}
 
 ## Firewall Overview by VLAN
 {: #firewall-overview-by-vlan}

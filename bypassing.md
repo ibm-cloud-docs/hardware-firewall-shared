@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2018-11-12"
+lastupdated: "2019-11-12"
 
 keywords: bypass, bypassing, firewall, rules, enable, enabling
 
@@ -23,7 +23,8 @@ subcollection: hardware-firewall-shared
 # Bypassing the Hardware Firewall Rules
 {: #bypassing-the-hardware-firewall-shared-rules}
 
-To bypass the firewall rules,
+You can bypass the rules of your Hardware Firewall by following the instructions here.
+{: shortdesc}
 
 1. From your browser, open  [Customer Portal ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/){: new_window} and log into your account.
 2. In the Customer Portal navigation, go to **Devices > Device List** and click on the firewall protected device you want to bypass.

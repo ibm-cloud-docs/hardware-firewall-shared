@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-08-28"
+lastupdated: "2019-11-13"
 
 keywords: firewall, overview, features, ordering, adding
 
@@ -23,6 +23,7 @@ subcollection: hardware-firewall-shared
 {: #getting-started}
 
 The Hardware Firewall provides customers with an essential layer of security that is provisioned on demand without service interruptions. It prevents unwanted traffic from hitting your servers, reducing your attack surface, and allowing your server resources to be dedicated for their intended use.
+{: shortdesc}
 
 To add a firewall to a server:
 

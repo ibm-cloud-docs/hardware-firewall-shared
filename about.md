@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2018-11-12"
+lastupdated: "2019-11-12"
 
 keywords: about, overview, features, firewall
 
@@ -24,6 +24,7 @@ subcollection: hardware-firewall-shared
 {: #about-hardware-firewall-shared-}
 
 A Hardware Firewall is a network device that is connected upstream from a server. The firewall blocks unwanted traffic from a server before the traffic ever reaches the server. The main advantage to having a Hardware Firewall is that a server only has to handle 'good' traffic and no resources are wasted dealing with the 'bad' traffic.
+{: shortdesc}
 
 The Hardware Firewall leverages a multi-tenant enterprise platform to protect an individual server.  It can be purchased with the server or added on later.  It delivers virtualized network security through its Virtual Domain (VDOM) technology, providing virtualized security domains that are separately provisioned and managed.  
 

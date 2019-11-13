@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2018-11-12"
+lastupdated: "2019-11-12"
 
 keywords: configure, configuring, firewall, add, adding, edit, editing, rules, ports, common
 
@@ -23,7 +23,8 @@ subcollection: hardware-firewall-shared
 # Configuring the Hardware Firewall
 {: #configuring-the-hardware-firewall-shared-}
 
-Configuring the firewall is as simple as creating a set of rules to allow access to certain IP addresses/ports from specific internet addresses while denying traffic from other sources.
+Configuring your Hardware Firewall is as simple as creating a set of rules to allow access to certain IP addresses/ports from specific internet addresses while denying traffic from other sources.
+{: shortdesc}
 
 ## Adding a Firewall to a Server
 {: #adding-a-firewall-to-a-server}
