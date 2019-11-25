@@ -38,9 +38,11 @@ When a firewall is first added to a server, a set of rules is initially put in p
 
 Ensure the "status" indicates that the firewall is "Processing All Rules." Users can choose to bypass the rules in the event that implemented rules have an unintended impact on their environment by clicking **Bypass Rules** in the **Actions** drop-down.
 
-1. From your browser, open  [Customer Portal ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/){: new_window} and log into your account.
-2. In the Customer Portal navigation, go to **Devices > Device List** and click on the firewall protected device you want to configure.
-3. In the **Firewall** tab, ensure the "Status" indicates that the firewall is "Processing All Rules."  The page displays the current rules in effect for IPv4 and IPv6 addresses. If no rules are implemented, a faded placeholder is displayed. At this point, links are available to edit the current rules.  This list of rules is known as the 'working config'. A 'working config' is a set of rules that is in the process of being created but has not yet been applied to the firewall. A user may edit, add, and delete rules until the rule set is completed.
+1. From your browser, open the [IBM Cloud catalog ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com){:new_window} and log into your account.
+2. Select the Menu icon ![Menu icon](../../icons/icon_hamburger.svg) from the top left, then click **Classic Infrastructure**.
+3. Select **Devices > Device List** and click on the firewall protected device you want to configure.
+4. In the **Firewall** tab, ensure the "Status" indicates that the firewall is "Processing All Rules."  
+  The page displays the current rules in effect for IPv4 and IPv6 addresses. If no rules are implemented, a faded placeholder is displayed. At this point, links are available to edit the current rules.  This list of rules is known as the 'working config'. A 'working config' is a set of rules that is in the process of being created but has not yet been applied to the firewall. A user may edit, add, and delete rules until the rule set is completed.
 
      Rules are displayed in the order in which they are processed, with lower numbered rules having precedence over higher
      number rules (if rule one allows a packet through, rules two and beyond are ignored by the packet).

@@ -29,7 +29,11 @@ You can identify the Hardware Firewalls in use on an account and their associate
 ## Firewall Overview by VLAN
 {: #firewall-overview-by-vlan}
 
-To get an overview of firewalls on your system, as well as initiate basic management, navigate to **Network > IP Management > VLANs** in the [Customer Portal ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/){: new_window}.
+To get an overview of firewalls on your system, as well as initiate basic management:
+
+1. From your browser, open the [IBM Cloud catalog ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com){:new_window} and log into your account.
+2. Select the Menu icon ![Menu icon](../../icons/icon_hamburger.svg) from the top left, then click **Classic Infrastructure**.
+3. Select **Network > IP Management > VLANs**.
 
 To view only public VLANS, click on the **Filter** drop down and enter `fcr` for **Primary Router**.
 {: tip}

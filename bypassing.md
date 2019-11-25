@@ -26,9 +26,10 @@ subcollection: hardware-firewall-shared
 You can bypass the rules of your Hardware Firewall by following the instructions here.
 {: shortdesc}
 
-1. From your browser, open  [Customer Portal ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/){: new_window} and log into your account.
-2. In the Customer Portal navigation, go to **Devices > Device List** and click on the firewall protected device you want to bypass.
-3.  In the **Firewall** tab, click on the **Actions** dropdown menu and choose **Bypass Rules**. Click **Yes** to confirm the action. Bypassing the rules takes approximately two minutes to take effect. While in bypass mode, the "Status" will be "Bypassing All Rules".
+1. From your browser, open the [IBM Cloud catalog ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com){:new_window} and log into your account.
+2. Select the Menu icon ![Menu icon](../../icons/icon_hamburger.svg) from the top left, then click **Classic Infrastructure**.
+3. Select **Devices > Device List** and click on the firewall protected device you want to bypass.
+4.  In the **Firewall** tab, click on the **Actions** dropdown menu and choose **Bypass Rules**. Click **Yes** to confirm the action. Bypassing the rules takes approximately two minutes to take effect. While in bypass mode, the "Status" will be "Bypassing All Rules".
 
 ## Enable the Rules Again
 {: #enable-the-rules-again}

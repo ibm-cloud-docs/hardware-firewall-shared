@@ -31,7 +31,7 @@ The Hardware Firewall leverages a multi-tenant enterprise platform to protect an
 Because there are multiple customers associated with the hardware, if the firewall fails or is overwhelmed by an attack, every customer that shares a Hardware Firewall instance may be impacted.
 
 Up to 79 firewall rules can be configured for the primary and statically routed IP addresses assigned to the server. Reports for Firewalls are available based on the activity of a single IP for a selected date range.
-Customers can manage the firewall through two ways: SoftLayer Control Portal (the firewall tab under the protected server details page) and SoftLayer SLDN APIs.
+Customers can manage the firewall through two ways: the IBM Cloud console (the firewall tab under the protected server details page) and SLDN APIs.
 
 Since monthly server bandwidth is recorded at the server switch port, traffic blocked by the Hardware Firewall is not counted against your monthly allotments, eliminating the need to pay for unwanted traffic.
 
@@ -40,7 +40,7 @@ Since monthly server bandwidth is recorded at the server switch port, traffic bl
 
 **Intended Use:** Single Server Primary IP Protection
 
-**User Interface:** Integrated into SoftLayer Control Portal and SoftLayer API
+**User Interface:** Integrated into IBM Cloud console and APIs
 
 **Features:** Stateful Packet Inspection, Ingress Firewall Rules, IPv4, IPv6, Basic Logging
 
