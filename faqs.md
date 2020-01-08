@@ -65,7 +65,7 @@ Coming from the public internet in, the load balancing products are first, the H
 ## Does a server's uplink port speed need to match the Hardware Firewall?
 {: faq}
 
-The Hardware Firewall does need to match the public uplink speed of the server. However, because it only protects the public side of the network, the public uplink speed is what must match the firewall selection.  Customers can create a ticket to request a downgrade of only the public interfaces if desired.
+The Hardware Firewall does need to match the public uplink speed of the server. However, because it only protects the public side of the network, the public uplink speed is what must match the firewall selection.  Customers can create a case to request a downgrade of only the public interfaces if desired.
 
 ## Does IBM Cloud charge for firewall bandwidth?
 {: faq}
