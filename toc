@@ -1,7 +1,7 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="hardware-firewall-shared" category="security" audience="network" arm="3662773" href="/docs/hardware-firewall-shared?topic=/hardware-firewall-shared-getting-started-with-hardware-firewall-shared" path="hardware-firewall-shared"}
+{: .toc subcollection="hardware-firewall-shared" category="security" audience="network" arm="3662773" href="/docs/hardware-firewall-shared?topic=hardware-firewall-shared-getting-started-with-hardware-firewall-shared" path="hardware-firewall-shared"}
 Hardware Firewall (Shared)
 
     {: .navgroup id="learn"}
