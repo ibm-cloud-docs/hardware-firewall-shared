@@ -29,7 +29,7 @@ Configuring your Hardware Firewall is as simple as creating a set of rules to al
 ## Adding a Firewall to a Server
 {: #adding-a-firewall-to-a-server}
 
-To add a firewall to a server, follow the steps in [Getting Started](/docs/infrastructure/hardware-firewall-shared?topic=hardware-firewall-shared-getting-started-with-hardware-firewall-shared). If you receive an error, see the [Known Limitations](/docs/infrastructure/hardware-firewall-shared?topic=hardware-firewall-shared-known-limitations-with-hardware-firewall-shared-) and [Getting help and support](/docs/infrastructure/hardware-firewall-shared?topic=hardware-firewall-shared-getting-help-and-support-for-hardware-firewall-shared-).
+To add a firewall to a server, follow the steps in [Getting Started](/docs/hardware-firewall-shared?topic=hardware-firewall-shared-getting-started-with-hardware-firewall-shared). If you receive an error, see the [Known Limitations](/docs/hardware-firewall-shared?topic=hardware-firewall-shared-known-limitations-with-hardware-firewall-shared-) and [Getting help and support](/docs/hardware-firewall-shared?topic=hardware-firewall-shared-getting-help-and-support-for-hardware-firewall-shared-).
 
 ## Editing Rules
 {: #editing-rules}
@@ -55,7 +55,7 @@ Ensure the "status" indicates that the firewall is "Processing All Rules." Users
 
       **Source** - This field can be either 'any' or a specific IP address or the network address for a specific subnet.
 
-      **Destination** - This field selects the destination IP (see [Known Limitations](/docs/infrastructure/hardware-firewall-shared?topic=hardware-firewall-shared-known-limitations-with-hardware-firewall-shared-) if there are issues).
+      **Destination** - This field selects the destination IP (see [Known Limitations](/docs/hardware-firewall-shared?topic=hardware-firewall-shared-known-limitations-with-hardware-firewall-shared-) if there are issues).
 
       **CIDR** - This field indicates the standard CIDR notation for the selected source/destination.
 
