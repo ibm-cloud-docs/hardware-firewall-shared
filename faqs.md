@@ -20,6 +20,7 @@ subcollection: hardware-firewall-shared
 {:faq: data-hd-content-type='faq'}
 {:note: .note}
 {:important: .important}
+{:support: data-reuse='support'}
 
 # FAQs for Hardware Firewall
 {: #faqs-for-hardware-firewall-shared-}
@@ -38,22 +39,30 @@ A firewall is a network device that is connected upstream from a server. The fir
 The primary advantage of having a firewall is that your server only has to handle “good” traffic – this means your resource is solely being used for its intended purpose as opposed to handling unwanted traffic, too.
 
 ## What firewall products does IBM© offer?
+{: #products}
 {: faq}
+{: support}
 
 You can find a detailed comparison of all firewall products offered in the IBM© Cloud by reviewing this [topic](/docs/fortigate-10g?topic=fortigate-10g-exploring-firewalls).
 
 ## Is the Hardware Firewall compatible with IBM's load balancer products?
+{: #compatibility}
 {: faq}
+{: support}
 
 Yes. The Hardware Firewall is compatible with the cloud load balancing service, local load balancer, as well as the Citrix Netscaler VPX and MPX.
 
 ## Can portable IP’s be protected by the Hardware Firewall?
+{: #portable}
 {: faq}
+{: support}
 
 No. Portable IPs are not available for protection because they can be moved between servers. Exceptions are made on a case by case basis as there are numerous caveats and require additional details about the customer's system design.
 
 ## Can I have a Hardware Firewall and a Network Gateway associated with the same VLAN?
+{: #vlan}
 {: faq}
+{: support}
 
 No, it is not possible to have a Hardware Firewall (standard or Dedicated)  and a Network Gateway device assigned to the same VLAN.  The expanded functionality of the Network Gateway device provides firewall features for your network in place of a standard or dedicated firewall.
 
@@ -63,12 +72,16 @@ No, it is not possible to have a Hardware Firewall (standard or Dedicated)  and 
 Coming from the public internet in, the load balancing products are first, the Hardware Firewall products are next, and the NetScaler products are last (along with the customers servers).
 
 ## Does a server's uplink port speed need to match the Hardware Firewall?
+{: #uplink}
 {: faq}
+{: support}
 
 The Hardware Firewall does need to match the public uplink speed of the server. However, because it only protects the public side of the network, the public uplink speed is what must match the firewall selection.  Customers can create a case to request a downgrade of only the public interfaces if desired.
 
 ## Does IBM Cloud charge for firewall bandwidth?
+{: #bandwidth}
 {: faq}
+{: support}
 
 The Hardware Firewall, Hardware Firewall (Dedicated), and FortiGate Security Appliance (FSA) 1G are not metered for bandwidth.  FSA 10G is charged for firewall bandwidth after 20 TB are used. Additionally, these products can reduce total bandwidth utilization by limiting the traffic that servers must respond to.
 
@@ -88,7 +101,9 @@ No. The Hardware Firewall platform is enterprise-grade and highly durable, but t
 No. Portable IPs are used for the VMs in a hypervisor environment and portable IPs are not protected by the hardware firewall.  A Hardware Firewall (Dedicated) or FortiGate Security Appliance is recommended.
 
 ## What are the grayed out ports in my Windows Firewall?
+{: #greyed-out}
 {: faq}
+{: support}
 
 IBM Cloud offers many different services that you can utilize with your server including Evault, SNMP and Nagios monitoring. These services require that our internal systems communicate with your server to some degree. The grayed out ports you see in the Exceptions list are ports open on the internal network port only. They are still blocked on the public (internet) network connection. Since the internal network is a secured network having these ports open is considered secure.
 
@@ -100,7 +115,9 @@ These ports generally cannot be modified; however, if you reset the firewall rul
 FSA 10G is the only option to support 10Gbps servers for both public and private traffic. If 10Gbps is only required on the private network (for database, backup, storage, etc), then customers can request a downgrade of only their public uplinks and order any of the Hardware Firewall products.
 
 ## What IP ranges do I allow through the firewall?
+{: #ip}
 {: faq}
+{: support}
 
 For the list of IP addresses and IP ranges to allow through the firewall, go [here](/docs/hardware-firewall-dedicated?topic=hardware-firewall-dedicated-ibm-cloud-ip-ranges){: new_window}.
 

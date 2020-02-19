@@ -19,9 +19,13 @@ subcollection: hardware-firewall-shared
 {:download: .download}
 {:note: .note}
 {:important: .important}
+{:help: data-hd-content-type='help'}
+{:support: data-reuse='support'}
 
 # Viewing Log Reports for Hardware Firewall
 {: #viewing-log-reports-for-hardware-firewall}
+{: help}
+{: support}
 
 Logs for your Hardware Firewall are available on a per-IP basis by navigating to the protected device, selecting the **Firewall** tab, and clicking **Actions > Firewall Logs**.
 {: shortdesc}

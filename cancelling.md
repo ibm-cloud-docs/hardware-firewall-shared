@@ -19,9 +19,13 @@ subcollection: hardware-firewall-shared
 {:download: .download}
 {:note: .note}
 {:important: .important}
+{:help: data-hd-content-type='help'}
+{:support: data-reuse='support'}
 
 # Canceling a Hardware Firewall
 {: #canceling-a-hardware-firewall-shared-}
+{: help}
+{: support}
 
 Your Hardware Firewall can be cancelled at any time, by following the instructions here.
 {: shortdesc}
