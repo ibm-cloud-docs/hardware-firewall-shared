@@ -1,0 +1,43 @@
+{
+ "portable": [
+  "portable IP’s be protected by the Hardware Firewall",
+  "are portable IPs protected by a firewall",
+  "a firewall protects portable Ips",
+  "hardware firewall protect a portable IP",
+  "hardware firewall provide protection for portable Ips",
+  "firewall protecting portable Ips"
+  ],
+  "how-do-i-upgrade-the-uplink-of-my-hardware-firewall-": [
+   "upgrade the uplink of my Hardware Firewall",
+   "firewall locked to the public uplink port speed of a server",
+   "upgrade the uplink to my Firewall",
+   "upgrading my firewall's uplink port speed",
+   "firewall's uplink port speed upgrade"
+  ],
+  "uplink": [
+   "server's uplink port speed need to match the Hardware Firewall",
+   "firewall need to match the public uplink speed of the server",
+   "public uplink speed of the server and firewall match",
+   "uplink speed of the firewall and server be the same",
+   "match the server's uplink port speed with the firewall"
+  ],
+  "is-high-availability-possible-with-the-hardware-firewall-": [ 
+   "High Availability possible with the Hardware Firewall Shared",
+   "HA possible with Shared Hardware Firewall",
+   "HA possiblity with my Shared Firewall",
+   "do all Firewalls can have high availability",
+   "have HA with a shared firewall"
+  ],
+  "i-am-running-a-hypervisor-on-an-ibm-cloud-server-will-the-hardware-firewall-protect-the-virtual-machines-running-on-my-hypervisor-": [ 
+   "Hardware Firewall protect the Virtual Machines running on my hypervisor",
+   "firewall provide protection for VMs",
+   "Hardware Firewall protect the VM running on my hypervisor",
+   "VM running on hypervisor protected by firewall",
+   "hypervisor protected by firewall"
+   ]
+}
+
+   
+   
+
+
