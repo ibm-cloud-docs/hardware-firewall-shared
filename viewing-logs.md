@@ -22,7 +22,7 @@ subcollection: hardware-firewall-shared
 {:help: data-hd-content-type='help'}
 {:support: data-reuse='support'}
 
-# Viewing Log Reports for Hardware Firewall
+# Viewing log reports for Hardware Firewall
 {: #viewing-log-reports-for-hardware-firewall}
 {: help}
 {: support}

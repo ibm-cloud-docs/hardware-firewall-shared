@@ -35,7 +35,7 @@ Customers can manage the firewall through two ways: the IBM Cloud console (the f
 
 Since monthly server bandwidth is recorded at the server switch port, traffic blocked by the Hardware Firewall is not counted against your monthly allotments, eliminating the need to pay for unwanted traffic.
 
-## Overview and Features
+## Overview and features
 {: #overview-and-features}
 
 **Intended Use:** Single Server Primary IP Protection

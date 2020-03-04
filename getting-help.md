@@ -20,7 +20,7 @@ subcollection: hardware-firewall-shared
 {:note: .note}
 {:important: .important}
 
-# Getting Help and Support for Hardware Firewall
+# Getting help and support for Hardware Firewall
 {: #getting-help-and-support-for-hardware-firewall-shared-}
 
 If you have problems or questions when using the Hardware Firewall, you can get help by searching for information or by asking questions through one of the forums listed below. You can also open a support case.

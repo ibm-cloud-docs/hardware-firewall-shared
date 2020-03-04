@@ -26,12 +26,12 @@ subcollection: hardware-firewall-shared
 Configuring your Hardware Firewall is as simple as creating a set of rules to allow access to certain IP addresses/ports from specific internet addresses while denying traffic from other sources.
 {: shortdesc}
 
-## Adding a Firewall to a Server
+## Adding a firewall to a server
 {: #adding-a-firewall-to-a-server}
 
 To add a firewall to a server, follow the steps in [Getting Started](/docs/hardware-firewall-shared?topic=hardware-firewall-shared-getting-started-with-hardware-firewall-shared). If you receive an error, see the [Known Limitations](/docs/hardware-firewall-shared?topic=hardware-firewall-shared-known-limitations-with-hardware-firewall-shared-) and [Getting help and support](/docs/hardware-firewall-shared?topic=hardware-firewall-shared-getting-help-and-support-for-hardware-firewall-shared-).
 
-## Editing Rules
+## Editing rules
 {: #editing-rules}
 
 When a firewall is first added to a server, a set of rules is initially put in place that allows all traffic to reach the server. The rules can then be edited to control the traffic reaching the server.
@@ -69,7 +69,7 @@ Ensure the "status" indicates that the firewall is "Processing All Rules." Users
 
 5. Once the 'working config' is complete, press the **Update Rules** button to have the 'working config' applied to the firewall. The rules should take effect within two minutes.
 
-## Common Ports
+## Common ports
 {: #common-ports}
 
 | Protocol | Port |

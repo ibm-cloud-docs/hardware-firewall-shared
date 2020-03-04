@@ -20,7 +20,7 @@ subcollection: hardware-firewall-shared
 {:important: .important}
 {:download: .download}
 
-# Known Limitations with Hardware Firewall
+# Known limitations with Hardware Firewall
 {: #known-limitations-with-hardware-firewall-shared-}
 
 There are some limitations to know about when working with your Hardware Firewall.
