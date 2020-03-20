@@ -1,13 +1,14 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="hardware-firewall-shared" category="security" audience="network" arm="3662773" href="/docs/hardware-firewall-shared?topic=hardware-firewall-shared-getting-started" path="hardware-firewall-shared"}
+{: .toc subcollection="hardware-firewall-shared" category="security" audience="network" href="/docs/hardware-firewall-shared?topic=hardware-firewall-shared-getting-started" path="hardware-firewall-shared"}
 Hardware Firewall (Shared)
 
     {: .navgroup id="learn"}
     getting-started.md
     about.md
-    /fortigate-10g/fortigate-10g-exploring-firewalls
+    /fortigate-10g/fortigate-10g-exploring-firewalls    
+    [What is network security?](https://www.ibm.com/cloud/learn/networking-a-complete-guide)
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
