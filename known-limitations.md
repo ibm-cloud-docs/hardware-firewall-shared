@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2019-11-12"
+lastupdated: "2021-02-19"
 
 keywords: limitations, firewall, gateway, fortigate, fsa, subnet, vlan, problems, issues
 
@@ -31,6 +31,7 @@ A Hardware Firewall cannot be deployed to a server on a VLAN that meets any of t
 * Is currently associated with a Network Gateway, Hardware Firewall, or FortiGate Security Appliance.
 * Contains 30 or more servers.
 * Has a primary subnet that is larger than a /28.
+* Contains a bare-metal server hosting a gateway, such as a Juniper vSRX or VRA, as these servers are deployed on a transit VLAN.
 
 In these instances, a new VLAN must be established for the Firewall or another product must be selected.
 
