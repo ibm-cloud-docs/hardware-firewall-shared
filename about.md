@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2019-11-12"
+lastupdated: "2021-02-24"
 
 keywords: about, overview, features, firewall
 
@@ -38,12 +38,12 @@ Since monthly server bandwidth is recorded at the server switch port, traffic bl
 ## Overview and features
 {: #overview-and-features}
 
-**Intended Use:** Single Server Primary IP Protection
+**Intended Use:** Single Server Primary Public IP Protection
 
 **User Interface:** Integrated into IBM Cloud console and APIs
 
 **Features:** Stateful Packet Inspection, Ingress Firewall Rules, IPv4, IPv6, Basic Logging
 
-**Throughput:** 10Mbps, 100Mbps, 1000Mbps, or 2000Mbps
+**Server Network Interface Speeds:** 100Mbps, 200Mbps, 1000Mbps, and 2000Mbps
 
 It is required that the throughput of Hardware Firewall instance match the uplink speed of the server the firewall is being added to.

@@ -43,3 +43,4 @@ Further limitations for the Hardware Firewall include:
 * Incompatible with Windows Network Load Balancing (NLB) due to the way ARP is processed
 * The rule destination subnet is limited to the public IP of the protected server. Hardware Firewall (Dedicated) does not have this limitation.
 * Hourly billed servers are not allowed. Hardware Firewall can be applied to a monthly billed server.
+* The VLAN for the primary public IP that is protected by the hardware firewall cannot be associated or routed through another gateway, such as a Juniper vSRX or VRA.
