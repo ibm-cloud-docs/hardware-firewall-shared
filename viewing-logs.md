@@ -27,7 +27,7 @@ subcollection: hardware-firewall-shared
 {: help}
 {: support}
 
-Logs for your Hardware Firewall are available on a per-IP basis by navigating to the protected device, selecting the **Firewall** tab, and clicking **Actions > Firewall Logs**.
+Logs for your Hardware Firewall are available on a per-IP basis by navigating to the protected device, on the Firewall Details page, and clicking **Actions > Firewall Logs**.
 {: shortdesc}
 
 Logs are presented in .CSV format and contain the following:

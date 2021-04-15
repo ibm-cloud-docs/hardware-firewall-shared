@@ -41,15 +41,15 @@ Ensure the "status" indicates that the firewall is "Processing All Rules." Users
 1. From your browser, open the [IBM Cloud catalog ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com){:new_window} and log into your account.
 2. Select the Menu icon ![Menu icon](../../icons/icon_hamburger.svg) from the top left, then click **Classic Infrastructure**.
 3. Select **Devices > Device List** and click on the firewall protected device you want to configure.
-4. In the **Firewall** tab, ensure the "Status" indicates that the firewall is "Processing All Rules."  
-  The page displays the current rules in effect for IPv4 and IPv6 addresses. If no rules are implemented, a faded placeholder is displayed. At this point, links are available to edit the current rules.  This list of rules is known as the 'working config'. A 'working config' is a set of rules that is in the process of being created but has not yet been applied to the firewall. A user may edit, add, and delete rules until the rule set is completed.
+4. In the **Add-ons** section, click **Firewall details**. It will redirect you to the firewall page. 
+5. The Firewall Details page shows the current rules in effect for IPv4 and IPv6 addresses. If no rules are implemented, a yellow status icon will show with a "Bypassing all rules" message next to the device name on the top of the page. 
 
      Rules are displayed in the order in which they are processed, with lower numbered rules having precedence over higher
      number rules (if rule one allows a packet through, rules two and beyond are ignored by the packet).
 
      The fields are:
 
-      **Order** - This field contains the rule number.  Rules can be moved up or down the list with the provided arrows.
+      **Priority** - This field contains the rule number. Lower numbered rules have precedence over higher numbered rules. 
 
       **Action** - This select list is used to 'permit' or 'deny' traffic matching this rule.
 
@@ -65,9 +65,9 @@ Ensure the "status" indicates that the firewall is "Processing All Rules." Users
 
       **Notes:** Freeform field to enter any note about this rule.
 
-4. Click on a rule to edit it or click on the plus sign at the bottom of the table to add an additional rule. Clicking on the minus icon will delete the rule. The rules are automatically validated as you enter them.
+6. Click on the Overflow menu icon at the end of the row of the firewall rule to edit or delete the rule. Click the **Add rule** button at the right top corner of the table to add an additional rule. The rules are automatically validated as you enter them.
 
-5. Once the 'working config' is complete, press the **Update Rules** button to have the 'working config' applied to the firewall. The rules should take effect within two minutes.
+7. Click the **Save** or **Add** buttons to save the rule and apply to the firewall. The rule addition or update should take effect within two minutes.
 
 ## Common ports
 {: #common-ports}

@@ -42,8 +42,6 @@ Each row represents a VLAN in your infrastructure. IBM© Cloud populates the **V
 
 The **GATEWAY/FIREWALL** column contains details about which hardware firewall protection is in place, for example:
 
-**Add Firewall** indicates that there are no firewalls in place for servers on this VLAN.
-
 **Individually Protected Servers** indicates that one or more servers is utilizing a Hardware Firewall and that there is not a Hardware Firewall (Dedicated), FortiGate Security Appliance, or Network Gateway in place. VLAN firewalls and network gateways are not able to be placed on a VLAN that has individually protected servers.
 
 **Firewall-vlanXXXX.networklayer.com** indicates that there is a Hardware Firewall (Dedicated) or FortiGate Security Appliance in place. Only one VLAN firewall or Network Gateway can be associated with a VLAN, but a server can be protected on the public VLAN by a VLAN firewall and associated on the private network with a Network Gateway.
@@ -57,7 +55,7 @@ On the VLANs screen, identify a row with **Individually Protected Servers** in t
 
 From here, you can click on each device and review whether a firewall is in place for that particular Server.
 
-Once you have clicked on a device, scroll to the bottom of the Configuration tab. You will see **Firewall** in the Addons section with **Installed** or **Not Installed** for the status. **Not Installed** indicates that no firewall is in place for this device. **Installed** indicates that a firewall is in place and you will have a **Firewall** tab available on the device where you can manage the firewall configuration.
+Once you have clicked on a device, scroll to the bottom of the Configuration tab. You will see **Firewall** in the Addons section with **Installed** or **Not installed** for the status. **Not Installed** indicates that no firewall is in place for this device. **Installed** indicates that a firewall is in place and you will have a **Firewall details** button. It will redirect you to the "Firewall Details" page where you can manage the firewall configuration.
 
 ## Dedicated firewall view
 {: #dedicated-firewall-view}
