@@ -21,7 +21,6 @@ Hardware Firewall (Shared)
     
     {: .navgroup id="reference"}
     ips.md
-    /hardware-firewall-dedicated/hardware-firewall-dedicated-ibm-cloud-ip-ranges
     [Terraform](https://cloud.ibm.com/docs/terraform?topic=terraform-getting-started)
     {: .navgroup-end}
 
