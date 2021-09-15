@@ -6,7 +6,7 @@ lastupdated: "2020-08-13"
 
 keywords: ip, range, firewall, network, traffic, security
 
-subcollection: hardware-firewall-dedicated
+subcollection: hardware-firewall-shared
 
 ---
 
