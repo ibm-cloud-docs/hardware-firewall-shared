@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-11-13"
+lastupdated: "2021-09-13"
 
 keywords: firewall, overview, features, ordering, adding
 
@@ -27,7 +27,7 @@ The Hardware Firewall provides customers with an essential layer of security tha
 
 To add a firewall to a server:
 
-1. From your browser, open the [IBM Cloud catalog ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com){:new_window} and log into your account.
+1. From your browser, open the [IBM Cloud catalog ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com){: new_window} and log into your account.
 2. Select the Menu icon ![Menu icon](../../icons/icon_hamburger.svg) from the top left, then click **Classic Infrastructure**.
 3. Select **Devices > Device List** and click on the server you want protected.  
 4. In the **Device Details** page, in the **Configuration** tab, scroll to the bottom of the page to the **Addons** section and click on the **Order Hardware Firewall** link.
