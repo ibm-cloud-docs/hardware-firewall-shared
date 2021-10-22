@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2020
-lastupdated: "2020-08-13"
+  years: 2017, 2021
+lastupdated: "2021-08-13"
 
 keywords: ip, range, firewall, network, traffic, security
 
@@ -251,8 +251,8 @@ Be sure to configure rules and verify routes for DAL01, DAL10, WDC04, and the lo
 
 | Data Center | IP Range |
 |:-----|:-----|
-|**Required Flows**: * Outbound TCP 8086 and TCP 8087 from your private /n VLANs to IP ranges documented in DAL09 and DAL10 only. `*` \n * Outbound TCP 2546 from your private VLANs to IP ranges /n documented for each DC where you need to access your vault. `*` | |
-| AMS01 | 10.2.70.0/24 \n 10.200.54.0/24 |   
+|**Required Flows**: * Outbound TCP 8086 and TCP 8087 from your private  \n VLANs to IP ranges documented in DAL09 and DAL10 only. `*`  \n * Outbound TCP 2546 from your private VLANs to IP ranges  \n documented for each DC where you need to access your vault. `*` | |
+| AMS01 | 10.2.70.0/24  \n 10.200.54.0/24 |   
 | AMS03 | 10.3.134.0/24 |  
 | CHE01 | 10.200.22.0/24 |  
 | DAL01 | 10.0.82.0/24 |
@@ -285,10 +285,10 @@ Be sure to configure rules and verify routes for DAL01, DAL10, WDC04, and the lo
 | PAR01 | 10.2.150.0/24 |  
 | SAO01 | 10.200.6.0/24 |  
 | SEO01 | 10.200.86.0/24 |  
-| SJC01 | 10.1.198.0/24 /n 10.200.38.0/24 |
+| SJC01 | 10.1.198.0/24  \n 10.200.38.0/24 |
 | SJC03 | 10.3.182.0/24 |
 | SJC04 | 10.201.86.0/24 |
-| SNG01 | 10.2.38.0/24  /n 10.200.150.0/24 |  
+| SNG01 | 10.2.38.0/24  \n 10.200.150.0/24 |  
 | SYD01 | 10.3.102.0/24 |  
 | SYD04 | 10.201.22.0/24 |  
 | TOK02AZ | 10.201.166.0/24 |  
@@ -297,7 +297,7 @@ Be sure to configure rules and verify routes for DAL01, DAL10, WDC04, and the lo
 | TOR01 | 10.2.54.0/24 |
 | WDC01 | 10.1.114.0/24 |
 | WDC03 | 100.100.38.0/24 |
-| WDC04 | 10.3.166.0/24 /n 10.201.6.0/24 |
+| WDC04 | 10.3.166.0/24  \n 10.201.6.0/24 |
 | WDC06 | 10.200.166.0/24 |
 | WDC07 | 10.200.182.0/24 |
 {: class="simple-tab-table"}
@@ -308,12 +308,12 @@ Be sure to configure rules and verify routes for DAL01, DAL10, WDC04, and the lo
 
 | Data Center | IP Range |
 |:-----|:-----|
-| **Required Flows**: NFS File Storage: /n * TCP & UDP 111 (sunrpc) /n * TCP & UDP 2049 (nfs) /n * TCP & UDP 111(portmapper) /n * TCP & UDP 635 (nfsd) /n * TCP & UDP 4045-4048 /n * UDP 4049 /n Block Storage: /n * TCP & UDP 65200 (iscsi) | |
-| AMS01 | 10.2.78.0/24 /n 10.200.62.0/24 |
+| **Required Flows**: NFS File Storage:  \n * TCP & UDP 111 (sunrpc)  \n * TCP & UDP 2049 (nfs)  \n * TCP & UDP 111(portmapper)  \n * TCP & UDP 635 (nfsd)  \n * TCP & UDP 4045-4048  \n * UDP 4049  \n Block Storage:  \n * TCP & UDP 65200 (iscsi) | |
+| AMS01 | 10.2.78.0/24  \n 10.200.62.0/24 |
 | AMS03 | 10.3.142.0/24 |
 | CHE01 | 10.200.30.0/24 |
-| DAL01 | 10.0.90.0/24 /n 10.0.95.0/24 |
-| DAL05 | 10.1.154.0/24 /n 10.1.159.0/24 |
+| DAL01 | 10.0.90.0/24  \n 10.0.95.0/24 |
+| DAL05 | 10.1.154.0/24  \n 10.1.159.0/24 |
 | DAL06 | 10.2.142.0/24 |
 | DAL08 | 100.100.14.0/24 |
 | DAL10 | 10.200.94.0/24 |
@@ -340,10 +340,10 @@ Be sure to configure rules and verify routes for DAL01, DAL10, WDC04, and the lo
 | PAR01 | 10.2.158.0/24 |
 | SAO01 | 10.200.14.0/24 |
 | SEO01 | 10.200.78.0/24 |
-| SJC01 | 10.1.206.0/24 /n 10.200.46.0/24 |
+| SJC01 | 10.1.206.0/24  \n 10.200.46.0/24 |
 | SJC03 | 10.3.190.0/24 |
 | SJC04 | 10.201.94.0/24 |
-| SNG01 | 10.2.46.0/24 /n 10.200.158.0/24 |
+| SNG01 | 10.2.46.0/24  \n 10.200.158.0/24 |
 | SYD01 | 10.3.110.0/24 |
 | SYD04 | 10.201.30.0/24 |
 | TOK02 | 10.3.78.0/24 |
@@ -351,7 +351,7 @@ Be sure to configure rules and verify routes for DAL01, DAL10, WDC04, and the lo
 | TOK04 | 10.201.190.0/24 |
 | TOK05 | 10.201.206.0/24 |
 | TOR01 | 10.2.62.0/24 |
-| WDC01 | 10.1.122.0/24 /n 10.1.127.0/24 /n 10.1.104.0/24 |
+| WDC01 | 10.1.122.0/24  \n 10.1.127.0/24  \n 10.1.104.0/24 |
 | WDC03 | 100.100.46.0/24 |
 | WDC04 | 10.201.14.0/24 |
 | WDC04 | 10.3.174.0/24 |
@@ -365,7 +365,7 @@ Be sure to configure rules and verify routes for DAL01, DAL10, WDC04, and the lo
 
 | Data Center | IP Range |
 |-----|-----|
-| **Required Flows**: /n * Inbound: TCP and UDP, 48000. `*` /n * Outbound: TCP and UDP, 48000-48020. `*` | |
+| **Required Flows**:  \n * Inbound: TCP and UDP, 48000. `*`  \n * Outbound: TCP and UDP, 48000-48020. `*` | |
 | AMS01 | 10.2.67.0/24 |
 | AMS03 | 10.3.131.0/24 |
 | CHE01 | 10.200.19.0/24 |
@@ -421,11 +421,11 @@ Be sure to configure rules and verify routes for DAL01, DAL10, WDC04, and the lo
 | Data Center | IP Range |
 |-----|-----|
 | **Required Flows**:Outbound: TCP 80, 443. `*` | |
-| AMS01 | 10.2.66.0/24 /n 10.200.50.0/24 |
+| AMS01 | 10.2.66.0/24  \n 10.200.50.0/24 |
 | AMS03 | 10.3.130.0/24 |
 | CHE01 | 10.200.18.0/24 |
 | DAL01 | 10.0.78.0/24 |
-| DAL05 | 10.1.142.0/24 /n 10.1.138.0/24 |
+| DAL05 | 10.1.142.0/24  \n 10.1.138.0/24 |
 | DAL06 | 10.2.130.0/24 |
 | DAL08 | 100.100.2.0/24 |
 | DAL09 | 10.2.114.0/24 |
@@ -453,10 +453,10 @@ Be sure to configure rules and verify routes for DAL01, DAL10, WDC04, and the lo
 | PAR01 | 10.2.146.0/24 |
 | SAO01 | 10.200.2.0/24 |
 | SEO01 | 10.200.66.0/24 |
-| SJC01 | 10.1.194.0/24 /n 10.200.34.0/24 |
+| SJC01 | 10.1.194.0/24  \n 10.200.34.0/24 |
 | SJC03 | 10.3.178.0/24 |
 | SJC04 | 10.201.82.0/24 |
-| SNG01 | 10.2.34.0/24 /n 10.200.146.0/24 |
+| SNG01 | 10.2.34.0/24  \n 10.200.146.0/24 |
 | SYD01 | 10.3.98.0/24 |
 | SYD04 | 10.201.18.0/24 |
 | TOK02 | 10.3.66.0/24 |
@@ -464,7 +464,7 @@ Be sure to configure rules and verify routes for DAL01, DAL10, WDC04, and the lo
 | TOK04 | 10.201.178.0/24 |
 | TOK05 | 10.201.194.0/24 |
 | TOR01 | 10.2.50.0/24 |
-| WDC01 | 10.1.110.0/24 /n 10.1.106.0/24|
+| WDC01 | 10.1.110.0/24  \n 10.1.106.0/24|
 | WDC03 | 100.100.34.0/24 |
 | WDC04 | 10.3.162.0/24 |
 | WDC04 | 10.201.2.0/24 |
@@ -528,7 +528,7 @@ All TCP/UDP ports (for access from your local workstation)
 |tok02|Tokyo|-|JPN|10.2.224.0/24|
 |tok04|Tokyo|-|JPN|10.201.228.0/24|
 |tok05|Tokyo|-|JPN|10.201.224.0/24|
-|tor01|Toronto|-|CAN|10.1.232.0/24 /n 10.1.233.0/24|
+|tor01|Toronto|-|CAN|10.1.232.0/24  \n 10.1.233.0/24|
 |tor04|Toronto|-|CAN|10.1.0.0/24|
 |tor05|Toronto|-|CAN|10.1.4.0/24|
 |wdc01|Washington D.C.|-|USA|10.1.16.0/23|
