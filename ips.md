@@ -41,7 +41,6 @@ A frequently asked question is, "What IP ranges do I allow through the firewall?
 |ams01|Amsterdam|-|NLD|159.253.158.0/23|
 |ams03|Amsterdam|-|NLD|159.8.198.0/23|
 |che01|Chennai|-|IND|169.38.118.0/23|
-|dal01|Dallas|Texas|USA|66.228.118.0/23|
 |dal05|Dallas|Texas|USA|173.192.118.0/23|
 |dal06|Dallas|Texas|USA|184.172.118.0/23|
 |dal07|Dallas|Texas|USA|50.22.118.0/23|
@@ -54,22 +53,18 @@ A frequently asked question is, "What IP ranges do I allow through the firewall?
 |fra04|Frankfurt|-|DEU|161.156.118.0/24|
 |fra05|Frankfurt|-|DEU|149.81.118.0/23|
 |hkg02|Hong Kong|-|CHN|119.81.138.0/23|
-|hou02|Houston|Texas|USA|173.193.118.0/23|
 |lon02|London|-|ENG|5.10.118.0/23|
 |lon04|London|-|ENG|158.175.127.0/24|
 |lon05|London|-|ENG|141.125.118.0/23|
 |lon06|London|-|ENG|158.176.118.0/23|
-|mel01|Melbourne|-|AUS|168.1.118.0/23|
 |mex01|Mexico City|-|MEX|169.57.118.0/23|
 |mil01|Milan|-|ITA|159.122.138.0/23|
 |mon01|Montreal|-|CAN|169.54.118.0/23|
 |osa21|Osaka|-|JPN|163.68.118.0/24|
 |osa22|Osaka|-|JPN|163.69.118.0/24|
 |osa23|Osaka|-|JPN|163.73.118.0/24|
-|osl01|Oslo|-|NOR|169.51.118.0/24|
 |par01|Paris|-|FRA|159.8.118.0/23|
 |sao01|São Paulo|-|BRA|169.57.138.0/23|
-|sea01|Seattle|Washington|USA|67.228.118.0/23|
 |seo01|Seoul|-|KOR|169.56.118.0/24|
 |sjc01|San Jose|California|USA|50.23.118.0/23|
 |sjc03|San Jose|California|USA|169.45.118.0/23|
@@ -101,7 +96,6 @@ Ports to allow:
 |ams01|Amsterdam|-|NLD|159.253.157.0/24|
 |ams03|Amsterdam|-|NLD|159.8.197.0/24|
 |che01|Chennai|-|IND|169.38.117.0/24|
-|dal01|Dallas|Texas|USA|67.228.66.0/24, 75.126.76.0/24, 174.35.17.0/24, 208.43.15.0/24|
 |dal05|Dallas|Texas|USA|50.23.203.0/24, 108.168.157.0/24 173.192.117.0/24, 192.155.205.0/24|
 |dal06|Dallas|Texas|USA|184.172.117.0/24|
 |dal07|Dallas|Texas|USA|50.22.117.0/24|
@@ -113,19 +107,15 @@ Ports to allow:
 |fra04|Frankfurt|-|DEU|161.156.117.0/24|
 |fra05|Frankfurt|-|DEU|149.81.117.0/24|
 |hkg02|Hong Kong|-|CHN|119.81.137.0/24|
-|hou02|Houston|Texas|USA|173.193.118.0/23|
 |lon02|London|-|ENG|5.10.117.0/24|
 |lon04|London|-|ENG|158.175.117.0/24|
 |lon05|London|-|ENG|141.125.117.0/24|
 |lon06|London|-|ENG|158.176.117.0/24|
-|mel01|Melbourne|-|AUS|168.1.117.0/24|
 |mex01|Mexico City|-|MEX|169.57.117.0/24|
 |mil01|Milan|-|ITA|159.122.137.0/24|
 |mon01|Montreal|-|CAN|169.54.117.0/24|
 |par01|Paris|-|FRA|159.8.117.0/24|
-|osl01|Oslo|-|NOR|169.51.117.0/24|
 |sao01|São Paulo|-|BRA|169.57.137.0/24|
-|sea01|Seattle|Washington|USA|67.228.117.0/24|
 |seo01|Seoul|-|KOR|169.56.117.0/24|
 |sjc01|San Jose|California|USA|50.23.117.0/24|
 |sjc03|San Jose|California|USA|169.45.117.0/24|
@@ -182,7 +172,7 @@ Ports to allow:
 
 ## Service network (on back-end/private network)
 
-Be sure to configure rules and verify routes for DAL01, DAL10, WDC04, and the location of your server. If your server is in an EU location, you must add rules allowing traffic from DAL01, DAL10, WDC04, and AMS01 to your server. The traffic must be able to travel between the service networks and your server. By default, all servers and gateway/firewall devices are configured with a static route for the `10.0.0.0/8` network to the Backend Customer Router (BCR). If you change that configuration such that the entire `10.0.0.0/8` network is pointed elsewhere, you must also configure static routes for the service networks to ensure they are pointed to the BCR. Failing to do so will result in the static routes being pointed to whichever IP address you replaced the original with. If you do not change the default static route for `10.0.0.0/8`, then the service networks are already routed correctly.
+Be sure to configure rules and verify routes for DAL10, WDC04, and the location of your server. If your server is in an EU location, you must add rules allowing traffic from DAL10, WDC04, and AMS01 to your server. The traffic must be able to travel between the service networks and your server. By default, all servers and gateway/firewall devices are configured with a static route for the `10.0.0.0/8` network to the Backend Customer Router (BCR). If you change that configuration such that the entire `10.0.0.0/8` network is pointed elsewhere, you must also configure static routes for the service networks to ensure they are pointed to the BCR. Failing to do so will result in the static routes being pointed to whichever IP address you replaced the original with. If you do not change the default static route for `10.0.0.0/8`, then the service networks are already routed correctly.
 
 |Data Center|City|State|Country|IP Range|
 |---|---|---|---|---|
@@ -191,7 +181,6 @@ Be sure to configure rules and verify routes for DAL01, DAL10, WDC04, and the lo
 |ams01|Amsterdam|-|NLD|10.2.64.0/20|
 |ams03|Amsterdam|-|NLD|10.3.128.0/20|
 |che01|Chennai|-|IND|10.200.16.0/20|
-|dal01|Dallas|Texas|USA|10.0.64.0/19|
 |dal05|Dallas|Texas|USA|10.1.128.0/19 * |
 |dal06|Dallas|Texas|USA|10.2.128.0/20|
 |dal07|Dallas|Texas|USA|10.1.176.0/20|
@@ -204,24 +193,20 @@ Be sure to configure rules and verify routes for DAL01, DAL10, WDC04, and the lo
 |fra04|Frankfurt|-|DEU|10.201.112.0/20|
 |fra05|Frankfurt|-|DEU|10.201.128.0/20|
 |hkg02|Hong Kong|-|CHN|10.2.160.0/20|
-|hou02|Houston|Texas|USA|10.1.160.0/20|
 |lon02|London|-|ENG|10.1.208.0/20|
 |lon04|London|-|ENG|10.201.32.0/20|
 |lon05|London|-|ENG|10.201.48.0/20|
 |lon06|London|-|ENG|10.201.64.0/20|
-|mel01|Melbourne|-|AUS|10.2.80.0/20|
 |mex01|Mexico City|-|MEX|10.2.176.0/20|
 |mil01|Milan|-|ITA|10.3.144.0/20|
 |mon01|Montreal|-|CAN|10.3.112.0/20|
 |osa21|Osaka|-|JPN|10.202.112.0/20|
 |osa22|Osaka|-|JPN|10.202.144.0/20|
 |osa23|Osaka|-|JPN|10.202.160.0/20|
-|osl01|Oslo|-|NOR|10.200.96.0/20|
 |par01|Paris|-|FRA|10.2.144.0/20|
 |sao01|São Paulo|-|BRA|10.200.0.0/20|
 |sao04|São Paulo|-|BRA|10.202.208.0/20|
 |sao05|São Paulo|-|BRA|10.202.240.0/20|
-|sea01|Seattle|Washington|USA|10.1.64.0/19|
 |seo01|Seoul|-|KOR|10.200.64.0/20|
 |sjc01|San Jose|California|USA|10.1.192.0/20|
 |sjc03|San Jose|California|USA|10.3.176.0/20|
@@ -255,7 +240,6 @@ Be sure to configure rules and verify routes for DAL01, DAL10, WDC04, and the lo
 | AMS01 | 10.2.70.0/24  \n 10.200.54.0/24 |   
 | AMS03 | 10.3.134.0/24 |  
 | CHE01 | 10.200.22.0/24 |  
-| DAL01 | 10.0.82.0/24 |
 | DAL05 | 10.1.146.0/24 |     
 | DAL06 | 10.2.134.0/24 |   
 | DAL08 | 100.100.6.0/24 |  
@@ -269,7 +253,6 @@ Be sure to configure rules and verify routes for DAL01, DAL10, WDC04, and the lo
 | FRA04 | 10.201.118.0/24 |  
 | FRA05 | 10.201.134.0/24 |
 | HKG02 | 10.2.166.0/24 |  
-| HOU02 | 10.1.166.0/24 |
 | LON02 | 10.1.214.0/24 |
 | LON02AZ | 10.201.102.0/24 |  
 | LON04 | 10.201.38.0/24 |  
@@ -281,7 +264,6 @@ Be sure to configure rules and verify routes for DAL01, DAL10, WDC04, and the lo
 | OSA21 | 10.202.118.0/24 |
 | OSA22 | 10.202.150.0/24 |
 | OSA23 | 10.202.166.0/24 |
-| OSL01 | 10.200.102.0/24 |  
 | PAR01 | 10.2.150.0/24 |  
 | SAO01 | 10.200.6.0/24 |  
 | SEO01 | 10.200.86.0/24 |  
@@ -312,7 +294,6 @@ Be sure to configure rules and verify routes for DAL01, DAL10, WDC04, and the lo
 | AMS01 | 10.2.78.0/24  \n 10.200.62.0/24 |
 | AMS03 | 10.3.142.0/24 |
 | CHE01 | 10.200.30.0/24 |
-| DAL01 | 10.0.90.0/24  \n 10.0.95.0/24 |
 | DAL05 | 10.1.154.0/24  \n 10.1.159.0/24 |
 | DAL06 | 10.2.142.0/24 |
 | DAL08 | 100.100.14.0/24 |
@@ -324,7 +305,6 @@ Be sure to configure rules and verify routes for DAL01, DAL10, WDC04, and the lo
 | FRA04 | 10.201.110.0/24 |
 | FRA05 | 10.201.142.0/24 |
 | HKG02 | 10.2.174.0/24 |
-| HOU02 | 10.1.174.0/24 |
 | LON02 | 10.1.222.0/24 |
 | LON02AZ | 10.201.110.0/24 |
 | LON04 | 10.201.46.0/24 |
@@ -336,7 +316,6 @@ Be sure to configure rules and verify routes for DAL01, DAL10, WDC04, and the lo
 | OSA21 | 10.202.126.0/24 |
 | OSA22 | 10.202.158.0/24 |
 | OSA23 | 10.202.174.0/24 |
-| OSL01 | 10.200.110.0/24 |
 | PAR01 | 10.2.158.0/24 |
 | SAO01 | 10.200.14.0/24 |
 | SEO01 | 10.200.78.0/24 |
@@ -369,7 +348,6 @@ Be sure to configure rules and verify routes for DAL01, DAL10, WDC04, and the lo
 | AMS01 | 10.2.67.0/24 |
 | AMS03 | 10.3.131.0/24 |
 | CHE01 | 10.200.19.0/24 |
-| DAL01 | 10.0.79.0/24 |
 | DAL05 | 10.1.143/139.0/24 |
 | DAL06 | 10.2.131.0/24 |
 | DAL08 | 100.100.3.0/24 |
@@ -382,7 +360,6 @@ Be sure to configure rules and verify routes for DAL01, DAL10, WDC04, and the lo
 | FRA04 | 10.201.115.0/24 |
 | FRA05 | 10.201.131.0/24 |
 | HKG02 | 10.2.163.0/24 |
-| HOU02 | 10.1.163.0/24 |
 | LON02 | 10.1.211.0/24 |
 | LON02AZ | 10.201.99.0/24 |
 | LON04 | 10.201.35.0/24 |
@@ -391,7 +368,6 @@ Be sure to configure rules and verify routes for DAL01, DAL10, WDC04, and the lo
 | MEX01 | 10.2.179.0/24 |
 | MIL01 | 10.3.147.0/24 |
 | MON01 | 10.3.115.0/24 |
-| OSL01 | 10.200.99.0/24 |
 | PAR01 | 10.2.147.0/24 |
 | SAO01 | 10.200.3.0/24 |
 | SEO01 | 10.200.67.0/24 |
@@ -424,7 +400,6 @@ Be sure to configure rules and verify routes for DAL01, DAL10, WDC04, and the lo
 | AMS01 | 10.2.66.0/24  \n 10.200.50.0/24 |
 | AMS03 | 10.3.130.0/24 |
 | CHE01 | 10.200.18.0/24 |
-| DAL01 | 10.0.78.0/24 |
 | DAL05 | 10.1.142.0/24  \n 10.1.138.0/24 |
 | DAL06 | 10.2.130.0/24 |
 | DAL08 | 100.100.2.0/24 |
@@ -437,7 +412,6 @@ Be sure to configure rules and verify routes for DAL01, DAL10, WDC04, and the lo
 | FRA04 | 10.201.114.0/24 |
 | FRA05 | 10.201.130.0/24 |
 | HKG02 | 10.2.162.0/24 |
-| HOU02 | 10.1.162.0/24 |
 | LON02 | 10.1.210.0/24 |
 | LON02AZ | 10.201.98.0/24 |
 | LON04 | 10.201.34.0/24 |
@@ -449,7 +423,6 @@ Be sure to configure rules and verify routes for DAL01, DAL10, WDC04, and the lo
 | OSA21 | 10.202.114.0/24 |
 | OSA22 | 10.202.146.0/24 |
 | OSA23 | 10.202.162.0/24 |
-| OSL01 | 10.200.98.0/24 |
 | PAR01 | 10.2.146.0/24 |
 | SAO01 | 10.200.2.0/24 |
 | SEO01 | 10.200.66.0/24 |
@@ -491,7 +464,6 @@ All TCP/UDP ports (for access from your local workstation)
 |ams01|Amsterdam|-|NLD|10.2.200.0/23|
 |ams03|Amsterdam|-|NLD|10.3.220.0/24|
 |che01|Chennai|-|IND|10.200.232.0/24|
-|dal01|Dallas|Texas|USA|10.1.0.0/23|
 |dal05|Dallas|Texas|USA|10.1.24.0/23|
 |dal06|Dallas|Texas|USA|10.2.208.0/23|
 |dal07|Dallas|Texas|USA|10.1.236.0/24|
@@ -501,22 +473,18 @@ All TCP/UDP ports (for access from your local workstation)
 |dal13|Dallas|Texas|USA|10.200.212.0/22|
 |fra02|Frankfurt|-|DEU|10.2.236.0/24|
 |hkg02|Hong Kong|-|CHN|10.2.216.0/24|
-|hou02|Houston|Texas|USA|10.1.56.0/23|
 |lon02|London|-|ENG|10.2.220.0/24|
 |lon04|London|-|ENG|10.200.196.0/24|
 |lon05|London|-|ENG|10.201.208.0/24|
 |lon06|London|-|ENG|10.3.200.0/24|
-|mel01|Melbourne|-|AUS|10.2.228.0/24|
 |mex01|Mexico City|-|MEX|10.3.232.0/24|
 |mil01|Milan|-|ITA|10.3.216.0/24|
 |mon01|Montreal|-|CAN|10.3.224.0/24|
 |osa21|Osaka|10.202.128.0/24|
 |osa22|Osaka|10.202.132.0/24|
 |osa23|Osaka|10.202.136.0/24|
-|osl01|Oslo|-|NOR|10.200.220.0/22|
 |par01|Paris|-|FRA|10.3.236.0/24|
 |sao01|São Paulo|-|BRA|10.200.236.0/24|
-|sea01|Seattle|Washington|USA|10.1.8.0/23|
 |seo01|Seoul|-|KOR|10.200.224.0/22|
 |sjc01|San Jose|California|USA|10.1.224.0/23|
 |sjc03|San Jose|California|USA|10.3.204.0/24|
@@ -572,15 +540,13 @@ If your server uses a Red Hat Enterprise Linux (RHEL) license provided by {{site
 |---|---|
 |Amsterdam (AMS01, AMS03)|FRA02|
 |Chennai (CHE01)|TOK02|
-|Dallas (DAL01, DAL05, DAL06, DAL09, DAL10, DAL12, DAL13)|DAL09|
-|Houston (HOU02)|DAL09|
+|Dallas (DAL05, DAL06, DAL09, DAL10, DAL12, DAL13)|DAL09|
 |Frankfurt (FRA02, FRA04, FRA05)|FRA02|
 |Hong Kong (HKG02)|TOK02|
 |London (LON02, LON04, LON05, LON06)|LON02|
 |Mexico (MEX01)|DAL09|
 |Milan (MIL01)|FRA02|
 |Montreal (MON01)|MON01|
-|Oslo (OSL01)|FRA02|
 |Paris (PAR01)|FRA02|
 |San Jose (SJC01, SJC03, SJC04)|DAL09|
 |Sao Paulo (SAO01)|DAL09|
