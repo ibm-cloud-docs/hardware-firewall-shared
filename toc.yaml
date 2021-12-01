@@ -36,6 +36,7 @@ toc:
        - bypassing.md
        - cancelling.md
        - viewing-logs.md
+       - managing-permissions.md
 
     - navgroup:
        id: reference
