@@ -19,6 +19,8 @@ To view and manage your hardware firewalls, you need the correct permissions. Af
 The following permissions are required for viewing and managing various parts of your hardware firewalls:
 
 * **Manage firewalls** - Allows you to view your list of firewalls. It also allows you to view and manage the details of a specific firewall.
+* **View hardware details** - Allows you to view your list of hardware firewalls on bare metal servers. It also allows you to view and manage the details of a specific hardware firewall on a bare metal server.
+* **View virtual server details** - Allows you to view your list of firewalls on virtual servers. It also allows you to view and manage the details of a specific hardware firewall on a virtual server.
 * **Manage firewall rules** - Allows you to manage the rules of a specific hardware firewall.
 * **Cancel services** - Allows you to cancel a firewall.
 
@@ -31,9 +33,11 @@ If you are the account administrator and you want to grant a user permission to 
 2. Select **View: My classic infrastructure users**.
 3. Select a user, click the **Classic infrastructure** tab, then click the **Permissions** tab.
 4. Expand the **Devices** category and select **Manage firewalls**.
-4. Expand the **Devices** category and select **Manage firewall rules**.
-4. Expand the **Account** category and select **Cancel services**.
-6. Click **Apply**.
+5. Expand the **Devices** category and select **View hardware details**.
+6. Expand the **Devices** category and select **View virtual server details**.
+7. Expand the **Devices** category and select **Manage firewall rules**.
+8. Expand the **Account** category and select **Cancel services**.
+9. Click **Apply**.
 
 ## Next steps
 {: #next-steps}
