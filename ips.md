@@ -10,15 +10,7 @@ subcollection: hardware-firewall-shared
 
 ---
 
-{:shortdesc: .shortdesc}
-{:new_window: target="_blank_"}
-{:codeblock: .codeblock}
-{:pre: .pre}
-{:screen: .screen}
-{:tip: .tip}
-{:download: .download}
-{:note: .note}
-{:important: .important}
+{{site.data.keyword.attribute-definition-list}}
 
 # IBM Cloud IP ranges
 {: #ibm-cloud-ip-ranges}
@@ -35,6 +27,7 @@ A frequently asked question is, "What IP ranges do I allow through the firewall?
 * Hardware Firewall (Shared)
 
 ## Front-end (public) network
+{: #front-end-public}
 
 |Data Center|City|State|Country|IP Range|
 |---|---|---|---|---|
@@ -84,12 +77,14 @@ A frequently asked question is, "What IP ranges do I allow through the firewall?
 |wdc04|Washington D.C.|-|USA|169.55.118.0/23|
 |wdc06|Washington D.C.|-|USA|169.60.118.0/23|
 |wdc07|Washington D.C.|-|USA|169.61.118.0/23|
+{: caption="Front-end (public) network" caption-side="bottom"}
 
 Ports to allow:
 - All TCP/UDP ports
 - ICMP – ping (for support troubleshooting and monitoring)
 
 ## Load balancer IPs
+{: #load-balancer-ips}
 
 |Data Center|City|State|Country|IP Range|
 |---|---|---|---|---|
@@ -131,8 +126,10 @@ Ports to allow:
 |wdc04|Washington D.C.|-|USA|169.55.117.0/24|
 |wdc06|Washington D.C.|-|USA|169.60.117.0/24|
 |wdc07|Washington D.C.|-|USA|169.61.117.0/24|
+{: caption="Load balancer IPs" caption-side="bottom"}
 
 ## DOS mitigation systems
+{: #DOS}
 
 |Data Center|City|State|Country|IP Range|
 |---|---|---|---|---|
@@ -158,11 +155,13 @@ Ports to allow:
 |TOK|Tokyo|-|JPN|161.202.116.0/24|
 |TOR|Toronto|-|CAN|158.85.116.0/24, 163.66.116.0/24, 163.74.116.0/24, 163.75.116.0/24|
 |WDC|Washington D.C.|-|USA|50.22.255.0/24|
+{: caption="DOS mitigation systems" caption-side="bottom"}
 
 Ports to allow:
 - All TCP/UDP ports
 
 ## Back-end (private) network
+{: #back-end-private}
 
 IP block: your private IP block for server to server communications (`10.X.X.X/X`)
 
@@ -171,6 +170,7 @@ Ports to allow:
 - All TCP/UDP ports
 
 ## Service network (on back-end/private network)
+{: #service-network}
 
 Be sure to configure rules and verify routes for DAL10, WDC04, and the location of your server. If your server is in an EU location, you must add rules allowing traffic from DAL10, WDC04, and AMS01 to your server. The traffic must be able to travel between the service networks and your server. By default, all servers and gateway/firewall devices are configured with a static route for the `10.0.0.0/8` network to the Backend Customer Router (BCR). If you change that configuration such that the entire `10.0.0.0/8` network is pointed elsewhere, you must also configure static routes for the service networks to ensure they are pointed to the BCR. Failing to do so will result in the static routes being pointed to whichever IP address you replaced the original with. If you do not change the default static route for `10.0.0.0/8`, then the service networks are already routed correctly.
 
@@ -227,6 +227,7 @@ Be sure to configure rules and verify routes for DAL10, WDC04, and the location 
 |wdc04|Washington D.C.|-|USA|10.3.160.0/20 and 10.201.0.0/20|
 |wdc06|Washington D.C.|-|USA|10.200.160.0/20|
 |wdc07|Washington D.C.|-|USA|10.200.176.0/20|
+{: caption="Service network (on back-end/private network)" caption-side="bottom"}
 
 `*` - The 10.1.129.0/24 subnet, within the 10.1.128.0/19 master subnet, is used for Global service virtual IPs, which are not located in DAL05.
 {: note}
@@ -283,7 +284,7 @@ Be sure to configure rules and verify routes for DAL10, WDC04, and the location 
 | WDC06 | 10.200.166.0/24 |
 | WDC07 | 10.200.182.0/24 |
 {: class="simple-tab-table"}
-{: caption="Table 1. eVault by Data Center" caption-side="left"}
+{: caption="Table 1. eVault by Data Center" caption-side="bottom"}
 {: #simpletabtable1}
 {: tab-title="eVault"}
 {: tab-group="IAM-simple"}
@@ -336,7 +337,7 @@ Be sure to configure rules and verify routes for DAL10, WDC04, and the location 
 | WDC04 | 10.3.174.0/24 |
 | WDC06 | 10.200.174.0/24 |
 | WDC07 | 10.200.90.0/24 |
-{: caption="Table 2. File and Block by Data Center" caption-side="left"}
+{: caption="Table 2. File and Block by Data Center" caption-side="bottom"}
 {: #simpletabtable2}
 {: tab-title="File & Block"}
 {: tab-group="IAM-simple"}
@@ -388,7 +389,7 @@ Be sure to configure rules and verify routes for DAL10, WDC04, and the location 
 | WDC04 | 10.201.3.0/24 |
 | WDC06 | 10.200.163.0/24 |
 | WDC07 | 10.200.179.0/24 |
-{: caption="Table 3. AdvMon (Nimsoft) by Data Center" caption-side="left"}
+{: caption="Table 3. AdvMon (Nimsoft) by Data Center" caption-side="bottom"}
 {: #simpletabtable3}
 {: tab-title="AdvMon (Nimsoft)"}
 {: tab-group="IAM-simple"}
@@ -443,7 +444,7 @@ Be sure to configure rules and verify routes for DAL10, WDC04, and the location 
 | WDC04 | 10.201.2.0/24 |
 | WDC06 | 10.200.162.0/24 |
 | WDC07 | 10.200.178.0/24 |
-{: caption="Table 4. ICOS by Data Center" caption-side="left"}
+{: caption="Table 4. ICOS by Data Center" caption-side="bottom"}
 {: #simpletabtable4}
 {: tab-title="ICOS"}
 {: tab-group="IAM-simple"}
@@ -453,11 +454,14 @@ Be sure to configure rules and verify routes for DAL10, WDC04, and the location 
 {: note}
 
 ## SSL VPN network (on backend/private network)
+{: #ssl-vpn}
+
 ICMP – ping (for support troubleshooting)
 
 All TCP/UDP ports (for access from your local workstation)
 
 ## SSL VPN data centers
+{: #ssl-vpn-data}
 
 |Data Center|City|State|Country|IP Range|
 |---|---|---|---|---|
@@ -504,8 +508,10 @@ All TCP/UDP ports (for access from your local workstation)
 |wdc03|Washington D.C.|-|USA|100.101.132.0/24|
 |wdc06|Washington D.C.|-|USA|10.200.208.0/24|
 |wdc07|Washington D.C.|-|USA|10.200.204.0/24|
+{: caption="SSL VPN data centers" caption-side="bottom"}
 
 ## SSL VPN POPs
+{: #ssl-vpn-pop}
 
 |POP|City|State|Country|IP Range|
 |---|---|---|---|---|
@@ -515,8 +521,10 @@ All TCP/UDP ports (for access from your local workstation)
 |lax01|Los Angeles|California|USA|10.1.33.0/24|
 |mia01|Miami|Florida|USA|10.1.37.0/24|
 |nyc01|New York|New York|USA|10.1.45.0/24|
+{: caption="SSL VPN POPs" caption-side="bottom"}
 
 ## Legacy networks
+{: #legacy}
 
 |IP Range|
 |---|
@@ -531,8 +539,10 @@ All TCP/UDP ports (for access from your local workstation)
 |216.12.193.9|
 |216.40.193.0/24|
 |216.234.234.0/24|
+{: caption="Legacy networks" caption-side="bottom"}
 
 ## Red Hat Enterprise Linux server requirements
+{: #redhat-reqs}
 
 If your server uses a Red Hat Enterprise Linux (RHEL) license provided by {{site.data.keyword.cloud_notm}} infrastructure, you must also allow access to the service network as follows; otherwise, updates and licensing do not function properly.
 
@@ -557,3 +567,4 @@ If your server uses a Red Hat Enterprise Linux (RHEL) license provided by {{site
 |Toronto (TOR01)|MON01|
 |Washington DC (WDC01, WDC04, WDC06, WDC07)|MON01|
 |Any DC Not Listed Above|DAL09|
+{: caption="Red Hat Enterprise Linux server requirements" caption-side="bottom"}

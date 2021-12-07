@@ -10,15 +10,7 @@ subcollection: hardware-firewall-shared
 
 ---
 
-{:shortdesc: .shortdesc}
-{:new_window: target="_blank"}
-{:codeblock: .codeblock}
-{:pre: .pre}
-{:screen: .screen}
-{:tip: .tip}
-{:download: .download}
-{:note: .note}
-{:important: .important}
+{{site.data.keyword.attribute-definition-list}}
 
 # Configuring the Hardware Firewall
 {: #configuring-the-hardware-firewall-shared-}
@@ -38,7 +30,7 @@ When a firewall is first added to a server, a set of rules is initially put in p
 
 Ensure the "status" indicates that the firewall is "Processing All Rules." Users can choose to bypass the rules in the event that implemented rules have an unintended impact on their environment by clicking **Bypass Rules** in the **Actions** drop-down.
 
-1. From your browser, open the [IBM Cloud catalog ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com){: new_window} and log into your account.
+1. From your browser, open the [IBM Cloud catalog](https://cloud.ibm.com){: external} and log into your account.
 2. Select the Menu icon ![Menu icon](../../icons/icon_hamburger.svg) from the top left, then click **Classic Infrastructure**.
 3. Select **Devices > Device List** and click on the firewall protected device you want to configure.
 4. In the **Add-ons** section, click **Firewall details**. It will redirect you to the firewall page. 
@@ -89,4 +81,6 @@ Ensure the "status" indicates that the firewall is "Processing All Rules." Users
 | PostgreSQL | 5432 |
 | VNC Web | 5800 |
 | VNC Client | 5900 |
-| Urchin | 9999 or 10000 ||
+| Urchin | 9999 or 10000 |
+{: caption="Common ports" caption-side="bottom"}
+

@@ -10,15 +10,7 @@ subcollection: hardware-firewall-shared
 
 ---
 
-{:shortdesc: .shortdesc}
-{:new_window: target="_blank"}
-{:codeblock: .codeblock}
-{:pre: .pre}
-{:screen: .screen}
-{:tip: .tip}
-{:note: .note}
-{:important: .important}
-{:download: .download}
+{{site.data.keyword.attribute-definition-list}}
 
 # Viewing your various firewalls
 {: #viewing-your-various-firewalls}
@@ -31,7 +23,7 @@ You can identify the Hardware Firewalls in use on an account and their associate
 
 To get an overview of firewalls on your system, as well as initiate basic management:
 
-1. From your browser, open the [IBM Cloud catalog ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com){: new_window} and log into your account.
+1. From your browser, open the [IBM Cloud catalog](https://cloud.ibm.com){: external} and log into your account.
 2. Select the Menu icon ![Menu icon](../../icons/icon_hamburger.svg) from the top left, then click **Classic Infrastructure**.
 3. Select **Network > IP Management > VLANs**.
 

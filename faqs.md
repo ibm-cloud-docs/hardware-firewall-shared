@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2017,2018
+  years: 2017, 2018
 lastupdated: "2019-11-12"
 
 keywords: faqs, firewall, ips, traffic, public, private, bandwidth, vpn, nat
@@ -10,17 +10,7 @@ subcollection: hardware-firewall-shared
 
 ---
 
-{:shortdesc: .shortdesc}
-{:new_window: target="_blank"}
-{:codeblock: .codeblock}
-{:pre: .pre}
-{:screen: .screen}
-{:tip: .tip}
-{:download: .download}
-{:faq: data-hd-content-type='faq'}
-{:note: .note}
-{:important: .important}
-{:support: data-reuse='support'}
+{{site.data.keyword.attribute-definition-list}}
 
 # FAQs for Hardware Firewall
 {: #faqs-for-hardware-firewall-shared-}
@@ -29,11 +19,13 @@ The following frequently asked questions can help you when working with your Har
 {: shortdesc}
 
 ## What is a firewall?
+{: #faqs-what}
 {: faq}
 
 A firewall is a network device that is connected upstream from a server. The firewall blocks unwanted traffic from a server before the server is reached.
 
 ## Why should I use a firewall?
+{: #faqs-why}
 {: faq}
 
 The primary advantage of having a firewall is that your server only has to handle “good” traffic – this means your resource is solely being used for its intended purpose as opposed to handling unwanted traffic, too.
@@ -67,6 +59,7 @@ No. Portable IPs are not available for protection because they can be moved betw
 No, it is not possible to have a Hardware Firewall (standard or Dedicated)  and a Network Gateway device assigned to the same VLAN.  The expanded functionality of the Network Gateway device provides firewall features for your network in place of a standard or dedicated firewall.
 
 ## Does public traffic pass through my load balancer or Hardware Firewall first?
+{: #faqs-public-traffic}
 {: faq}
 
 Coming from the public internet in, the load balancing products are first, the Hardware Firewall products are next, and the NetScaler products are last (along with the customers servers).
@@ -86,16 +79,19 @@ The Hardware Firewall does need to match the public uplink speed of the server. 
 The Hardware Firewall, Hardware Firewall (Dedicated), and FortiGate Security Appliance (FSA) 1G are not metered for bandwidth.  FSA 10G is charged for firewall bandwidth after 20 TB are used. Additionally, these products can reduce total bandwidth utilization by limiting the traffic that servers must respond to.
 
 ## How do I upgrade the uplink of my Hardware Firewall?
+{: #faqs-upgrade-uplink}
 {: faq}
 
 The Hardware Firewall is locked to the public uplink port speed of a server. You can upgrade in place by cancelling the firewall, upgrading the port speed for the server, and ordering a new firewall. Alternatively, you can deploy a new server with the desired uplinks and associated firewall.
 
 ## Is High Availability possible with the Hardware Firewall?
+{: #faqs-ha}
 {: faq}
 
 No. The Hardware Firewall platform is enterprise-grade and highly durable, but true High Availability (redundant devices) is not an option for the Hardware Firewall. For HA, a Hardware Firewall (Dedicated with High Availability) or FortiGate Security Appliance (High Availability) is required.  The Network Gateway product also has an HA option with firewall capabilities.
 
 ## I am running a hypervisor on an IBM Cloud server. Will the Hardware Firewall protect the Virtual Machines running on my hypervisor?
+{: #faqs-hypervisor}
 {: faq}
 
 No. Portable IPs are used for the VMs in a hypervisor environment and portable IPs are not protected by the hardware firewall.  A Hardware Firewall (Dedicated) or FortiGate Security Appliance is recommended.
@@ -110,6 +106,7 @@ IBM Cloud offers many different services that you can utilize with your server i
 These ports generally cannot be modified; however, if you reset the firewall rules, it will clear them from the Exceptions list. Please beware that resetting the firewall rules may have an adverse affect not only on these additional services but also could cause other issues as well with your server depending on its current configuration.
 
 ## What Hardware Firewall options are available for 10Gbps servers?
+{: #faqs-10g-options}
 {: faq}
 
 FSA 10G is the only option to support 10Gbps servers for both public and private traffic. If 10Gbps is only required on the private network (for database, backup, storage, etc), then customers can request a downgrade of only their public uplinks and order any of the Hardware Firewall products.
@@ -119,9 +116,10 @@ FSA 10G is the only option to support 10Gbps servers for both public and private
 {: faq}
 {: support}
 
-For the list of IP addresses and IP ranges to allow through the firewall, go [here](/docs/hardware-firewall-dedicated?topic=hardware-firewall-dedicated-ibm-cloud-ip-ranges){: new_window}.
+For the list of IP addresses and IP ranges to allow through the firewall, go [here](/docs/hardware-firewall-dedicated?topic=hardware-firewall-dedicated-ibm-cloud-ip-ranges){: external}.
 
-## What VPN options are included with each Firewall product?
+## What VPN options are included with each firewall product?
+{: #faqs-VPN}
 {: faq}
 
 Not all firewalls offer VPN and not all VPN options are the same.  The general options for VPN are:
@@ -134,6 +132,7 @@ Not all firewalls offer VPN and not all VPN options are the same.  The general o
 * Customers can also deploy a VPN solution on to a server within their IBM Cloud environment.
 
 ## Which firewall products support public-to-private NAT and/or private VLAN segmentation?
+{: #faqs-NAT}
 {: faq}
 
 Fortigate Security Appliance 10G supports NAT and private VLAN segmentation. The other firewall offerings only support public traffic.

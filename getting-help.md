@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2017,2019
+  years: 2017, 2019
 lastupdated: "2019-11-12"
 
 keywords: help, support, troubleshooting
@@ -10,15 +10,7 @@ subcollection: hardware-firewall-shared
 
 ---
 
-{:shortdesc: .shortdesc}
-{:new_window: target="_blank"}
-{:codeblock: .codeblock}
-{:pre: .pre}
-{:screen: .screen}
-{:tip: .tip}
-{:download: .download}
-{:note: .note}
-{:important: .important}
+{{site.data.keyword.attribute-definition-list}}
 
 # Getting help and support for Hardware Firewall (Shared)
 {: #getting-help-and-support-for-hardware-firewall-shared-}
