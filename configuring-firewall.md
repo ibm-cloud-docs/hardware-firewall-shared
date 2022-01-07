@@ -61,6 +61,9 @@ Ensure the "status" indicates that the firewall is "Processing All Rules." Users
 
 7. Click the **Save** or **Add** buttons to save the rule and apply to the firewall. The rule addition or update should take effect within two minutes.
 
+The **Delete** action will be disabled if there is only one rule on the firewall.
+{: note}
+
 ## Common ports
 {: #common-ports}
 

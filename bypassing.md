@@ -28,3 +28,6 @@ You can bypass the rules of your Hardware Firewall by following the instructions
 {: #enable-the-rules-again}
 
 To enable the rules again, follow the instructions above to reach the Firewall Details page of the device and click on the **Actions** dropdown menu. Choose **Process Rules**. Click **OK** to confirm the action. Within two minutes, the status icon will change back to green and show a "Processing all rules" message.
+
+The **Process Rules** action will be disabled if the firewall does not have any rules defined.
+{: note}
