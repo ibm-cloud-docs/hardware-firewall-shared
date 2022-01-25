@@ -172,12 +172,13 @@ Ports to allow:
 ## Service network (on back-end/private network)
 {: #service-network}
 
-Be sure to configure rules and verify routes for DAL10, WDC04, and the location of your server. If your server is in an EU location, you must add rules allowing traffic from DAL10, WDC04, and AMS01 to your server. The traffic must be able to travel between the service networks and your server. By default, all servers and gateway/firewall devices are configured with a static route for the `10.0.0.0/8` network to the Backend Customer Router (BCR). If you change that configuration such that the entire `10.0.0.0/8` network is pointed elsewhere, you must also configure static routes for the service networks to ensure they are pointed to the BCR. Failing to do so will result in the static routes being pointed to whichever IP address you replaced the original with. If you do not change the default static route for `10.0.0.0/8`, then the service networks are already routed correctly.
+Be sure to configure rules and verify routes for the subnets listed under All, DAL10, WDC04, and the location of your server. If your server is in an EU location, you must also add rules allowing traffic from AMS01 to your server. The traffic must be able to travel between the service networks and your server. By default, all servers and gateway/firewall devices are configured with a static route for the `10.0.0.0/8` network to the Backend Customer Router (BCR). If you change that configuration such that the entire `10.0.0.0/8` network is pointed elsewhere, you must also configure static routes for the service networks to ensure they are pointed to the BCR. Failing to do so will result in the static routes being pointed to whichever IP address you replaced the original with. If you do not change the default static route for `10.0.0.0/8`, then the service networks are already routed correctly.
 
 |Data Center|City|State|Country|IP Range|
 |---|---|---|---|---|
-|All|-|-|-|166.8.0.0/14|
+|All|-|-|-|10.0.64.0/19|
 |All|-|-|-|161.26.0.0/16|
+|All|-|-|-|166.8.0.0/14|
 |ams01|Amsterdam|-|NLD|10.2.64.0/20|
 |ams03|Amsterdam|-|NLD|10.3.128.0/20|
 |che01|Chennai|-|IND|10.200.16.0/20|
