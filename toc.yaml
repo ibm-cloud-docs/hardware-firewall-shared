@@ -41,7 +41,7 @@ toc:
     - navgroup:
        id: reference
        topics:
-       - ips.md
+       - /cloud-infrastructure/cloud-infrastructure-ibm-cloud-ip-ranges
 
     - navgroup:
        id: help
