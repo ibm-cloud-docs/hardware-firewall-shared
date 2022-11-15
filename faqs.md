@@ -56,7 +56,7 @@ No. Portable IPs are not available for protection because they can be moved betw
 {: faq}
 {: support}
 
-No, it is not possible to have a Hardware Firewall (standard or Dedicated)  and a Network Gateway device assigned to the same VLAN.  The expanded functionality of the Network Gateway device provides firewall features for your network in place of a standard or dedicated firewall.
+No, it is not possible to have a Hardware Firewall and a Network Gateway device assigned to the same VLAN. The expanded functionality of the Network Gateway device provides firewall features for your network in place of a standard firewall.
 
 ## Does public traffic pass through my load balancer or Hardware Firewall first?
 {: #faqs-public-traffic}
@@ -76,7 +76,7 @@ The Hardware Firewall does need to match the public uplink speed of the server. 
 {: faq}
 {: support}
 
-The Hardware Firewall, Hardware Firewall (Dedicated), and FortiGate Security Appliance (FSA) 1G are not metered for bandwidth.  FSA 10G is charged for firewall bandwidth after 20 TB are used. Additionally, these products can reduce total bandwidth utilization by limiting the traffic that servers must respond to.
+The Hardware Firewall and FortiGate Security Appliance (FSA) 1G are not metered for bandwidth.  FSA 10G is charged for firewall bandwidth after 20 TB are used. Additionally, these products can reduce total bandwidth utilization by limiting the traffic that servers must respond to.
 
 ## How do I upgrade the uplink of my Hardware Firewall?
 {: #faqs-upgrade-uplink}
@@ -88,13 +88,13 @@ The Hardware Firewall is locked to the public uplink port speed of a server. You
 {: #faqs-ha}
 {: faq}
 
-No. The Hardware Firewall platform is enterprise-grade and highly durable, but true High Availability (redundant devices) is not an option for the Hardware Firewall. For HA, a Hardware Firewall (Dedicated with High Availability) or FortiGate Security Appliance (High Availability) is required.  The Network Gateway product also has an HA option with firewall capabilities.
+No. The Hardware Firewall platform is enterprise-grade and highly durable, but true High Availability (redundant devices) is not an option for the Hardware Firewall. For HA, a Hardware Firewall (High Availability) or FortiGate Security Appliance (High Availability) is required.  The Network Gateway product also has an HA option with firewall capabilities.
 
 ## I am running a hypervisor on an IBM Cloud server. Will the Hardware Firewall protect the Virtual Machines running on my hypervisor?
 {: #faqs-hypervisor}
 {: faq}
 
-No. Portable IPs are used for the VMs in a hypervisor environment and portable IPs are not protected by the hardware firewall.  A Hardware Firewall (Dedicated) or FortiGate Security Appliance is recommended.
+No. Portable IPs are used for the VMs in a hypervisor environment and portable IPs are not protected by the hardware firewall.  A FortiGate Security Appliance is recommended.
 
 ## What are the grayed out ports in my Windows Firewall?
 {: #greyed-out}
@@ -116,7 +116,7 @@ FSA 10G is the only option to support 10Gbps servers for both public and private
 {: faq}
 {: support}
 
-For the list of IP addresses and IP ranges to allow through the firewall, go [here](/docs/hardware-firewall-dedicated?topic=hardware-firewall-dedicated-ibm-cloud-ip-ranges){: external}.
+For the list of IP addresses and IP ranges to allow through the firewall, go [here](/docs/hardware-firewall-shared?topic=cloud-infrastructure-ibm-cloud-ip-ranges){: external}.
 
 ## What VPN options are included with each firewall product?
 {: #faqs-VPN}
