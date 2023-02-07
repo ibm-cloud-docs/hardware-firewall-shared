@@ -15,7 +15,7 @@ toc:
        topics:
        - getting-started.md
        - about.md
-       - include: /fortigate-10g/explore-firewalls.md
+       - include: ../fortigate-10g/explore-firewalls.md
        - link:
           label: What is network security?
           href: https://www.ibm.com/cloud/learn/networking-a-complete-guide
@@ -27,7 +27,7 @@ toc:
        - topicgroup:
           label: Team based privacy using IAM, VPC, Transit Gateway and DNS
           topics:
-          - include: /solution-tutorials/vpc-tg-dns-iam.md
+          - include: ../solution-tutorials/vpc-tg-dns-iam.md
 
     - navgroup:
        id: howto
