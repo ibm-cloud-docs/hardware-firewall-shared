@@ -125,7 +125,7 @@ For the list of IP addresses and IP ranges to allow through the firewall, go [he
 Not all firewalls offer VPN and not all VPN options are the same.  The general options for VPN are:
 
 * Each customer receives unlimited SSL VPN connections to our private network. These connections can be established by clicking the VPN link at the top of the page while logged into the IBM Cloud console.
-* IBM Cloud also offers a basic multi-tenant IPsecVPN service starting at $99/month.
+* IBM Cloud also offers a basic multi-tenant IPsecVPN service.
 * The FortiGate Security Appliance 1G provides SSL and IPsecVPN options with Public network access only (no access to the IBM Cloud private network). FSA 10G provides SSL and IPsecVPN options with Public or Private network access.
 * The Network Gateway provides SSL, IPsecand OpenVPN capabilities on the public or private network
 * The NetScaler products can provide SSL and IPsecVPN on the public or private network.
