@@ -116,7 +116,7 @@ FSA 10G is the only option to support 10Gbps servers for both public and private
 {: faq}
 {: support}
 
-For the list of IP addresses and IP ranges to allow through the firewall, go [here](/docs/hardware-firewall-shared?topic=cloud-infrastructure-ibm-cloud-ip-ranges){: external}.
+For the list of IP addresses and IP ranges to allow through the firewall, go [here](/docs/hardware-firewall-shared?topic=hardware-firewall-shared-ibm-cloud-ip-ranges){: external}.
 
 ## What VPN options are included with each firewall product?
 {: #faqs-VPN}
