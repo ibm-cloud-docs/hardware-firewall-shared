@@ -17,7 +17,7 @@ subcollection: hardware-firewall-shared
 {: help}
 {: support}
 
-Your Hardware Firewall can be cancelled at any time, by following the instructions here.
+Your Hardware Firewall can be cancelled at any time, by following the instructions here. 
 {: shortdesc}
 
 1. From your browser, open the [IBM Cloud catalog](https://cloud.ibm.com){: external} and log into your account.
