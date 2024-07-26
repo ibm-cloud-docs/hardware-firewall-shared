@@ -15,7 +15,7 @@ subcollection: hardware-firewall-shared
 # Configuring the Hardware Firewall
 {: #configuring-the-hardware-firewall-shared-}
 
-Configuring your Hardware Firewall is as simple as creating a set of rules to allow access to certain IP addresses/ports from specific internet addresses while denying traffic from other sources.
+Configuring your Hardware Firewall is as simple as creating a set of rules to allow access to certain IP addresses or ports from specific internet addresses while denying traffic from other sources.
 {: shortdesc}
 
 ## Adding a firewall to a server
@@ -26,42 +26,42 @@ To add a firewall to a server, follow the steps in [Getting Started](/docs/hardw
 ## Editing rules
 {: #editing-rules}
 
-When a firewall is first added to a server, a set of rules is initially put in place that allows all traffic to reach the server. The rules can then be edited to control the traffic reaching the server.
+When a firewall is first added to a server, a set of rules is initially put in place that allows all traffic to reach the server. The rules can then be edited to control the traffic that reaches the server.
 
-Ensure the "status" indicates that the firewall is "Processing All Rules." Users can choose to bypass the rules in the event that implemented rules have an unintended impact on their environment by clicking **Bypass Rules** in the **Actions** drop-down.
+Make sure the "status" indicates that the firewall is "Processing All Rules." Users can choose to bypass the rules if implemented rules have an unintended impact on their environment by clicking **Bypass Rules** in the **Actions** menu.
 
-1. From your browser, open the [IBM Cloud catalog](https://cloud.ibm.com){: external} and log into your account.
-2. Select the Menu icon ![Menu icon](../../icons/icon_hamburger.svg) from the top left, then click **Classic Infrastructure**.
-3. Select **Devices > Device List** and click on the firewall protected device you want to configure.
-4. In the **Add-ons** section, click **Firewall details**. It will redirect you to the firewall page. 
-5. The Firewall Details page shows the current rules in effect for IPv4 and IPv6 addresses. If no rules are implemented, a yellow status icon will show with a "Bypassing all rules" message next to the device name on the top of the page. 
+1. From your browser, open the [IBM Cloud catalog](https://cloud.ibm.com){: external} and log in to your account.
+1. Select the Menu icon ![Menu icon](../../icons/icon_hamburger.svg) from the upper left, then click **Classic Infrastructure**.
+1. Select **Devices > Device List** and click the firewall-protected device that you want to configure.
+1. In the **Add-ons** section, click **Firewall details**. It will redirect you to the firewall page.
+1. The Firewall Details page shows the current rules in effect for IPv4 and IPv6 addresses. If no rules are implemented, a yellow status icon shows with a "Bypassing all rules" message next to the device name.
 
      Rules are displayed in the order in which they are processed, with lower numbered rules having precedence over higher
-     number rules (if rule one allows a packet through, rules two and beyond are ignored by the packet).
+     number rules. For example, if rule one allows a packet through, the packet ignores rules two and beyond.
 
      The fields are:
 
-      **Priority** - This field contains the rule number. Lower numbered rules have precedence over higher numbered rules. 
+      **Priority** - This field contains the rule number. Lower numbered rules have precedence over higher numbered rules.
 
-      **Action** - This select list is used to 'permit' or 'deny' traffic matching this rule.
+      **Action** - This select list is used to 'permit' or 'deny' traffic that matches this rule.
 
       **Source** - This field can be either 'any' or a specific IP address or the network address for a specific subnet.
 
-      **Destination** - This field selects the destination IP (see [Known Limitations](/docs/hardware-firewall-shared?topic=hardware-firewall-shared-known-limitations-with-hardware-firewall-shared-) if there are issues).
+      **Destination** - This field selects the destination IP (see [Known Limitations](/docs/hardware-firewall-shared?topic=hardware-firewall-shared-known-limitations-with-hardware-firewall-shared-) if any issues arise).
 
       **CIDR** - This field indicates the standard CIDR notation for the selected source/destination.
 
-      **Port Range** - These two fields indicate the range of ports (between 1 and 65535) that the rule will apply to.
+      **Port Range** - These two fields indicate the range of ports (between 1 and 65535) that the rule applies to.
 
-      **Protocol** - This field selects the protocol the rule will apply to (TCP/GRE/ICMP/UDP/PPTP/AH/ESP).
+      **Protocol** - This field selects the protocol that the rule applies to (TCP/GRE/ICMP/UDP/PPTP/AH/ESP).
 
       **Notes:** Freeform field to enter any note about this rule.
 
-6. Click on the Overflow menu icon at the end of the row of the firewall rule to edit or delete the rule. Click the **Add rule** button at the right top corner of the table to add an additional rule. The rules are automatically validated as you enter them.
+1. Click the **Actions** menu icon at the end of the row of the firewall rule to edit or delete the rule. Click **Add rule** at the upper right of the table to add a rule. The rules are automatically validated as you enter them.
 
-7. Click the **Save** or **Add** buttons to save the rule and apply to the firewall. The rule addition or update should take effect within two minutes.
+1. Click the **Save** or **Add** buttons to save the rule and apply to the firewall. The rule addition or update takes effect within two minutes.
 
-The **Delete** action will be disabled if there is only one rule on the firewall.
+The **Delete** action is disabled if the firewall includes only one rule.
 {: note}
 
 ## Common ports
@@ -82,8 +82,7 @@ The **Delete** action will be disabled if there is only one rule on the firewall
 | MySQL | 3306 |
 | Remote Desktop | 3389 |
 | PostgreSQL | 5432 |
-| VNC Web | 5800 |
+| VNC web | 5800 |
 | VNC Client | 5900 |
 | Urchin | 9999 or 10000 |
 {: caption="Common ports" caption-side="bottom"}
-

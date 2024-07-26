@@ -20,7 +20,7 @@ subcollection: hardware-firewall-shared
 Logs for your Hardware Firewall are available on a per-IP basis by navigating to the protected device, on the Firewall Details page, and clicking **Actions > Firewall Logs**.
 {: shortdesc}
 
-Logs are presented in .CSV format and contain the following:
+Logs are presented in .CSV format and contain the following items:
 
 **Event Type:** The action taken by the firewall (Deny)
 
@@ -28,7 +28,7 @@ Logs are presented in .CSV format and contain the following:
 
 **Source IP Address:** IP where the packet originated
 
-**Source Port:** Port where the packet originated
+**Source Port:** The port where the packet originated
 
 **Destination IP:** Intended target for the packet
 

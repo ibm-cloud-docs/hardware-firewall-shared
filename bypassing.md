@@ -18,16 +18,12 @@ subcollection: hardware-firewall-shared
 You can bypass the rules of your Hardware Firewall by following the instructions here.
 {: shortdesc}
 
-1. From your browser, open the [IBM Cloud catalog](https://cloud.ibm.com){: external} and log into your account.
-2. Select the Menu icon ![Menu icon](../../icons/icon_hamburger.svg) from the top left, then click **Classic Infrastructure**.
-3. Select **Devices > Device List** and select the firewall protected device you want to bypass.
-4. In the **Add-ons** section, click the **Firewall details** button. It will redirect you to the Firewall Details page.
-5. In the Firewall Details page, click the **Actions** dropdown menu and choose **Bypass Rules**. Click **OK** to confirm the action. Bypassing the rules takes approximately two minutes to take effect. While in bypass mode, the status icon will change to yellow, and show a "Bypassing all rules" message.
+1. From your browser, open the [IBM Cloud catalog ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com){:new_window} and log in to your account.
+1. Select the Menu icon ![Menu icon](../../icons/icon_hamburger.svg) from the upper left, then click **Classic Infrastructure**.
+1. Select **Devices > Device List** and click the firewall-protected device that you want to bypass.
+1. In the **Firewall** tab, click the **Actions** menu and choose **Bypass Rules**. Click **Yes** to confirm the action. Bypassing the rules takes approximately two minutes to take effect. While in bypass mode, the "Status" is "Bypassing All Rules".
 
 ## Enabling the rules again
 {: #enable-the-rules-again}
 
-To enable the rules again, follow the instructions above to reach the Firewall Details page of the device and click on the **Actions** dropdown menu. Choose **Process Rules**. Click **OK** to confirm the action. Within two minutes, the status icon will change back to green and show a "Processing all rules" message.
-
-The **Process Rules** action will be disabled if the firewall does not have any rules defined.
-{: note}
+To enable the rules again, follow the preceding instructions to reach the Firewall tab of the device, and click the **Actions** menu and choose **Process Rules**. The "Status" changes back to "Processing All Rules" within two minutes.

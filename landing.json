@@ -1,7 +1,7 @@
 {
     "title": "Hardware Firewall docs",
     "lastupdated": "2021-06-08",
-    "introduction": "A Hardware Firewall is a network device that is connected upstream from a server. The firewall blocks unwanted traffic from a server before the traffic ever reaches the server. The main advantage to having a Hardware Firewall is that a server only has to handle 'good' traffic and no resources are wasted dealing with the 'bad' traffic.",
+    "introduction": "A Hardware Firewall is a network device that is connected upstream from a server. The firewall blocks unwanted traffic from a server before the traffic ever reaches the server. The main advantage to having a Hardware Firewall is that a server handles only 'good' traffic and no resources are wasted dealing with the 'bad' traffic.",
     "section_recommended": [
       {
         "title": "Getting started with Hardware Firewall",
@@ -10,12 +10,12 @@
       },
       {
         "title": "Configuring the Hardware Firewall",
-        "description": "Configuring your Hardware Firewall is as simple as creating a set of rules to allow access to certain IP addresses/ports from specific internet addresses while denying traffic from other sources.",
+        "description": "Configuring your Hardware Firewall is as simple as creating a set of rules to allow access to certain IP addresses and ports from specific internet addresses while the firewall denies traffic from other sources.",
         "href": "/docs/hardware-firewall-shared?topic=hardware-firewall-shared-configuring-the-hardware-firewall-shared-"
       },
       {
         "title": "Viewing your various firewalls",
-        "description": "You can identify the Hardware Firewalls in use on an account and their associated VLANs, as well as identify unprotected VLANs and plan the deployment of a firewall solution.",
+        "description": "You can identify the Hardware Firewalls in use on an account and their associated VLANs, and identify unprotected VLANs and plan the deployment of a firewall solution.",
         "href": "/docs/hardware-firewall-shared?topic=hardware-firewall-shared-viewing-your-various-firewalls"
       }
     ],
