@@ -13,7 +13,7 @@ subcollection: hardware-firewall-shared
 {{site.data.keyword.attribute-definition-list}}
 
 # FAQs for Hardware Firewall
-{: #faqs-for-hardware-firewall-shared-}
+{: #faqs-for-hardware-firewall-shared}
 
 The following frequently asked questions can help you when you work with your Hardware Firewall.
 {: shortdesc}

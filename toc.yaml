@@ -7,7 +7,6 @@ toc:
     href: /docs/hardware-firewall-shared
     path: hardware-firewall-shared
     label: Hardware Firewall
-
   entries:
     - navgroup:
        id: learn
@@ -19,15 +18,6 @@ toc:
           label: What is network security?
           href: https://www.ibm.com/topics/networking
        - release-notes.md
-
-    - navgroup:
-       id: tutorial
-       topics:
-       - topicgroup:
-          label: Team based privacy using IAM, VPC, Transit Gateway and DNS
-          topics:
-          - include: ../solution-tutorials/vpc-tg-dns-iam.md
-
     - navgroup:
        id: howto
        topics:
@@ -37,12 +27,10 @@ toc:
        - cancelling.md
        - viewing-logs.md
        - managing-permissions.md
-
     - navgroup:
        id: reference
        topics:
        - include: ../cloud-infrastructure/ips.md
-
     - navgroup:
        id: help
        topics:

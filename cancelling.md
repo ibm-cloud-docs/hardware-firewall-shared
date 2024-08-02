@@ -13,7 +13,7 @@ subcollection: hardware-firewall-shared
 {{site.data.keyword.attribute-definition-list}}
 
 # Canceling a Hardware Firewall
-{: #canceling-a-hardware-firewall-shared-}
+{: #canceling-a-hardware-firewall-shared}
 {: help}
 {: support}
 

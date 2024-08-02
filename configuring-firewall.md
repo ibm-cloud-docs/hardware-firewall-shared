@@ -13,7 +13,7 @@ subcollection: hardware-firewall-shared
 {{site.data.keyword.attribute-definition-list}}
 
 # Configuring the Hardware Firewall
-{: #configuring-the-hardware-firewall-shared-}
+{: #configuring-the-hardware-firewall-shared}
 
 Configuring your Hardware Firewall is as simple as creating a set of rules to allow access to certain IP addresses or ports from specific internet addresses while denying traffic from other sources.
 {: shortdesc}
@@ -21,7 +21,7 @@ Configuring your Hardware Firewall is as simple as creating a set of rules to al
 ## Adding a firewall to a server
 {: #adding-a-firewall-to-a-server}
 
-To add a firewall to a server, follow the steps in [Getting Started](/docs/hardware-firewall-shared?topic=hardware-firewall-shared-getting-started#getting-started). If you receive an error, see the [Known Limitations](/docs/hardware-firewall-shared?topic=hardware-firewall-shared-known-limitations-with-hardware-firewall-shared-#known-limitations-with-hardware-firewall-shared-) and [Getting help and support](/docs/hardware-firewall-shared?topic=hardware-firewall-shared-getting-help-and-support-for-hardware-firewall-shared-#getting-help-and-support-for-hardware-firewall-shared-).
+To add a firewall to a server, follow the steps in [Getting Started](/docs/hardware-firewall-shared?topic=hardware-firewall-shared-getting-started#getting-started). If you receive an error, see the [Known Limitations](/docs/hardware-firewall-shared?topic=hardware-firewall-shared-known-limitations-with-hardware-firewall-shared-#known-limitations-with-hardware-firewall-shared) and [Getting help and support](/docs/hardware-firewall-shared?topic=hardware-firewall-shared-getting-help-and-support-for-hardware-firewall-shared-#getting-help-and-support-for-hardware-firewall-shared).
 
 ## Editing rules
 {: #editing-rules}
@@ -47,7 +47,7 @@ Make sure the "status" indicates that the firewall is "Processing All Rules." Us
 
       **Source** - This field can be either 'any' or a specific IP address or the network address for a specific subnet.
 
-      **Destination** - This field selects the destination IP (see [Known Limitations](/docs/hardware-firewall-shared?topic=hardware-firewall-shared-known-limitations-with-hardware-firewall-shared-) if any issues arise).
+      **Destination** - This field selects the destination IP (see [Known Limitations](/docs/hardware-firewall-shared?topic=hardware-firewall-shared-known-limitations-with-hardware-firewall-shared) if any issues arise).
 
       **CIDR** - This field indicates the standard CIDR notation for the selected source/destination.
 
