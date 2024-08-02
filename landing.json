@@ -11,7 +11,7 @@
       {
         "title": "Configuring the Hardware Firewall",
         "description": "Configuring your Hardware Firewall is as simple as creating a set of rules to allow access to certain IP addresses and ports from specific internet addresses while the firewall denies traffic from other sources.",
-        "href": "/docs/hardware-firewall-shared?topic=hardware-firewall-shared-configuring-the-hardware-firewall-shared-"
+        "href": "/docs/hardware-firewall-shared?topic=hardware-firewall-shared-configuring-the-hardware-firewall-shared"
       },
       {
         "title": "Viewing your various firewalls",

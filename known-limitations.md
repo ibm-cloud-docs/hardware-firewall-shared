@@ -13,7 +13,7 @@ subcollection: hardware-firewall-shared
 {{site.data.keyword.attribute-definition-list}}
 
 # Known limitations with Hardware Firewall
-{: #known-limitations-with-hardware-firewall-shared-}
+{: #known-limitations-with-hardware-firewall-shared}
 
 Review limitations when you work with your Hardware Firewall.
 {: shortdesc}
@@ -33,5 +33,5 @@ Further limitations for the Hardware Firewall include:
 * Not available for 10 Gb servers
 * Maximum of 79 firewall rules per Hardware Firewall
 * Incompatible with Windows network load balancing due to the way ARP is processed
-* The rule destination subnet is limited to the public IP of the protected server. 
+* The rule destination subnet is limited to the public IP of the protected server.
 * The VLAN for the primary public IP that is protected by the hardware firewall cannot be associated or routed through another gateway, such as a Juniper vSRX or VRA.
