@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2021
-lastupdated: "2021-11-22"
+  years: 2017, 2024
+lastupdated: "2024-08-02"
 
 subcollection: hardware-firewall-shared
 
@@ -29,7 +29,7 @@ The following permissions are required for viewing and managing various parts of
 
 If you are the account administrator and you want to grant a user permission to view and manage gateway appliance details, complete the following steps.
 
-1. Log in to the [Access (IAM)](https://cloud.ibm.com/iam/users){: external} page in the {{site.data.keyword.cloud}} console.
+1. Log in to the [Access (IAM)](/iam/users){: external} page in the {{site.data.keyword.cloud}} console.
 2. Select **View: My classic infrastructure users**.
 3. Select a user, click the **Classic infrastructure** tab, then click the **Permissions** tab.
 4. Expand the **Devices** category and select **Manage firewalls**.
@@ -42,4 +42,4 @@ If you are the account administrator and you want to grant a user permission to 
 ## Next steps
 {: #next-steps}
 
-User permissions are updated immediately after the changes are submitted. If permissions are granted, the user can view or interact with the selected features. If permissions are removed, the user can no longer view or interact with the selected features. Permissions can be updated again at any time. 
+User permissions are updated immediately after the changes are submitted. If permissions are granted, the user can view or interact with the selected features. If permissions are removed, the user can no longer view or interact with the selected features. Permissions can be updated again at any time.

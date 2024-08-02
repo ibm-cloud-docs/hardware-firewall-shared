@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2019-11-12"
+  years: 2017, 2024
+lastupdated: "2024-08-02"
 
 keywords: bypass, bypassing, firewall, rules, enable, enabling
 
@@ -18,7 +18,7 @@ subcollection: hardware-firewall-shared
 You can bypass the rules of your Hardware Firewall by following the instructions here.
 {: shortdesc}
 
-1. From your browser, open the [IBM Cloud catalog ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com){:new_window} and log in to your account.
+1. From your browser, open the [IBM Cloud catalog](/catalog){: external} and log in to your account.
 
 1. Select the Menu icon ![Menu icon](../../icons/icon_hamburger.svg) from the upper left, then click **Classic Infrastructure**.
 1. Select **Devices > Device List** and click the firewall-protected device that you want to bypass.

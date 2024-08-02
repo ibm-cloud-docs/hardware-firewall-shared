@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2019-11-12"
+  years: 2017, 2024
+lastupdated: "2024-08-02"
 
 keywords: cancel, canceling, firewall, vlan
 
@@ -20,7 +20,7 @@ subcollection: hardware-firewall-shared
 Your Hardware Firewall can be cancelled at any time, by following the instructions here.
 {: shortdesc}
 
-1. From your browser, open the [IBM Cloud catalog](https://cloud.ibm.com){: external} and log in to your account.
+1. From your browser, open the [IBM Cloud catalog](/catalog){: external} and log in to your account.
 1. Select the Menu icon ![Menu icon](../../icons/icon_hamburger.svg) from the upper left, then click **Classic Infrastructure**.
 1. Select **Devices > Device List** and click the firewall-protected device that you want to cancel.
 1. In the **Add-ons** section, click **Firewall details**. It redirects you to the Firewall Details page.
