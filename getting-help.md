@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2019
-lastupdated: "2019-11-12"
+  years: 2017, 2024
+lastupdated: "2024-08-02"
 
 keywords: help, support, troubleshooting
 
@@ -20,7 +20,7 @@ If you experience an issue or have questions when you use Hardware Firewall, you
 
 * Review the [FAQs](/docs/hardware-firewall-shared?topic=hardware-firewall-shared-faqs-for-hardware-firewall-shared).
 * Review [known limitations](/docs/hardware-firewall-shared?topic=hardware-firewall-shared-known-limitations-with-hardware-firewall-shared).
-* Check the status of the {{site.data.keyword.Bluemix_notm}} platform and resources by going to the [Status page](https://cloud.ibm.com/status){: external}.
+* Check the status of the {{site.data.keyword.Bluemix_notm}} platform and resources by going to the [Status page](/status){: external}.
 
 If you still can't resolve the problem, you can open a support case. For more information, see [Creating support cases](/docs/get-support?topic=get-support-open-case).
 
