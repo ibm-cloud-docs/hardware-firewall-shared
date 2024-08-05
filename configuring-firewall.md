@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2024
-lastupdated: "2024-08-02"
+lastupdated: "2024-08-05"
 
 keywords: configure, configuring, firewall, add, adding, edit, editing, rules, ports, common
 
@@ -21,7 +21,7 @@ Configuring your Hardware Firewall is as simple as creating a set of rules to al
 ## Adding a firewall to a server
 {: #adding-a-firewall-to-a-server}
 
-To add a firewall to a server, follow the steps in [Getting Started](/docs/hardware-firewall-shared?topic=hardware-firewall-shared-getting-started#getting-started). If you receive an error, see the [Known Limitations](/docs/hardware-firewall-shared?topic=hardware-firewall-shared-known-limitations-with-hardware-firewall-shared-#known-limitations-with-hardware-firewall-shared) and [Getting help and support](/docs/hardware-firewall-shared?topic=hardware-firewall-shared-getting-help-and-support-for-hardware-firewall-shared-#getting-help-and-support-for-hardware-firewall-shared).
+To add a firewall to a server, follow the steps in [Getting Started](/docs/hardware-firewall-shared?topic=hardware-firewall-shared-getting-started#getting-started). If you receive an error, see the [Known Limitations](/docs/hardware-firewall-shared?topic=hardware-firewall-shared-known-limitations-with-hardware-firewall-shared) and [Getting help and support](/docs/hardware-firewall-shared?topic=hardware-firewall-shared-getting-help-and-support-for-hardware-firewall-shared).
 
 ## Editing rules
 {: #editing-rules}
