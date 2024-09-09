@@ -3,6 +3,7 @@ includes:
   - https://github.ibm.com/cloud-docs/cloud-infrastructure
   - https://github.ibm.com/cloud-docs-solutions/solution-tutorials
   - https://github.ibm.com/cloud-docs/icons
+  - https://github.ibm.com/cloud-docs/gateway-appliance
 translation:
   exclude:
     byFilePath:
