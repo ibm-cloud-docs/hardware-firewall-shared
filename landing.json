@@ -1,0 +1,50 @@
+{
+  "version": 2,
+  "title": "IBM Cloud Hardware Firewall",
+  "introduction": "A Hardware Firewall is a network device that is connected upstream from a server. The firewall blocks unwanted traffic from a server before the traffic ever reaches the server.",
+  "product_page": "https://www.ibm.com/networking",
+  "console_page": "/netsec/firewalls",
+  "section_topics": {
+    "links": [
+      {
+        "title": "Getting started with Hardware Firewall",
+        "href": "/docs/hardware-firewall-shared?topic=hardware-firewall-shared-getting-started"
+      },
+      {
+        "title": "Configuring the Hardware Firewall",
+        "href": "/docs/hardware-firewall-shared?topic=hardware-firewall-shared-configuring-the-hardware-firewall-shared"
+      },
+      {
+        "title": "Viewing your various firewalls",
+        "href": "/docs/hardware-firewall-shared?topic=hardware-firewall-shared-viewing-your-various-firewalls"
+      }
+    ]
+  },
+  "section_highlights": [
+    {
+      "title": "What is computer networking?",
+      "description": "An introduction to IBM computer networking about enabling the transmission and exchange of information and resources.",
+      "href": "https://www.ibm.com/topics/networking",
+      "type": "blog"
+    },
+    {
+      "title": "Network as a service",
+      "description": "In this demo, you’ll learn how you can use IBM Cloud services to create a simple three-tiered web app in a matter of clicks.",
+      "href": "/docs/security-groups?topic=security-groups-naas-video",
+      "type": "video",
+      "recommended": true
+    }
+  ],
+  "section_devtools": {
+    "terraform": "https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/firewall"
+  },
+  "section_updates": {
+    "view_more": "/docs/overview?topic=overview-whatsnew",
+    "tiles": [
+      {
+          "date": "8 December 2021",
+          "title": "Account administrators can now assign permissions to allow users to view and manage various parts of a hardware firewall. "
+        }
+    ]
+  }
+}
