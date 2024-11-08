@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2024
-lastupdated: "2024-08-05"
+lastupdated: "2024-11-08"
 
 keywords: configure, configuring, firewall, add, adding, edit, editing, rules, ports, common
 
@@ -31,8 +31,8 @@ When a firewall is first added to a server, a set of rules is initially put in p
 Make sure the "status" indicates that the firewall is "Processing All Rules." Users can choose to bypass the rules if implemented rules have an unintended impact on their environment by clicking **Bypass Rules** in the **Actions** menu.
 
 1. From your browser, open the [IBM Cloud catalog](/catalog){: external} and log in to your account.
-1. Select the Menu icon ![Menu icon](../../icons/icon_hamburger.svg) from the upper left, then click **Classic Infrastructure**.
-1. Select **Devices > Device List** and click the firewall-protected device that you want to configure.
+1. Select the Menu icon ![Menu icon](../../icons/icon_hamburger.svg) from the upper left, then click **Infrastructure > Classic Infrastructure**.
+1. From the devices list, click the firewall-protected device that you want to configure.
 1. In the **Add-ons** section, click **Firewall details**. It will redirect you to the firewall page.
 1. The Firewall Details page shows the current rules in effect for IPv4 and IPv6 addresses. If no rules are implemented, a yellow status icon shows with a "Bypassing all rules" message next to the device name.
 
