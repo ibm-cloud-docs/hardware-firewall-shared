@@ -31,7 +31,7 @@ toc:
     - navgroup:
        id: reference
        topics:
-       - include: /..infrastructure-hub/ips.md
+       - include: ../docs/infrastructure-hub/ips.md
     - navgroup:
        id: help
        topics:
