@@ -24,13 +24,13 @@
     {
       "title": "What is computer networking?",
       "description": "An introduction to IBM computer networking about enabling the transmission and exchange of information and resources.",
-      "href": "https://www.ibm.com/topics/networking",
+      "href": "https://www.ibm.com/think/topics/networking",
       "type": "blog"
     },
     {
       "title": "Network as a service",
       "description": "In this demo, you’ll learn how you can use IBM Cloud services to create a simple three-tiered web app in a matter of clicks.",
-      "href": "/docs/security-groups?topic=security-groups-naas-video",
+      "href": "https://cloud.ibm.com/docs/security-groups?topic=security-groups-naas-video",
       "type": "video",
       "recommended": true
     }
