@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-lastupdated: "2019-11-12"
+  years: 2017, 2025
+lastupdated: "2025-04-22"
 
 keywords: faqs, firewall, ips, traffic, public, private, bandwidth, vpn, nat
 
@@ -12,7 +12,7 @@ subcollection: hardware-firewall-shared
 
 {{site.data.keyword.attribute-definition-list}}
 
-# FAQs for Hardware Firewall
+# FAQ for Hardware Firewall
 {: #faqs-for-hardware-firewall-shared}
 
 The following frequently asked questions can help you when you work with your Hardware Firewall.
