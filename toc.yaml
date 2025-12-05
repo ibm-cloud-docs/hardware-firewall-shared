@@ -8,32 +8,32 @@ toc:
     path: hardware-firewall-shared
     label: Hardware Firewall
   entries:
-    - navgroup:
-       id: learn
-       topics:
-       - getting-started.md
-       - about.md
-       - include: ../fortigate-10g/explore-firewalls.md
-       - include: ../gateway-appliance/ga-raci.md
-       - link:
+  - navgroup:
+      id: learn
+      topics:
+      - getting-started.md
+      - about.md
+      - include: ../fortigate-10g/explore-firewalls.md
+      - include: ../gateway-appliance/ga-raci.md
+      - link:
           label: What is network security?
           href: https://www.ibm.com/think/topics/networking
-    - navgroup:
-       id: howto
-       topics:
-       - configuring-firewall.md
-       - view_firewalls.md
-       - bypassing.md
-       - cancelling.md
-       - viewing-logs.md
-       - managing-permissions.md
-    - navgroup:
-       id: reference
-       topics:
-       - include: ../infrastructure-hub/ips.md
-    - navgroup:
-       id: help
-       topics:
-       - faqs.md
-       - known-limitations.md
-       - getting-help.md
+  - navgroup:
+      id: howto
+      topics:
+      - configuring-firewall.md
+      - view_firewalls.md
+      - bypassing.md
+      - cancelling.md
+      - viewing-logs.md
+      - managing-permissions.md
+  - navgroup:
+      id: reference
+      topics:
+      - include: ../infrastructure-hub/ips.md
+  - navgroup:
+      id: help
+      topics:
+      - faqs.md
+      - known-limitations.md
+      - getting-help.md
