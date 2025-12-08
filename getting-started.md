@@ -17,7 +17,7 @@ subcollection: hardware-firewall-shared
 The Hardware Firewall provides customers with an essential layer of security that is provisioned on demand without service interruptions. It prevents unwanted traffic from hitting your servers, reducing your attack surface, and allowing your server resources to be dedicated for their intended use.
 {: shortdesc}
 
-The Fortinet shared firewall will reach End of Support (EOS) on 31 December 2026. After this date, it will no longer be supported or available for use on IBM Cloud.
+The IBM shared hardware firewall will reach End of Support (EOS) on 31 December 2026. After this date, it will no longer be supported or available for use on IBM Cloud.
 {: attention}
 
 To add a firewall to a server, perform the following procedure:
