@@ -7,8 +7,8 @@
   "section_topics": {
     "links": [
       {
-        "title": "Getting started with Hardware Firewall",
-        "href": "/docs/hardware-firewall-shared?topic=hardware-firewall-shared-getting-started"
+        "title": "Deprecation of IBM shared hardware firewall",
+        "href": "/docs/hardware-firewall-shared?topic=hardware-firewall-shared-deprecation-hardware-shared-firewall"
       },
       {
         "title": "Configuring the Hardware Firewall",
