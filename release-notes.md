@@ -23,7 +23,7 @@ Find out about new and updated features in IBM Cloud Hardware Firewall.
 {: #shared-firewall-dec2025}
 {: release-note}
 
-Effective 17 December 2025, IBM shared hardware firewall on IBM Cloud has reached End of Marketing (EOM) and no longer accepts new orders. Additionally, this service will reach End of Support (EOS) on 31 December 2026. After this date, it will no longer be supported or available for use on IBM Cloud. For more information, see [Deprecation of IBM shared hardware firewall](/docs/fortigate-10g?topic=fortigate-10g-deprecation-fortigate).
+Effective 17 December 2025, IBM shared hardware firewall on IBM Cloud has reached End of Marketing (EOM) and no longer accepts new orders. Additionally, this service will reach End of Support (EOS) on 31 December 2026. After this date, it will no longer be supported or available for use on IBM Cloud. For more information, see [Deprecation of IBM shared hardware firewall](/docs/hardware-firewall-shared?topic=hardware-firewall-shared-deprecation-hardware-shared-firewall#migration-options-hardware-shared-firewall).
 
 ## 8 December 2021
 {: #hardware-firewall-shared-dec0821}

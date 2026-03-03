@@ -38,7 +38,7 @@ Review the following details about the IBM shared hardware firewall deprecation:
 * After 31 December 2026, support for IBM shared hardware firewall devices including updates, bug fixes, and technical support for the service will no longer be available.
 * No support cases can be opened after 31 December 2026.
 
-## Migration options for FSA 10 Gbps
+## Migration options for IBM shared hardware firewall
 {: #migration-options-hardware-shared-firewall}
 
 IBM shared hardware firewall is expected to reach end of support on 31 December 2026. To keep your network secure and avoid any business disruptions, we recommend planning your migration well before the end of support date.
