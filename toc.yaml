@@ -2,9 +2,9 @@ toc:
   properties:
     subcollection: hardware-firewall-shared
     version: 2
-    category: network_classic
     audience: service
     href: /docs/hardware-firewall-shared
+    release-level: deprecated
     path: hardware-firewall-shared
     label: Hardware Firewall
   entries:
