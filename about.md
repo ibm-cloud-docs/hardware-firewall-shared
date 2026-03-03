@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2021-02-24"
+  years: 2017, 2026
+lastupdated: "2026-03-03"
 
 keywords: about, overview, features, firewall
 
@@ -14,6 +14,9 @@ subcollection: hardware-firewall-shared
 
 # About Hardware Firewall
 {: #about-hardware-firewall-shared}
+
+Effective 17 December 2025, IBM shared hardware firewall on IBM Cloud has reached End of Marketing (EOM) and no longer accepts new orders. Additionally, this service will reach End of Support (EOS) on 31 December 2026. After this date, it will no longer be supported or available for use on IBM Cloud. For migration information, see [Migration options for hardware shared firewall](/docs/fortigate-10g?topic=fortigate-10g-deprecation-fortigate#migration-options-fortigate-10g).
+{: deprecated}
 
 A Hardware Firewall is a network device that is connected upstream from a server. The firewall blocks unwanted traffic from a server before the traffic ever reaches the server. The main advantage to having a Hardware Firewall is that a server handles only 'good' traffic and no resources are wasted dealing with the 'bad' traffic.
 {: shortdesc}

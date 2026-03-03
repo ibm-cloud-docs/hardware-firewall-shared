@@ -11,13 +11,14 @@ toc:
   - navgroup:
       id: learn
       topics:
-      - getting-started.md
+      - deprecation.md
       - about.md
       - include: ../fortigate-10g/explore-firewalls.md
       - include: ../gateway-appliance/ga-raci.md
       - link:
           label: What is network security?
           href: https://www.ibm.com/think/topics/networking
+      - release-notes.md
   - navgroup:
       id: howto
       topics:
