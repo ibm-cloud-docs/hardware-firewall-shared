@@ -42,9 +42,13 @@
     "view_more": "/docs/overview?topic=overview-whatsnew",
     "tiles": [
       {
-          "date": "8 December 2021",
-          "title": "Account administrators can now assign permissions to allow users to view and manage various parts of a hardware firewall. "
-        }
+        "date": "17 December 2025",
+        "title": "IBM shared hardware firewall is deprecated as on 17 December 2025. It will reach end of support on 31 December 2026. "
+      },
+      {
+        "date": "8 December 2021",
+        "title": "Account administrators can now assign permissions to allow users to view and manage various parts of a hardware firewall. "
+      }
     ]
   }
 }
