@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-03-03"
+lastupdated: "2026-03-04"
 
 keywords: hardware-firewall, firewall, deprecation
 
@@ -15,7 +15,7 @@ subcollection: hardware-firewall-shared
 # Deprecation of IBM shared hardware firewall
 {: #deprecation-hardware-shared-firewall}
 
-IBM shared hardware firewall has reached End of Marketing (EOM) and no longer accepts new orders. It is deprecated on IBM Cloud as of 17 December 2025. The service will no longer be supported by {{site.data.keyword.cloud}} as of 31 December 2026 and any instances of the shared hardware firewall that are still running will no longer receive updates for security issues.
+IBM shared hardware firewall has reached End of Marketing (EOM) on 17 December 2025 and no longer accepts new orders on {{site.data.keyword.cloud}}. The service will no longer be supported by IBM Cloud as of 31 December 2026 and any instances of it that are still running will no longer receive updates for security issues after this date.
 {: shortdesc}
 
 ## Important dates
