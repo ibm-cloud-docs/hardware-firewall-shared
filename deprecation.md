@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-03-04"
+lastupdated: "2026-08-26"
 
 keywords: hardware-firewall, firewall, deprecation
 
@@ -46,7 +46,7 @@ IBM shared hardware firewall is expected to reach end of support on 31 December 
 The following alternatives help you migrate to a suitable firewall offering:
 
 1. Recommended option:
-   * Migrate to the Fortinet Virtual Firewall (vFSA). See [Getting started with vFSA](/docs/vfsa?topic=vfsa-getting-started-vfsa) and [license types](https://cloud.ibm.com/docs/vfsa?topic=vfsa-getting-started-vfsa#choosing-vfsa-license).
+   * Migrate to the Fortinet Virtual Firewall (vFSA). See [Getting started with vFSA](/docs/vfsa?topic=vfsa-getting-started-vfsa) and [license types](/docs/vfsa?topic=vfsa-getting-started-vfsa#choosing-vfsa-license).
    * Use Forti-Converter Service that is included in the enterprise license to migrate security policies and configurations from Fortinet hardware to the Fortinet virtual appliance.
       * Register an account in the [FortiConverter Service](https://service.forticonverter.com/){: external} for customer self-managed service.
       * For help with creating a migration ticket, see the [Forti-Converter Service Ticket Guide](https://docs.fortinet.com/document/forticonverter-service/25.1.0/online-help/783478/create-forticonverter-service-ticket){: external}.
@@ -54,4 +54,4 @@ The following alternatives help you migrate to a suitable firewall offering:
    * Juniper vSRX with Content Security Bundle: Enhanced security features, VLAN protection, HA configurations, IPS/IDS/UTM capabilities. See [Getting started with Juniper vSRX](/docs/vsrx?topic=vsrx-getting-started-vsrx).
    * Virtual Router Appliance (VRA 5600): Enterprise router with firewall, VPN, traffic shaping, and policy-based    routing. See [Getting started with Virtual Router Appliance](/docs/virtual-router-appliance?topic=virtual-router-appliance-getting-started-vra).
 
-Contact [IBM Cloud Support](https://www.ibm.com/cloud/support){: external} for any guidance or to know more about the migration process.
+Contact [IBM Cloud Support](https://www.ibm.com/products/cloud/support){: external} for any guidance or to know more about the migration process.
