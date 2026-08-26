@@ -2,7 +2,7 @@
   "version": 2,
   "title": "IBM Cloud Hardware Firewall",
   "introduction": "A Hardware Firewall is a network device that is connected upstream from a server. The firewall blocks unwanted traffic from a server before the traffic ever reaches the server.",
-  "product_page": "https://www.ibm.com/networking",
+  "product_page": "https://www.ibm.com/solutions/networking",
   "console_page": "/netsec/firewalls",
   "section_topics": {
     "links": [
