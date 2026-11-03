@@ -29,7 +29,7 @@
     },
     {
       "title": "Network as a service",
-      "description": "In this demo, you’ll learn how you can use IBM Cloud services to create a simple three-tiered web app in a matter of clicks.",
+      "description": "In this demo, you will learn how you can use IBM Cloud services to create a simple three-tiered web app in a matter of clicks.",
       "href": "/docs/security-groups?topic=security-groups-naas-video",
       "type": "video",
       "recommended": true
@@ -43,11 +43,11 @@
     "tiles": [
       {
         "date": "17 December 2025",
-        "title": "IBM shared hardware firewall is deprecated as on 17 December 2025. It will reach end of support on 31 December 2026. "
+        "title": "IBM shared hardware firewall is deprecated as on 17 December 2025. It will reach end of support on 31 December 2026."
       },
       {
-        "date": "8 December 2021",
-        "title": "Account administrators can now assign permissions to allow users to view and manage various parts of a hardware firewall. "
+        "date": "08 December 2021",
+        "title": "Account administrators can now assign permissions to allow users to view and manage various parts of a hardware firewall."
       }
     ]
   }
