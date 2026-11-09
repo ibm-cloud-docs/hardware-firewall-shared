@@ -12,6 +12,7 @@ toc:
       id: learn
       topics:
       - deprecation.md
+      - getting-started.md
       - about.md
       - include: ../fortigate-10g/explore-firewalls.md
       - include: ../gateway-appliance/ga-raci.md
