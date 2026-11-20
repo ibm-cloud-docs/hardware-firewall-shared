@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2019-11-12"
+  years: 2017, 2026
+lastupdated: "2026-11-20"
 
 keywords: viewing, logs, reports, firewall, troubleshooting
 
@@ -12,26 +12,33 @@ subcollection: hardware-firewall-shared
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Viewing log reports for Hardware Firewall
+# Viewing log reports for hardware firewalls
 {: #viewing-log-reports-for-hardware-firewall}
 {: help}
 {: support}
 
-Logs for your Hardware Firewall are available on a per-IP basis by navigating to the protected device, on the Firewall Details page, and clicking **Actions > Firewall Logs**.
+Logs for your hardware firewall are available on a per-IP basis by navigating to the protected device **Firewall Details** page and clicking **Actions > Firewall Logs**.
 {: shortdesc}
 
-Logs are presented in .CSV format and contain the following items:
+Logs are presented in CSV format and contain the following fields:
 
-**Event Type:** The action taken by the firewall (Deny)
+Event type
+:   The action taken by the firewall (such as `Deny`).
 
-**Protocol:** The protocol used for communication (TCP/PING/UDP/IRD/etc)
+Protocol
+:   The protocol used for communication (such as `TCP`, `PING`, or `UDP`).
 
-**Source IP Address:** IP where the packet originated
+Source IP address
+:   The IP address where the packet originated.
 
-**Source Port:** The port where the packet originated
+Source port
+:   The port where the packet originated.
 
-**Destination IP:** Intended target for the packet
+Destination IP
+:   The intended target IP address for the packet.
 
-**Destination Port:** Intended port for the packet
+Destination port
+:   The intended port for the packet.
 
-**Creation Date:** Date and time of action (24-hour format)
+Creation date
+:   The date and time of the action in 24-hour format.

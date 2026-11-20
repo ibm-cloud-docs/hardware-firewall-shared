@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2026
-lastupdated: "2026-03-03"
+lastupdated: "2026-11-20"
 
 keywords: updates, additions, improvements
 
@@ -14,16 +14,16 @@ content-type: release-note
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Release notes for IBM Cloud Hardware Firewall
+# Release notes for {{site.data.keyword.cloud_notm}} shared hardware firewall
 {: #hardware-firewall-shared-release-notes}
 
-Find out about new and updated features in IBM Cloud Hardware Firewall.
+Find out about new and updated features in {{site.data.keyword.cloud_notm}} shared hardware firewall.
 
 ## 17 December 2025
 {: #shared-firewall-dec2025}
 {: release-note}
 
-Effective 17 December 2025, IBM shared hardware firewall on IBM Cloud has reached End of Marketing (EOM) and no longer accepts new orders. Additionally, this service will reach End of Support (EOS) on 31 December 2026. After this date, it will no longer be supported or available for use on IBM Cloud. For more information, see [Deprecation of IBM shared hardware firewall](/docs/hardware-firewall-shared?topic=hardware-firewall-shared-deprecation-hardware-shared-firewall#migration-options-hardware-shared-firewall).
+Effective 17 December 2025, the {{site.data.keyword.cloud}} shared hardware firewall reached End of Marketing (EOM) and no longer accepts new orders. Additionally, this service will reach End of Support (EOS) on 31 December 2026. After this date, it will no longer be supported or available for use on {{site.data.keyword.cloud_notm}}. For more information, see [IBM shared hardware firewall deprecation](/docs/hardware-firewall-shared?topic=hardware-firewall-shared-deprecation-hardware-shared-firewall).
 
 ## 8 December 2021
 {: #hardware-firewall-shared-dec0821}

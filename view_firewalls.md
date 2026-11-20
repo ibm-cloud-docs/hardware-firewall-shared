@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2024
-lastupdated: "2024-11-08"
+  years: 2017, 2026
+lastupdated: "2026-11-20"
 
 keywords: views, firewalls, overview, vlan,
 
@@ -15,7 +15,7 @@ subcollection: hardware-firewall-shared
 # Viewing your various firewalls
 {: #viewing-your-various-firewalls}
 
-You can identify the Hardware Firewalls in use on an account and their associated VLANs, and identify unprotected VLANs and plan the deployment of a firewall solution.
+You can identify the hardware firewalls in use on an account and their associated VLANs, identify unprotected VLANs, and plan the deployment of a firewall solution.
 {: shortdesc}
 
 ## Firewall overview by VLAN
@@ -23,22 +23,25 @@ You can identify the Hardware Firewalls in use on an account and their associate
 
 To get an overview of firewalls on your system and initiate basic management:
 
-1. From your browser, open the [IBM Cloud catalog](/catalog){: external} and log in to your account.
-2. Select the Menu icon ![Menu icon](../../icons/icon_hamburger.svg) from the upper left, then click **Infrastructure > Classic Infrastructure**.
-3. Select **Network > IP Management > VLANs**.
+1. In your browser, open the [{{site.data.keyword.cloud_notm}} catalog](/catalog){: external} and log in to your account.
+1. Select the **Navigation Menu** icon ![Menu icon](../../icons/icon_hamburger.svg), then click **Infrastructure > Classic Infrastructure**.
+1. Select **Network > IP Management > VLANs**.
 
-To view only public VLANS, click the **Filter** menu and enter `fcr` for **Primary Router**.
+To view only public VLANs, click the **Filter** menu and enter `fcr` for **Primary Router**.
 {: tip}
 
-Each row represents a VLAN in your infrastructure. IBM© Cloud populates the **VLAN NUMBER** and **PRIMARY ROUTER** information automatically indicating the true VLAN number and the router that it is configured on. Use the **NAME** field to define a recognizable name.
+Each row represents a VLAN in your infrastructure. {{site.data.keyword.cloud_notm}} populates the **VLAN NUMBER** and **PRIMARY ROUTER** information automatically, indicating the VLAN number and configured router. Use the **NAME** field to define a recognizable name.
 
-The **GATEWAY/FIREWALL** column contains details about which hardware firewall protection is in place, for example:
+The **GATEWAY/FIREWALL** column contains details about which firewall protection is in place:
 
-**Individually Protected Servers** indicates that one or more servers is using a Hardware Firewall and that there is not a FortiGate Security Appliance, or Network Gateway in place. You cannot place VLAN firewalls and network gateways on a VLAN with individually protected servers.
+Individually Protected Servers
+:   Indicates that one or more servers is using a hardware firewall and that there is not a FortiGate Security Appliance or network gateway in place. You cannot place VLAN firewalls and network gateways on a VLAN with individually protected servers.
 
-**Firewall-vlanXXXX.networklayer** indicates that there is a FortiGate Security Appliance in place. Only one VLAN firewall or Network Gateway can be associated with a VLAN, but a server can be protected on the public VLAN by a VLAN firewall and associated on the private network with a Network Gateway.
+Firewall-vlanXXXX.networklayer
+:   Indicates that a FortiGate Security Appliance is in place. Only one VLAN firewall or network gateway can be associated with a VLAN, but a server can be protected on the public VLAN by a VLAN firewall and associated on the private network with a network gateway.
 
-**GatewayName** indicates that the VLAN is associated with that Network Gateway.
+GatewayName
+:   Indicates that the VLAN is associated with that network gateway.
 
 ## Individually protected servers view
 {: #individually-protected-servers-view}
