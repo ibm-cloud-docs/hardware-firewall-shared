@@ -33,6 +33,12 @@
       "href": "/docs/security-groups?topic=security-groups-naas-video",
       "type": "video",
       "recommended": true
+    },
+    {
+      "title": "Migrate off the shared hardware firewall",
+      "description": "Learn how to replace the shared hardware firewall on an IBM Cloud Classic server before it reaches end of support.",
+      "href": "/docs/hardware-firewall-shared?topic=hardware-firewall-shared-shared-fw-migration",
+      "type": "tutorial"
     }
   ],
   "section_devtools": {
