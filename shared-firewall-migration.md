@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-11-23"
+lastupdated: "2026-11-24"
 
 keywords: migration, shared hardware firewall, classic security groups, host firewall, bare metal, virtual server, end of support, deprecation
 
@@ -18,39 +18,39 @@ account-plan: paid
 {: #shared-fw-migration}
 {: toc-content-type="tutorial"}
 
-In this tutorial, you learn how to replace the shared hardware firewall on an {{site.data.keyword.cloud}} Classic server before it reaches End of Support. You review the options and put the replacement in place while the shared firewall is still filtering: Classic security groups for a virtual server, or an OS-level firewall for a bare metal server. You then bypass the shared firewall, verify that the replacement filters traffic the way you expect on its own, and cancel the shared firewall.
+In this tutorial, learn how to replace the shared hardware firewall on an {{site.data.keyword.cloud}} Classic server before it reaches End of Support. Review the options and put the replacement in place while the shared firewall is still filtering: Classic security groups for a virtual server, or an OS-level firewall for a bare metal server. Then, bypass the shared firewall, verify that the replacement filters traffic the way you expect on its own, and cancel the shared firewall.
 {: shortdesc}
 
 **End of Support: 31 December 2026.** The shared hardware firewall reached End of Marketing on 17 December 2025 and reaches End of Support on 31 December 2026. Firewalls that remain active after this date will continue to operate without vendor support, maintenance updates, or availability guarantees. Because the product reached End of Marketing, a cancelled firewall cannot be reprovisioned. Ensure that your replacement filtering solution is in place and verified before you cancel the firewall.
 {: important}
 
-**Why this tutorial does not cover a move to VPC.** Moving a workload to {{site.data.keyword.cloud_notm}} VPC is a platform migration: new servers, new addressing and new networking. It does not replace a layer of inbound firewall rules on a Classic server that is staying where it is. This tutorial assumes you are keeping the server and replacing the filtering, so a move to VPC is out of scope.
+**Why this tutorial does not cover a move to VPC.** Moving a workload to {{site.data.keyword.cloud_notm}} VPC is a platform migration that involves new servers, new addressing, and new networking. It does not replace the inbound firewall rules on a Classic server that remains in place. This tutorial assumes that you are keeping the Classic server and replacing only its firewall filtering. A move to VPC is outside the scope of this tutorial.
 {: note}
 
-## Purpose
+## Overview
 {: #shared-fw-purpose}
 
-This tutorial is for the person who plans and carries out the replacement of a shared hardware firewall on a Classic server. It assumes you want to keep the filtering the firewall provides and need something else to provide it. It covers three things:
+This tutorial is for the person who plans and carries out the replacement of a shared hardware firewall on a Classic server. It assumes you want to retain the firewall's filtering functionality and replace it with another solution. The tutorial covers three areas:
 
 1. What the firewall did, so the replacement covers the same traffic.
-1. The replacement options for a virtual server instance (VSI) and for a bare metal server, with the cost of each.
-1. A procedure for the two low-cost paths, Classic security groups for a VSI and a host firewall for bare metal. You put the replacement in place while the shared firewall is still filtering, bypass the shared firewall, verify, and only then cancel it.
+1. The replacement options for a virtual server instance and for a bare metal server, with the cost of each.
+1. A procedure for the two low-cost paths, Classic security groups for a virtual server instance and a host firewall for bare metal. You put the replacement in place while the shared firewall is still filtering, bypass the shared firewall, verify, and only then cancel it.
 
-For a move to a gateway appliance, use this tutorial for the inventory and the cancel steps, and the FSA 10G to vFSA migration tutorial for the pattern of routing VLANs through the new gateway.
+If you plan to move to a gateway appliance, use this tutorial to inventory your existing firewall rules and complete the shared firewall cancellation steps. For instructions on routing VLANs through the new gateway, see the [FSA 10G to vFSA migration tutorial](/docs/fortigate-10g?topic=fortigate-10g-fsa-to-vfsa-migration).
 
-## What the firewall did
+## Shared hardware firewall behavior
 {: #shared-fw-behavior}
 
-Build the replacement against this list. Each row comes from {{site.data.keyword.cloud_notm}}'s documentation for the product.
+Use this list to build your replacement. Each row describes a documented behavior of the shared hardware firewall.
 
 | Behavior | Detail |
 |---|---|
 | Scope | One server. It filters the primary public IP and statically routed IPs. |
-| Portable subnets | Not protected. Traffic to a portable IP on the server passed unfiltered. |
+| Portable subnets | Not protected. Traffic to a portable IP assigned to the server passed through without filtering. |
 | Network | Public side only. Private network traffic never crossed it. |
 | Direction | Inbound rules only. It has no egress rules. |
 | State | Stateful packet inspection. |
-| Rule model | Numbered rules, permit or deny, lowest number first, first match applies. |
+| Rule model | Numbered permit or deny rules. Rules are evaluated in ascending numerical order, and the first matching rule applies. |
 | Rule limit | 79 rules per firewall. |
 | Protocols | TCP, UDP, ICMP, GRE, PPTP, AH, ESP. IPv4 and IPv6. |
 | Logging | Denied-traffic log per IP, exported as CSV from the portal. |
@@ -60,47 +60,50 @@ Build the replacement against this list. Each row comes from {{site.data.keyword
 
 Two consequences for the migration:
 
-* The equivalent rule set is the public inbound rules and nothing else. Private filtering and egress filtering are new scope. Add them only if you want them.
+* The equivalent rule set includes only public inbound rules. Private traffic filtering and egress filtering are outside the shared firewall's scope. Add them to the replacement only if needed.
 * A replacement that filters the whole public interface also filters portable IPs. Traffic to those IPs passed unfiltered before the move. List what runs on them before you start.
 
-## Options
+## Replacement options
 {: #shared-fw-options}
 
-Two questions decide the path: is the server a VSI or bare metal, and how much of your network needs the filtering.
+Two questions determine the replacement path:
 
-The shared firewall is a low-cost, per-server, easily editable public inbound firewall policy. The closest replacements are per-server too: Classic security groups for a VSI, and OS-level software firewalls like firewalld or Windows Defender Firewall for bare metal servers.
+* Is the server a virtual server or bare metal?
+* How much of your network needs the filtering?
+
+The shared firewall is a low-cost, per-server, easily editable public inbound firewall policy. The closest replacements are per-server too: Classic security groups for a virtual server, and OS-level software firewalls like firewalld or Windows Defender Firewall for bare metal servers.
 
 Many users already have security groups configured for their virtual servers, or OS-level software firewall rules configured for their bare metal servers. If you already have these in place, compare your existing rules against the shared firewall's rule list, address any rule gaps, and then proceed with the bypass, verification, and cancellation steps.
 
-**Kubernetes and OpenShift worker nodes.** If the server is a worker node in an {{site.data.keyword.cloud_notm}} Kubernetes Service or Red Hat OpenShift on {{site.data.keyword.cloud_notm}} classic cluster, manage its public exposure the way the cluster documentation describes. See [What else can I do to reduce the surface for external attacks for Classic clusters?](/docs/containers?topic=containers-security#external-what-else) It lists three options: limit the number of apps you expose publicly, keep worker nodes private by connecting them to a private VLAN only, and limit public connectivity to a small pool of edge nodes. Classic clusters with a public VLAN also come with default Calico network policies on each worker node's public interface. They allow public inbound traffic only to cluster components such as NodePort, LoadBalancer and Ingress services, and you can add your own policies to restrict it further. See [Controlling traffic with network policies](/docs/containers?topic=containers-network_policies).
+**Kubernetes and OpenShift worker nodes.** If the server is a worker node in an {{site.data.keyword.cloud_notm}} Kubernetes Service or Red Hat OpenShift on {{site.data.keyword.cloud_notm}} classic cluster, manage its public exposure the way the cluster documentation describes. See [What else can I do to reduce the surface for external attacks for Classic clusters?](/docs/containers?topic=containers-security#external-what-else) It lists three options: limit the number of apps you expose publicly, keep worker nodes private by connecting them to a private VLAN only, and limit public connectivity to a small pool of edge nodes. Classic clusters with a public VLAN also come with default Calico network policies on each worker node's public interface. They allow public inbound traffic only to cluster components, such as NodePort, LoadBalancer and Ingress services, and you can add your own policies to restrict it further. See [Controlling traffic with network policies](/docs/containers?topic=containers-network_policies).
 {: note}
 
 A gateway appliance is a router and firewall deployed on dedicated bare metal hardware in a network pod. You associate public and private VLANs from that pod with the appliance and route traffic through it. You must configure and manage VLAN interfaces, subnet gateways, firewall policies, hardening configurations, and telemetry across every routed VLAN. Costs include the bare metal servers and software licensing. Managing a gateway appliance typically requires network engineering expertise to configure, harden, troubleshoot, monitor, and maintain the appliance, underlying host, and hypervisor.
 
-Choose this option only if you have enough servers and VLANs to warrant managing a dedicated network appliance and have experience managing Classic gateway appliances.
+Choose this option only if your number of servers and VLANs justifies a dedicated network appliance and you have experience managing Classic gateway appliances.
 
 ### Virtual server instance
 {: #shared-fw-vsi}
 
 | Option | Scope | Cost | Fit |
 |---|---|---|---|
-| Classic security groups | Per interface, public and private | No charge | The default path. A per-server inbound policy on one VSI, the closest match to the shared firewall. |
-| Gateway appliance: vFSA, vSRX, VRA, or bring your own | Every VLAN you route through it, public and private, in one pod | The bare metal server or servers plus licensing, billed monthly, and a network engineer to run it | Enough servers and VLANs to warrant managing your own network appliance, and experience running one. |
-| Host firewall in the guest OS | The server itself | No charge | A second layer under any option above. |
+| Classic security groups | Per interface, public and private | No charge | The default path. Provides a per-server inbound policy for one virtual server and is the closest match to the shared firewall. |
+| Gateway appliance: vFSA, vSRX, VRA, or bring your own | Every VLAN you route through it, public and private, in one pod | Bare metal server costs and software licensing, billed monthly, plus the cost of network engineering resources to manage it. | Enough servers and VLANs to warrant managing your own network appliance, and experience running one. |
+| Host firewall in the guest OS | The server itself | No charge | An additional layer of protection alongside either option above. |
 {: caption="Replacement options for a virtual server instance" caption-side="bottom"}
 
-Classic security groups are the only {{site.data.keyword.cloud_notm}} feature that matches the firewall on price and on per-server scope. The following table compares how each service behaves in terms of firewall rules and packet filtering:
+Classic security groups are the closest match to the shared firewall in both cost and per-server filtering. The following table compares the firewall rules and packet-filtering behavior of the two services:
 
 | Shared hardware firewall | Classic security groups |
 |---|---|
 | Stateful. When a rule allows a packet in one direction, the response packet is allowed in the opposite direction. | Stateful, with the same behavior. |
 | Permit and deny rules | Allow rules only |
-| Rule order decides the result | Order does not matter. The least restrictive rule wins. |
+| Rule order decides the result | Order does not matter. The least restrictive applicable rule takes precedence. |
 | Inbound only. Outbound always passed. | Inbound and outbound. Everything not allowed is denied, outbound included. |
 | Primary and static IPs only | The whole interface, portable IPs included |
 | 79 rules | 50 rules per group, 5 groups per interface |
 | Denied-traffic log | Audit log of configuration changes. No traffic log. |
-| Takes effect in two minutes, no restart | The first attach to an interface needs a restart |
+| Takes effect in two minutes, no restart | Attaching a security group to an interface for the first time requires a restart. |
 {: caption="Shared hardware firewall compared with Classic security groups" caption-side="bottom"}
 
 ### Bare metal server
@@ -128,18 +131,18 @@ Trade-offs of using a host firewall:
 
 Do not migrate to the FortiGate Security Appliance (FSA) 10G. It reached end of marketing on 17 December 2025 and reaches end of support on 31 December 2026, on the same schedule as the shared hardware firewall. If you require a Fortinet gateway appliance, migrate to the Virtual FortiGate Security Appliance (vFSA) instead.
 
-## Prerequisites
+## Before you begin
 {: #shared-fw-prerequisites}
 
 * Access to the {{site.data.keyword.cloud_notm}} portal, or the `ibmcloud` CLI with the `sl` plugin, logged in to the account. Either one can do every step.
 * Classic infrastructure permissions: **Manage Firewalls**, **Manage Firewall Rules**, **Cancel Services**, and **Manage Security Groups**.
-* A maintenance window. The VSI path restarts the server once.
+* A maintenance window. The virtual server path restarts the server once.
 * A test host outside {{site.data.keyword.cloud_notm}} for the verification steps.
 * For bare metal: working IPMI console access over the private network or the SSL VPN, tested before the window.
 
-The examples use VSI ID `12345678`, firewall ID `vs:445566`, public IP `203.0.113.10` and an office network of `198.51.100.0/24`.
+The examples use virtual server ID `12345678`, firewall ID `vs:445566`, public IP `203.0.113.10` and an office network of `198.51.100.0/24`.
 
-## Virtual servers: replace the shared firewall with security groups
+## Virtual servers: Replace the shared firewall with security groups
 {: #shared-fw-vsi-procedure}
 
 You can do all of this in the {{site.data.keyword.cloud_notm}} portal instead of the CLI. The steps below show CLI commands because they are easy to copy and to keep as a record. The portal equivalents:
@@ -149,7 +152,7 @@ You can do all of this in the {{site.data.keyword.cloud_notm}} portal instead of
 | View, bypass or cancel the firewall and its rules | **Classic Infrastructure > Devices > the server > Firewall** |
 | Create a security group | **Classic Infrastructure > Security > Network Security > Security Groups > Create group** |
 | Add rules to a group | The group's details page, **Create rule** |
-| Attach a group to the server | Assign the group to the VSI's public interface. The portal warns that a restart is required. |
+| Attach a group to the server | Assign the group to the virtual server's public interface. The portal warns that a restart is required. |
 {: caption="Portal locations for security group tasks" caption-side="bottom"}
 
 The portal's create form adds a rule that allows all outbound traffic unless you clear that option. That covers step 4.
@@ -164,13 +167,13 @@ ibmcloud sl firewall detail vs:445566 | tee shared-fw-445566-rules.txt
 ```
 {: pre}
 
-`list` prints a table with the columns `Firewall ID`, `Type`, `Features` and `Server/Vlan Id`. A shared firewall on a VSI has the type `Virtual Server - standard` and a firewall ID of the form `vs:445566`. Find the row whose `Server/Vlan Id` is your VSI ID and use its firewall ID. The number in the firewall ID is not the VSI ID.
+`list` prints a table with the columns `Firewall ID`, `Type`, `Features` and `Server/Vlan Id`. A shared firewall on a virtual server instance has the type `Virtual Server - standard` and a firewall ID of the form `vs:445566`. Find the row whose `Server/Vlan Id` is your virtual server ID and use its firewall ID. The number in the firewall ID is not the virtual server ID.
 
 `detail` prints one row per rule with the columns `#`, `action`, `protocol`, `src_ip`, `src_mask`, `dest` and `dest_mask`. The `dest` column holds the destination IP and port range as `IP:start-end`. Compare the saved output against the rules the portal shows. Keep the file. It is the only record of the rules after the firewall is cancelled, and the backout depends on it.
 
 In the portal: **Classic Infrastructure > Devices > the server > Firewall**.
 
-## Translate the rules
+## Translate the firewall rules to security groups
 {: #shared-fw-step-translate}
 {: step}
 
@@ -195,7 +198,7 @@ Work down the rule list in priority order and write each rule as a security grou
 
 Count the result. More than 50 rules need a second group. An interface takes five groups.
 
-## Create the group and its rules
+## Create the security group and its rules
 {: #shared-fw-step-create-group}
 {: step}
 
@@ -237,10 +240,10 @@ ibmcloud sl securitygroup list
 
 Expected: the list includes `allow_ssh`, `allow_http`, `allow_https`, `allow_outbound` and `allow_all`, each with an ID. Note the ID of `allow_outbound`. The examples use `1111111`.
 
-**No outbound rule, no outbound traffic.** A VSI with inbound rules and no egress rule accepts connections and cannot open any. Updates, DNS lookups, and license checks fail. Replies to inbound connections still pass, because the rules are stateful, so the issue looks intermittent.
+**No outbound rule, no outbound traffic.** A virtual server with inbound rules and no egress rule accepts connections and cannot open any. Updates, DNS lookups, and license checks fail. Replies to inbound connections still pass, because the rules are stateful, so the issue looks intermittent.
 {: attention}
 
-## Attach both groups to the public interface
+## Attach the security groups to the public interface
 {: #shared-fw-step-attach}
 {: step}
 
@@ -253,9 +256,9 @@ ibmcloud sl securitygroup interface-list 7654321
 ```
 {: pre}
 
-Expected: `interface-list` shows the VSI's public network component.
+Expected: `interface-list` shows the virtual server's public network component.
 
-## Restart the VSI
+## Restart the virtual server instance
 {: #shared-fw-step-restart}
 {: step}
 
@@ -267,11 +270,11 @@ ibmcloud sl vs detail 12345678
 ```
 {: pre}
 
-Expected: the VSI returns to a running state. Both the shared firewall and the security groups now filter the public interface.
+Expected: the virtual server returns to a running state. Both the shared firewall and the security groups now filter the public interface.
 
-Inbound traffic to the VSI reaches the shared firewall first, then the security groups, then the VSI's interface. Outbound traffic from the VSI reaches the security groups first, then the shared firewall. A connection has to pass both.
+Inbound traffic to the virtual server reaches the shared firewall first, then the security groups, then the server's interface. Outbound traffic from the server reaches the security groups first, then the shared firewall. A connection has to pass both.
 
-## Put the shared firewall in bypass
+## Bypass shared firewall rules
 {: #shared-fw-step-bypass}
 {: step}
 
@@ -279,7 +282,7 @@ In the portal: **Classic Infrastructure > Devices > the server > Firewall > Acti
 
 The security groups are now the only filter. This step is the reason the change is reversible: **Process Rules** restores the old filtering in two minutes.
 
-## Verify
+## Verify firewall rules and connectivity
 {: #shared-fw-step-verify}
 {: step}
 
@@ -293,7 +296,7 @@ nc -zv -w 5 203.0.113.10 3306
 
 Expected: port 443 connects. Port 3306, or any port the rules do not allow, times out.
 
-From the VSI:
+From the virtual server:
 
 ```sh
 curl -sS -o /dev/null -w "%{http_code}\n" https://www.ibm.com
@@ -304,7 +307,7 @@ Expected: an HTTP status code, which proves outbound traffic and DNS work.
 
 Then test each service the server provides, each source network with restricted access, and each portable IP on the server.
 
-## Monitor, then cancel
+## Monitor, then cancel the shared hardware firewall
 {: #shared-fw-step-cancel}
 {: step}
 
@@ -320,10 +323,10 @@ In the portal: **Firewall > Actions > Cancel firewall**, then choose immediate o
 **Cancellation is permanent.** The product reached End of Marketing in December 2025. After the cancellation completes, the firewall cannot be restored. Do not cancel to see if anything breaks; bypass answers that question.
 {: attention}
 
-## Bare metal servers: replace the shared firewall with an OS-level firewall
+## Bare metal servers: Replace the shared firewall with an OS-level firewall
 {: #shared-fw-bare-metal-procedure}
 
-The sequence matches the VSI path with the middle replaced: export, build, bypass, verify, monitor, cancel.
+The sequence matches the virtual server path with the middle replaced: export, build, bypass, verify, monitor, cancel.
 
 1. Export the rules as in step 1 above. A shared firewall on a bare metal server has the type `Hardware Server - standard` and a firewall ID of the form `server:445566`.
 1. Confirm IPMI console access works. This is the way back in after a bad rule.
@@ -347,15 +350,15 @@ Order a vFSA, vSRX or VRA only when you have enough servers and VLANs to warrant
 * Cancel every per-server shared firewall on a VLAN before you associate that VLAN with the gateway. After all of them are cancelled, the VLAN is released from the shared firewall automatically. If that has not happened within 10 minutes, open a case to have {{site.data.keyword.cloud_notm}} Support manually reclaim the backend firewall. After the release, you can associate the VLAN with the gateway appliance and then set it to route through. Cover the gap between the cancel and the route-through with an OS-level firewall.
 * No conversion tool applies. The shared firewall never exposed its FortiOS configuration, so the policy move is a manual rebuild from the exported rule list.
 
-The cutover pattern is in the FSA 10G to vFSA migration tutorial. Product pages: Fortinet FortiGates, Juniper vSRX, Vyatta, BYOGWA.
+The cutover pattern is in the [FSA 10G to vFSA migration tutorial](/docs/fortigate-10g?topic=fortigate-10g-fsa-to-vfsa-migration). Product pages: Fortinet FortiGates, Juniper vSRX, Vyatta, BYOGWA.
 
-## Backout
+## Backout procedure
 {: #shared-fw-backout}
 
 Before the cancel step, every path backs out in minutes:
 
 1. In the portal, choose **Firewall > Actions > Process Rules**. The status returns to `Processing All Rules` within two minutes.
-1. For a VSI, detach the groups. A VSI with no group attached is not limited by security groups.
+1. For a virtual server instance, detach the groups. A virtual server with no group attached is not limited by security groups.
 
    ```sh
    ibmcloud sl securitygroup interface-remove 7654321 -s 12345678 -i public
@@ -367,18 +370,12 @@ Before the cancel step, every path backs out in minutes:
 
 After the cancel step there is no backout to the shared firewall. Fix the replacement rules instead, using the export from step 1 as the reference.
 
-## Related
-{: #shared-fw-related}
-
-* Security groups overview: how the hypervisor enforces them.
-
-## Sources
+## Related information
 {: #shared-fw-sources}
-
-{{site.data.keyword.cloud_notm}} documentation, read on 18 November 2026:
 
 * [About hardware firewalls](/docs/hardware-firewall-shared): the end of marketing and end of support dates, features, the 79-rule limit, known limitations, FAQs, bypass and cancel procedures.
 * [Exploring firewalls](/docs/fortigate-10g?topic=fortigate-10g-exploring-firewalls): {{site.data.keyword.cloud_notm}}'s feature comparison across the Classic firewall offerings.
+* [Security groups overview](/docs/security-groups?topic=security-groups-getting-started): how the hypervisor enforces them.
 * [Security groups guidelines](/docs/security-groups?topic=security-groups-security-groups-guidelines): stateful rules, rule order, the restart on first attach, no bare metal.
 * [Security groups limits](/docs/security-groups?topic=security-groups-performance-limitations-for-security-groups): groups per interface and rules per group.
 * [Getting started with vFSA](/docs/vfsa?topic=vfsa-getting-started-vfsa): license types.
