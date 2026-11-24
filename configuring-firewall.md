@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2024
-lastupdated: "2024-11-08"
+  years: 2017, 2026
+lastupdated: "2026-11-20"
 
 keywords: configure, configuring, firewall, add, adding, edit, editing, rules, ports, common
 
@@ -12,54 +12,58 @@ subcollection: hardware-firewall-shared
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Configuring the Hardware Firewall
+# Configuring the hardware firewall
 {: #configuring-the-hardware-firewall-shared}
 
-Configuring your Hardware Firewall is as simple as creating a set of rules to allow access to certain IP addresses or ports from specific internet addresses while denying traffic from other sources.
+Configuring your hardware firewall involves creating rules that allow or deny traffic from specific IP addresses and ports.
 {: shortdesc}
 
 ## Adding a firewall to a server
 {: #adding-a-firewall-to-a-server}
 
-To add a firewall to a server, follow the steps in [Getting Started](/docs/hardware-firewall-shared?topic=hardware-firewall-shared-getting-started#getting-started). If you receive an error, see the [Known Limitations](/docs/hardware-firewall-shared?topic=hardware-firewall-shared-known-limitations-with-hardware-firewall-shared) and [Getting help and support](/docs/hardware-firewall-shared?topic=hardware-firewall-shared-getting-help-and-support-for-hardware-firewall-shared).
+To add a firewall to a server, follow the steps in [Getting started with hardware firewalls](/docs/hardware-firewall-shared?topic=hardware-firewall-shared-getting-started). If you receive an error, see [Known limitations with hardware firewalls](/docs/hardware-firewall-shared?topic=hardware-firewall-shared-known-limitations-with-hardware-firewall-shared) and [Getting help and support for hardware firewalls](/docs/hardware-firewall-shared?topic=hardware-firewall-shared-getting-help-and-support-for-hardware-firewall-shared).
 
 ## Editing rules
 {: #editing-rules}
 
-When a firewall is first added to a server, a set of rules is initially put in place that allows all traffic to reach the server. The rules can then be edited to control the traffic that reaches the server.
+When a firewall is first added to a server, a set of rules is put in place that allows all traffic to reach the server. You can edit the rules to control the traffic that reaches the server.
 
-Make sure the "status" indicates that the firewall is "Processing All Rules." Users can choose to bypass the rules if implemented rules have an unintended impact on their environment by clicking **Bypass Rules** in the **Actions** menu.
+Verify that the status indicates **Processing All Rules**. You can choose to bypass the rules if active rules cause unintended network disruption by selecting **Bypass Rules** from the **Actions** menu.
 
-1. From your browser, open the [IBM Cloud catalog](/catalog){: external} and log in to your account.
-1. Select the Menu icon ![Menu icon](../../icons/icon_hamburger.svg) from the upper left, then click **Infrastructure > Classic Infrastructure**.
+1. In your browser, open the [{{site.data.keyword.cloud_notm}} catalog](/catalog){: external} and log in to your account.
+1. Select the **Navigation Menu** icon ![Menu icon](../../icons/icon_hamburger.svg), then click **Infrastructure > Classic Infrastructure**.
 1. From the devices list, click the firewall-protected device that you want to configure.
-1. In the **Add-ons** section, click **Firewall details**. It will redirect you to the firewall page.
-1. The Firewall Details page shows the current rules in effect for IPv4 and IPv6 addresses. If no rules are implemented, a yellow status icon shows with a "Bypassing all rules" message next to the device name.
+1. In the **Add-ons** section, click **Firewall details**.
+1. The **Firewall Details** page shows the active rules for IPv4 and IPv6 addresses. If no rules are implemented, a yellow status icon displays with a **Bypassing all rules** message.
 
-     Rules are displayed in the order in which they are processed, with lower numbered rules having precedence over higher
-     number rules. For example, if rule one allows a packet through, the packet ignores rules two and beyond.
+   Rules are evaluated in numerical order, with lower-numbered rules having precedence over higher-numbered rules. For example, if rule 1 allows a packet through, subsequent rules are ignored.
 
-     The fields are:
+   Priority
+   :   The rule number. Lower-numbered rules have precedence over higher-numbered rules.
 
-      **Priority** - This field contains the rule number. Lower numbered rules have precedence over higher numbered rules.
+   Action
+   :   Permits or denies traffic that matches the rule.
 
-      **Action** - This select list is used to 'permit' or 'deny' traffic that matches this rule.
+   Source
+   :   `Any`, a specific IP address, or the network address for a specific subnet.
 
-      **Source** - This field can be either 'any' or a specific IP address or the network address for a specific subnet.
+   Destination
+   :   The destination IP address. For more information, see [Known limitations with hardware firewalls](/docs/hardware-firewall-shared?topic=hardware-firewall-shared-known-limitations-with-hardware-firewall-shared).
 
-      **Destination** - This field selects the destination IP (see [Known Limitations](/docs/hardware-firewall-shared?topic=hardware-firewall-shared-known-limitations-with-hardware-firewall-shared) if any issues arise).
+   CIDR
+   :   The standard CIDR notation for the selected source or destination.
 
-      **CIDR** - This field indicates the standard CIDR notation for the selected source/destination.
+   Port range
+   :   The range of ports (between 1 and 65535) that the rule applies to.
 
-      **Port Range** - These two fields indicate the range of ports (between 1 and 65535) that the rule applies to.
+   Protocol
+   :   The protocol that the rule applies to (`TCP`, `GRE`, `ICMP`, `UDP`, `PPTP`, `AH`, or `ESP`).
 
-      **Protocol** - This field selects the protocol that the rule applies to (TCP/GRE/ICMP/UDP/PPTP/AH/ESP).
+   Notes
+   :   An optional description for the rule.
 
-      **Notes:** Freeform field to enter any note about this rule.
-
-1. Click the **Actions** menu icon at the end of the row of the firewall rule to edit or delete the rule. Click **Add rule** at the upper right of the table to add a rule. The rules are automatically validated as you enter them.
-
-1. Click the **Save** or **Add** buttons to save the rule and apply to the firewall. The rule addition or update takes effect within two minutes.
+1. Click the **Actions** menu icon at the end of the rule row to edit or delete the rule. Click **Add rule** above the table to add a rule. Rules are automatically validated as you enter them.
+1. Click **Save** or **Add** to apply the rule to the firewall. Changes take effect within two minutes.
 
 The **Delete** action is disabled if the firewall includes only one rule.
 {: note}
